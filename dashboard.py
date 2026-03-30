@@ -110,7 +110,6 @@ def _safe_round_match(a: Optional[float], b: float, tol: float = 0.0025) -> bool
     return a is not None and abs(a - b) <= tol
 
 
-@st.cache_data
 def load_data() -> Optional[pd.DataFrame]:
     if not CSV_PATH.exists():
         return None
@@ -256,7 +255,6 @@ def parse_log(path: Path) -> Optional[dict]:
     return parsed
 
 
-@st.cache_data
 def load_runs() -> List[dict]:
     candidates = []
     for path in sorted(BASE_DIR.iterdir()):
@@ -290,7 +288,6 @@ def load_runs() -> List[dict]:
 def render_heatmap_tab() -> None:
     st.subheader("Dataset heatmap")
     # Debug: show where we are looking
-    st.caption(f"Looking for CSV in: `{CSV_PATH}` | exists: {CSV_PATH.exists()} | BASE_DIR: {BASE_DIR}")
     df = load_data()
     if df is None:
         st.info(
