@@ -18,7 +18,18 @@ CLASS_ORDER = ["COD", "COF", "FD", "HG-OS", "JTOF", "LG-OS", "Other", "PSOF"]
 
 # ── Log directory ──────────────────────────────────────────────────────────────
 # Priority: 1) sidebar input  2) MIL_LOG_DIR env var  3) same folder as script
+# Works both locally and on Streamlit Cloud
 BASE_DIR = Path(__file__).resolve().parent
+# Streamlit Cloud mounts repo at /mount/src/<reponame>
+_candidates = [
+    BASE_DIR,
+    Path("/mount/src/dashboard"),
+    Path("/mount/src/Dashboard"),
+]
+for _candidate in _candidates:
+    if (_candidate / "dataset_stratified_updated.csv").exists() or        any(_candidate.glob("*.log")) or any(_candidate.glob("*.out")):
+        BASE_DIR = _candidate
+        break
 CSV_PATH = BASE_DIR / "dataset_stratified_updated.csv"
 
 RUN_PROFILES: Dict[str, Dict[str, str]] = {
