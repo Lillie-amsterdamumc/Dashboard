@@ -1,0 +1,292 @@
+Job started on gpu03.cluster at Wed Mar 18 12:44:22 CET 2026
+Job ID: 1284031
+Python: /appdata/users/P098169/orthognal_MIL/bin/python
+
+=== Starting MIL training ===
+[INFO] Device: cuda
+[INFO] Using --classes: ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'PSOF']
+[INFO] num_classes=7
+[INFO] label2id = {'COD': 0, 'COF': 1, 'FD': 2, 'HG-OS': 3, 'JTOF': 4, 'LG-OS': 5, 'PSOF': 6}
+[INFO] Detected in_dim=1536 from slide '10001_T00-3355_3'  (shape=(27421, 1536))
+[INFO] topk disabled (topk_frac=0) -- all patches used
+[INFO] Ensemble over 5 folds
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_1/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_2/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_3/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_4/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_5/best_model.pt
+[INFO] Loaded 5 model(s)
+Inference:   0%|          | 0/143 [00:00<?, ?it/s]Inference:   1%|          | 1/143 [00:00<00:52,  2.68it/s]Inference:   1%|▏         | 2/143 [00:00<00:57,  2.44it/s]Inference:   2%|▏         | 3/143 [00:01<00:52,  2.69it/s]Inference:   3%|▎         | 4/143 [00:01<00:47,  2.95it/s]Inference:   3%|▎         | 5/143 [00:01<00:49,  2.78it/s]Inference:   4%|▍         | 6/143 [00:02<00:50,  2.70it/s]Inference:   5%|▍         | 7/143 [00:02<01:05,  2.07it/s]Inference:   6%|▌         | 8/143 [00:03<01:07,  1.99it/s]Inference:   7%|▋         | 10/143 [00:04<01:06,  1.99it/s]Inference:   8%|▊         | 11/143 [00:04<01:04,  2.05it/s]Inference:   8%|▊         | 12/143 [00:05<01:12,  1.82it/s]Inference:   9%|▉         | 13/143 [00:06<01:16,  1.69it/s]Inference:  10%|▉         | 14/143 [00:08<02:14,  1.04s/it]Inference:  10%|█         | 15/143 [00:08<01:46,  1.20it/s]Inference:  11%|█         | 16/143 [00:09<01:28,  1.44it/s]Inference:  12%|█▏        | 17/143 [00:09<01:13,  1.71it/s]Inference:  13%|█▎        | 18/143 [00:09<01:07,  1.84it/s]Inference:  13%|█▎        | 19/143 [00:10<01:01,  2.00it/s]Inference:  14%|█▍        | 20/143 [00:11<01:35,  1.29it/s]Inference:  15%|█▍        | 21/143 [00:12<01:39,  1.22it/s]Inference:  15%|█▌        | 22/143 [00:13<01:52,  1.07it/s]Inference:  16%|█▌        | 23/143 [00:14<01:55,  1.04it/s]Inference:  17%|█▋        | 24/143 [00:15<01:27,  1.36it/s]Inference:  17%|█▋        | 25/143 [00:15<01:17,  1.52it/s]Inference:  18%|█▊        | 26/143 [00:16<01:08,  1.70it/s]Inference:  19%|█▉        | 27/143 [00:16<01:04,  1.80it/s]Inference:  20%|█▉        | 28/143 [00:16<00:54,  2.10it/s]Inference:  20%|██        | 29/143 [00:17<00:57,  1.97it/s]Inference:  21%|██        | 30/143 [00:17<01:00,  1.87it/s]Inference:  22%|██▏       | 31/143 [00:18<00:56,  1.98it/s]Inference:  22%|██▏       | 32/143 [00:18<00:48,  2.31it/s]Inference:  23%|██▎       | 33/143 [00:19<01:11,  1.55it/s]Inference:  24%|██▍       | 34/143 [00:20<01:12,  1.51it/s]Inference:  24%|██▍       | 35/143 [00:21<01:27,  1.24it/s]Inference:  25%|██▌       | 36/143 [00:21<01:10,  1.52it/s]Inference:  26%|██▌       | 37/143 [00:22<01:03,  1.67it/s]Inference:  27%|██▋       | 38/143 [00:22<00:59,  1.76it/s]Inference:  27%|██▋       | 39/143 [00:24<01:33,  1.11it/s]Inference:  28%|██▊       | 40/143 [00:25<01:20,  1.28it/s]Inference:  29%|██▊       | 41/143 [00:25<01:05,  1.56it/s]Inference:  29%|██▉       | 42/143 [00:26<01:22,  1.22it/s]Inference:  30%|███       | 43/143 [00:27<01:13,  1.36it/s]Inference:  31%|███       | 44/143 [00:27<01:01,  1.60it/s]Inference:  31%|███▏      | 45/143 [00:27<00:54,  1.81it/s]Inference:  32%|███▏      | 46/143 [00:29<01:26,  1.12it/s]Inference:  33%|███▎      | 47/143 [00:30<01:31,  1.05it/s]Inference:  34%|███▍      | 49/143 [00:31<00:59,  1.58it/s]Inference:  35%|███▍      | 50/143 [00:31<00:51,  1.79it/s]Inference:  36%|███▌      | 51/143 [00:32<01:00,  1.52it/s]Inference:  36%|███▋      | 52/143 [00:33<01:03,  1.44it/s]Inference:  37%|███▋      | 53/143 [00:34<01:09,  1.29it/s]Inference:  38%|███▊      | 54/143 [00:35<01:10,  1.26it/s]Inference:  38%|███▊      | 55/143 [00:35<00:54,  1.60it/s]Inference:  39%|███▉      | 56/143 [00:35<00:46,  1.88it/s]Inference:  40%|███▉      | 57/143 [00:35<00:34,  2.47it/s][WARN] No feature file found for slide '10012_17_R84495_1A'. Tried:
+  /net/beegfs/users/P098169/features/10012_17_R84495_1A/features.pt
+  /net/beegfs/users/P098169/features/10012_17_R84495_1A.pt
+  /net/beegfs/users/P098169/features/10012_17_R84495_1A/10012_17_R84495_1A.pt
+[WARN] No feature file found for slide '10112_R06-82170_I'. Tried:
+  /net/beegfs/users/P098169/features/10112_R06-82170_I/features.pt
+  /net/beegfs/users/P098169/features/10112_R06-82170_I.pt
+  /net/beegfs/users/P098169/features/10112_R06-82170_I/10112_R06-82170_I.pt
+[WARN] No feature file found for slide '24_R82111'. Tried:
+  /net/beegfs/users/P098169/features/24_R82111/features.pt
+  /net/beegfs/users/P098169/features/24_R82111.pt
+  /net/beegfs/users/P098169/features/24_R82111/24_R82111.pt
+[WARN] No feature file found for slide '24_R83059'. Tried:
+  /net/beegfs/users/P098169/features/24_R83059/features.pt
+  /net/beegfs/users/P098169/features/24_R83059.pt
+  /net/beegfs/users/P098169/features/24_R83059/24_R83059.pt
+[WARN] No feature file found for slide '23_R81135'. Tried:
+  /net/beegfs/users/P098169/features/23_R81135/features.pt
+  /net/beegfs/users/P098169/features/23_R81135.pt
+  /net/beegfs/users/P098169/features/23_R81135/23_R81135.pt
+[WARN] No feature file found for slide '23_R83939'. Tried:
+  /net/beegfs/users/P098169/features/23_R83939/features.pt
+  /net/beegfs/users/P098169/features/23_R83939.pt
+  /net/beegfs/users/P098169/features/23_R83939/23_R83939.pt
+[WARN] No feature file found for slide '23_R82827'. Tried:
+  /net/beegfs/users/P098169/features/23_R82827/features.pt
+  /net/beegfs/users/P098169/features/23_R82827.pt
+  /net/beegfs/users/P098169/features/23_R82827/23_R82827.pt
+[WARN] No feature file found for slide '23_R83441'. Tried:
+  /net/beegfs/users/P098169/features/23_R83441/features.pt
+  /net/beegfs/users/P098169/features/23_R83441.pt
+  /net/beegfs/users/P098169/features/23_R83441/23_R83441.pt
+[WARN] No feature file found for slide '23_R81160'. Tried:
+  /net/beegfs/users/P098169/features/23_R81160/features.pt
+  /net/beegfs/users/P098169/features/23_R81160.pt
+  /net/beegfs/users/P098169/features/23_R81160/23_R81160.pt
+[WARN] No feature file found for slide '21_R84645'. Tried:
+  /net/beegfs/users/P098169/features/21_R84645/features.pt
+  /net/beegfs/users/P098169/features/21_R84645.pt
+  /net/beegfs/users/P098169/features/21_R84645/21_R84645.pt
+[WARN] No feature file found for slide '21_R81831'. Tried:
+  /net/beegfs/users/P098169/features/21_R81831/features.pt
+  /net/beegfs/users/P098169/features/21_R81831.pt
+  /net/beegfs/users/P098169/features/21_R81831/21_R81831.pt
+[WARN] No feature file found for slide '21_R80750'. Tried:
+  /net/beegfs/users/P098169/features/21_R80750/features.pt
+  /net/beegfs/users/P098169/features/21_R80750.pt
+  /net/beegfs/users/P098169/features/21_R80750/21_R80750.pt
+[WARN] No feature file found for slide '20_R82805'. Tried:
+  /net/beegfs/users/P098169/features/20_R82805/features.pt
+  /net/beegfs/users/P098169/features/20_R82805.pt
+  /net/beegfs/users/P098169/features/20_R82805/20_R82805.pt
+[WARN] No feature file found for slide '20_R82384'. Tried:
+  /net/beegfs/users/P098169/features/20_R82384/features.pt
+  /net/beegfs/users/P098169/features/20_R82384.pt
+  /net/beegfs/users/P098169/features/20_R82384/20_R82384.pt
+[WARN] No feature file found for slide '20_R83334'. Tried:
+  /net/beegfs/users/P098169/features/20_R83334/features.pt
+  /net/beegfs/users/P098169/features/20_R83334.pt
+  /net/beegfs/users/P098169/features/20_R83334/20_R83334.pt
+[WARN] No feature file found for slide '22_R81458'. Tried:
+  /net/beegfs/users/P098169/features/22_R81458/features.pt
+  /net/beegfs/users/P098169/features/22_R81458.pt
+  /net/beegfs/users/P098169/features/22_R81458/22_R81458.pt
+[WARN] No feature file found for slide '24_R80792'. Tried:
+  /net/beegfs/users/P098169/features/24_R80792/features.pt
+  /net/beegfs/users/P098169/features/24_R80792.pt
+  /net/beegfs/users/P098169/features/24_R80792/24_R80792.pt
+[WARN] No feature file found for slide '24_R81266'. Tried:
+  /net/beegfs/users/P098169/features/24_R81266/features.pt
+  /net/beegfs/users/P098169/features/24_R81266.pt
+  /net/beegfs/users/P098169/features/24_R81266/24_R81266.pt
+[WARN] No feature file found for slide '24_R81339'. Tried:
+  /net/beegfs/users/P098169/features/24_R81339/features.pt
+  /net/beegfs/users/P098169/features/24_R81339.pt
+  /net/beegfs/users/P098169/features/24_R81339/24_R81339.pt
+[WARN] No feature file found for slide '24_R83038'. Tried:
+  /net/beegfs/users/P098169/features/24_R83038/features.pt
+  /net/beegfs/users/P098169/features/24_R83038.pt
+  /net/beegfs/users/P098169/features/24_R83038/24_R83038.pt
+[WARN] No feature file found for slide '24_R82042'. Tried:
+  /net/beegfs/users/P098169/features/24_R82042/features.pt
+  /net/beegfs/users/P098169/features/24_R82042.pt
+  /net/beegfs/users/P098169/features/24_R82042/24_R82042.pt
+[WARN] No feature file found for slide '24_R81467'. Tried:
+  /net/beegfs/users/P098169/features/24_R81467/features.pt
+  /net/beegfs/users/P098169/features/24_R81467.pt
+  /net/beegfs/users/P098169/features/24_R81467/24_R81467.pt
+[WARN] No feature file found for slide '24_H09154'. Tried:
+  /net/beegfs/users/P098169/features/24_H09154/features.pt
+  /net/beegfs/users/P098169/features/24_H09154.pt
+  /net/beegfs/users/P098169/features/24_H09154/24_H09154.pt
+[WARN] No feature file found for slide '23_R80698'. Tried:
+  /net/beegfs/users/P098169/features/23_R80698/features.pt
+  /net/beegfs/users/P098169/features/23_R80698.pt
+  /net/beegfs/users/P098169/features/23_R80698/23_R80698.pt
+[WARN] No feature file found for slide '23_R80975'. Tried:
+  /net/beegfs/users/P098169/features/23_R80975/features.pt
+  /net/beegfs/users/P098169/features/23_R80975.pt
+  /net/beegfs/users/P098169/features/23_R80975/23_R80975.pt
+[WARN] No feature file found for slide '23_R81186'. Tried:
+  /net/beegfs/users/P098169/features/23_R81186/features.pt
+  /net/beegfs/users/P098169/features/23_R81186.pt
+  /net/beegfs/users/P098169/features/23_R81186/23_R81186.pt
+[WARN] No feature file found for slide '23_R82878'. Tried:
+  /net/beegfs/users/P098169/features/23_R82878/features.pt
+  /net/beegfs/users/P098169/features/23_R82878.pt
+  /net/beegfs/users/P098169/features/23_R82878/23_R82878.pt
+[WARN] No feature file found for slide '23_R83213'. Tried:
+  /net/beegfs/users/P098169/features/23_R83213/features.pt
+  /net/beegfs/users/P098169/features/23_R83213.pt
+  /net/beegfs/users/P098169/features/23_R83213/23_R83213.pt
+[WARN] No feature file found for slide '23_H10476'. Tried:
+  /net/beegfs/users/P098169/features/23_H10476/features.pt
+  /net/beegfs/users/P098169/features/23_H10476.pt
+  /net/beegfs/users/P098169/features/23_H10476/23_H10476.pt
+[WARN] No feature file found for slide '23_R84806'. Tried:
+  /net/beegfs/users/P098169/features/23_R84806/features.pt
+  /net/beegfs/users/P098169/features/23_R84806.pt
+  /net/beegfs/users/P098169/features/23_R84806/23_R84806.pt
+[WARN] No feature file found for slide '23_R84994'. Tried:
+  /net/beegfs/users/P098169/features/23_R84994/features.pt
+  /net/beegfs/users/P098169/features/23_R84994.pt
+  /net/beegfs/users/P098169/features/23_R84994/23_R84994.pt
+[WARN] No feature file found for slide '23_R85122'. Tried:
+  /net/beegfs/users/P098169/features/23_R85122/features.pt
+  /net/beegfs/users/P098169/features/23_R85122.pt
+  /net/beegfs/users/P098169/features/23_R85122/23_R85122.pt
+[WARN] No feature file found for slide '23_R80370'. Tried:
+  /net/beegfs/users/P098169/features/23_R80370/features.pt
+  /net/beegfs/users/P098169/features/23_R80370.pt
+  /net/beegfs/users/P098169/features/23_R80370/23_R80370.pt
+[WARN] No feature file found for slide '23_R81502'. Tried:
+  /net/beegfs/users/P098169/features/23_R81502/features.pt
+  /net/beegfs/users/P098169/features/23_R81502.pt
+  /net/beegfs/users/P098169/features/23_R81502/23_R81502.pt
+[WARN] No feature file found for slide '23_R82904'. Tried:
+  /net/beegfs/users/P098169/features/23_R82904/features.pt
+  /net/beegfs/users/P098169/features/23_R82904.pt
+  /net/beegfs/users/P098169/features/23_R82904/23_R82904.pt
+Inference:  80%|███████▉  | 114/143 [00:36<00:00, 31.86it/s]Inference:  82%|████████▏ | 117/143 [00:39<00:02, 10.38it/s]Inference:  83%|████████▎ | 119/143 [00:41<00:03,  6.82it/s]Inference:  85%|████████▍ | 121/143 [00:42<00:03,  6.13it/s]Inference:  85%|████████▌ | 122/143 [00:42<00:04,  5.13it/s]Inference:  86%|████████▌ | 123/143 [00:44<00:05,  3.86it/s]Inference:  87%|████████▋ | 124/143 [00:44<00:05,  3.22it/s]Inference:  88%|████████▊ | 126/143 [00:45<00:05,  3.36it/s]Inference:  89%|████████▉ | 127/143 [00:46<00:05,  2.87it/s]Inference:  90%|████████▉ | 128/143 [00:46<00:06,  2.42it/s]Inference:  90%|█████████ | 129/143 [00:47<00:06,  2.08it/s]Inference:  91%|█████████ | 130/143 [00:48<00:07,  1.80it/s]Inference:  92%|█████████▏| 131/143 [00:49<00:07,  1.51it/s]Inference:  92%|█████████▏| 132/143 [00:50<00:07,  1.48it/s]Inference:  94%|█████████▎| 134/143 [00:51<00:05,  1.61it/s]Inference:  94%|█████████▍| 135/143 [00:51<00:04,  1.89it/s]Inference:  95%|█████████▌| 136/143 [00:52<00:03,  1.88it/s]Inference:  96%|█████████▌| 137/143 [00:53<00:04,  1.45it/s]Inference:  97%|█████████▋| 139/143 [00:53<00:01,  2.12it/s]Inference:  98%|█████████▊| 140/143 [00:53<00:01,  2.40it/s]Inference:  99%|█████████▊| 141/143 [00:54<00:01,  1.63it/s]Inference:  99%|█████████▉| 142/143 [00:55<00:00,  1.84it/s]Inference: 100%|██████████| 143/143 [00:56<00:00,  1.45it/s]Inference: 100%|██████████| 143/143 [00:56<00:00,  2.53it/s]
+[WARN] No feature file found for slide '23_R85049'. Tried:
+  /net/beegfs/users/P098169/features/23_R85049/features.pt
+  /net/beegfs/users/P098169/features/23_R85049.pt
+  /net/beegfs/users/P098169/features/23_R85049/23_R85049.pt
+[WARN] No feature file found for slide '23_R81179'. Tried:
+  /net/beegfs/users/P098169/features/23_R81179/features.pt
+  /net/beegfs/users/P098169/features/23_R81179.pt
+  /net/beegfs/users/P098169/features/23_R81179/23_R81179.pt
+[WARN] No feature file found for slide '23_R80616'. Tried:
+  /net/beegfs/users/P098169/features/23_R80616/features.pt
+  /net/beegfs/users/P098169/features/23_R80616.pt
+  /net/beegfs/users/P098169/features/23_R80616/23_R80616.pt
+[WARN] No feature file found for slide '22_H08185'. Tried:
+  /net/beegfs/users/P098169/features/22_H08185/features.pt
+  /net/beegfs/users/P098169/features/22_H08185.pt
+  /net/beegfs/users/P098169/features/22_H08185/22_H08185.pt
+[WARN] No feature file found for slide '22_R84352'. Tried:
+  /net/beegfs/users/P098169/features/22_R84352/features.pt
+  /net/beegfs/users/P098169/features/22_R84352.pt
+  /net/beegfs/users/P098169/features/22_R84352/22_R84352.pt
+[WARN] No feature file found for slide '22_R84708'. Tried:
+  /net/beegfs/users/P098169/features/22_R84708/features.pt
+  /net/beegfs/users/P098169/features/22_R84708.pt
+  /net/beegfs/users/P098169/features/22_R84708/22_R84708.pt
+[WARN] No feature file found for slide '22_R80342'. Tried:
+  /net/beegfs/users/P098169/features/22_R80342/features.pt
+  /net/beegfs/users/P098169/features/22_R80342.pt
+  /net/beegfs/users/P098169/features/22_R80342/22_R80342.pt
+[WARN] No feature file found for slide '22_R80725'. Tried:
+  /net/beegfs/users/P098169/features/22_R80725/features.pt
+  /net/beegfs/users/P098169/features/22_R80725.pt
+  /net/beegfs/users/P098169/features/22_R80725/22_R80725.pt
+[WARN] No feature file found for slide '22_R80949'. Tried:
+  /net/beegfs/users/P098169/features/22_R80949/features.pt
+  /net/beegfs/users/P098169/features/22_R80949.pt
+  /net/beegfs/users/P098169/features/22_R80949/22_R80949.pt
+[WARN] No feature file found for slide '22_R82629'. Tried:
+  /net/beegfs/users/P098169/features/22_R82629/features.pt
+  /net/beegfs/users/P098169/features/22_R82629.pt
+  /net/beegfs/users/P098169/features/22_R82629/22_R82629.pt
+[WARN] No feature file found for slide '22_R82911'. Tried:
+  /net/beegfs/users/P098169/features/22_R82911/features.pt
+  /net/beegfs/users/P098169/features/22_R82911.pt
+  /net/beegfs/users/P098169/features/22_R82911/22_R82911.pt
+[WARN] No feature file found for slide '21_R80273'. Tried:
+  /net/beegfs/users/P098169/features/21_R80273/features.pt
+  /net/beegfs/users/P098169/features/21_R80273.pt
+  /net/beegfs/users/P098169/features/21_R80273/21_R80273.pt
+[WARN] No feature file found for slide '21_R81090'. Tried:
+  /net/beegfs/users/P098169/features/21_R81090/features.pt
+  /net/beegfs/users/P098169/features/21_R81090.pt
+  /net/beegfs/users/P098169/features/21_R81090/21_R81090.pt
+[WARN] No feature file found for slide '21_R80991'. Tried:
+  /net/beegfs/users/P098169/features/21_R80991/features.pt
+  /net/beegfs/users/P098169/features/21_R80991.pt
+  /net/beegfs/users/P098169/features/21_R80991/21_R80991.pt
+[WARN] No feature file found for slide '21_R81352'. Tried:
+  /net/beegfs/users/P098169/features/21_R81352/features.pt
+  /net/beegfs/users/P098169/features/21_R81352.pt
+  /net/beegfs/users/P098169/features/21_R81352/21_R81352.pt
+[WARN] No feature file found for slide '21_R81791'. Tried:
+  /net/beegfs/users/P098169/features/21_R81791/features.pt
+  /net/beegfs/users/P098169/features/21_R81791.pt
+  /net/beegfs/users/P098169/features/21_R81791/21_R81791.pt
+[WARN] No feature file found for slide '21_R82043'. Tried:
+  /net/beegfs/users/P098169/features/21_R82043/features.pt
+  /net/beegfs/users/P098169/features/21_R82043.pt
+  /net/beegfs/users/P098169/features/21_R82043/21_R82043.pt
+[WARN] No feature file found for slide '21_R83281'. Tried:
+  /net/beegfs/users/P098169/features/21_R83281/features.pt
+  /net/beegfs/users/P098169/features/21_R83281.pt
+  /net/beegfs/users/P098169/features/21_R83281/21_R83281.pt
+[WARN] No feature file found for slide '21_R84521'. Tried:
+  /net/beegfs/users/P098169/features/21_R84521/features.pt
+  /net/beegfs/users/P098169/features/21_R84521.pt
+  /net/beegfs/users/P098169/features/21_R84521/21_R84521.pt
+[WARN] No feature file found for slide '21_R80845'. Tried:
+  /net/beegfs/users/P098169/features/21_R80845/features.pt
+  /net/beegfs/users/P098169/features/21_R80845.pt
+  /net/beegfs/users/P098169/features/21_R80845/21_R80845.pt
+[WARN] No feature file found for slide '21_R80621'. Tried:
+  /net/beegfs/users/P098169/features/21_R80621/features.pt
+  /net/beegfs/users/P098169/features/21_R80621.pt
+  /net/beegfs/users/P098169/features/21_R80621/21_R80621.pt
+[WARN] No feature file found for slide '20_R83284'. Tried:
+  /net/beegfs/users/P098169/features/20_R83284/features.pt
+  /net/beegfs/users/P098169/features/20_R83284.pt
+  /net/beegfs/users/P098169/features/20_R83284/20_R83284.pt
+[WARN] No feature file found for slide '20_R83915'. Tried:
+  /net/beegfs/users/P098169/features/20_R83915/features.pt
+  /net/beegfs/users/P098169/features/20_R83915.pt
+  /net/beegfs/users/P098169/features/20_R83915/20_R83915.pt
+[WARN] No feature file found for slide 'K2011_1772'. Tried:
+  /net/beegfs/users/P098169/features/K2011_1772/features.pt
+  /net/beegfs/users/P098169/features/K2011_1772.pt
+  /net/beegfs/users/P098169/features/K2011_1772/K2011_1772.pt
+[WARN] No feature file found for slide 'K2017_770'. Tried:
+  /net/beegfs/users/P098169/features/K2017_770/features.pt
+  /net/beegfs/users/P098169/features/K2017_770.pt
+  /net/beegfs/users/P098169/features/K2017_770/K2017_770.pt
+[WARN] No feature file found for slide 'K2024_472'. Tried:
+  /net/beegfs/users/P098169/features/K2024_472/features.pt
+  /net/beegfs/users/P098169/features/K2024_472.pt
+  /net/beegfs/users/P098169/features/K2024_472/K2024_472.pt
+[WARN] No feature file found for slide 'K2022_828'. Tried:
+  /net/beegfs/users/P098169/features/K2022_828/features.pt
+  /net/beegfs/users/P098169/features/K2022_828.pt
+  /net/beegfs/users/P098169/features/K2022_828/K2022_828.pt
+
+[DONE] Saved predictions  ./results_optimized_85plus_inferences/predictions.csv
+
+============================================================
+  Accuracy : 0.3086
+  Macro F1 : 0.2308
+============================================================
+              precision    recall  f1-score   support
+
+         COD      0.000     0.000     0.000         1
+         COF      0.538     0.467     0.500        15
+          FD      0.273     0.333     0.300         9
+       HG-OS      0.524     0.458     0.489        24
+        JTOF      0.000     0.000     0.000        10
+       LG-OS      0.250     0.158     0.194        19
+        PSOF      0.083     0.333     0.133         3
+
+    accuracy                          0.309        81
+   macro avg      0.238     0.250     0.231        81
+weighted avg      0.347     0.309     0.321        81
+
+[INFO] Saved classification report  ./results_optimized_85plus_inferences/classification_report.txt
+[INFO] Saved confusion matrix  ./results_optimized_85plus_inferences/confusion_matrix.png
+
+[ALL DONE] Results in: ./results_optimized_85plus_inferences

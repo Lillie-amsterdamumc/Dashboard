@@ -1,0 +1,577 @@
+Job started on gpu03.cluster at Fri Mar 20 10:29:17 CET 2026
+Job ID: 1303515
+Python: /appdata/users/P098169/orthognal_MIL/bin/python
+
+=== Starting MIL training ===
+============================================================
+  MIL_slide_bags.py  —  Multi-Head Attention MIL
+============================================================
+[INFO] Device = cuda
+[INFO] GPU = NVIDIA H100 NVL MIG 4g.47gb
+[INFO] '24_R82111': 2 slides found — randomly selected: 24_R82111;1_1_1;1_EXTRA_HE_20240514_165532.isyntax_tiles.pt
+[INFO] '24_R83059': 3 slides found — randomly selected: 24_R83059;8_1_1;-_HE_20240808_161636.isyntax_tiles.pt
+[INFO] '23_R82954': 2 slides found — randomly selected: 23_R82954;3_1_1;-_HE_20230802_120800.isyntax_tiles.pt
+[INFO] '23_R83939': 2 slides found — randomly selected: 23_R83939;1_1_1;-_HE_20231009_142157.isyntax_tiles.pt
+[INFO] '23_R84295': 3 slides found — randomly selected: 23_R84295;1_1_1;-_HE_20231030_204602.isyntax_tiles.pt
+[INFO] '23_R84011': 5 slides found — randomly selected: 23_R84011;1_1_24;-_HE_20231010_170145.isyntax_tiles.pt
+[INFO] '23_R82827': 2 slides found — randomly selected: 23_R82827;2_1_1;-_HE_20230720_164518.isyntax_tiles.pt
+[INFO] '23_R83441': 6 slides found — randomly selected: 23_R83441;1_1_5;-_HE_20230904_151044.isyntax_tiles.pt
+[INFO] '22_R82599': 3 slides found — randomly selected: 22_R82599;4_1_1;-_HE_20220817_110849.isyntax_tiles.pt
+[INFO] '22_R82723': 3 slides found — randomly selected: 22_R82723;4_1_1;-_HE_20220804_102232.isyntax_tiles.pt
+[INFO] '21_R84645': 2 slides found — randomly selected: 21_R84645;1_1_1;-_HE_20211117_200540.isyntax_tiles.pt
+[INFO] '21_R83221': 7 slides found — randomly selected: 21_R83221;2_1_4;-_HE_20210809_095433.isyntax_tiles.pt
+[INFO] '21_R80750': 5 slides found — randomly selected: 21_R80750;1_1_6;-_HE_20210223_173916.isyntax_tiles.pt
+[INFO] '20_R82805': 6 slides found — randomly selected: 20_R82805;1_1_1;1_HE_20200811_095735.isyntax_tiles.pt
+[INFO] '20_R82384': 7 slides found — randomly selected: 20_R82384;1_1_17;-_HE_20200713_093702.isyntax_tiles.pt
+[INFO] '20_R83334': 2 slides found — randomly selected: 20_R83334;1_1_1;-_HE_20200921_182427.isyntax_tiles.pt
+[INFO] '22_R81458': 3 slides found — randomly selected: 22_R81458;1_1_1;-_HE_20220425_113756.isyntax_tiles.pt
+[INFO] '24_R80792': 6 slides found — randomly selected: 24_R80792;1_1_1;-_HE_1_20240219_173627.isyntax_tiles.pt
+[INFO] '24_R81340': 2 slides found — randomly selected: 24_R81340;1_1_1;-_HE_20240325_145109.isyntax_tiles.pt
+[INFO] '24_R80761': 2 slides found — randomly selected: 24_R80761;1_1_1;-_HE_20240216_204341.isyntax_tiles.pt
+[INFO] '24_H03876': 2 slides found — randomly selected: 24_H03876;1_1_5;-_HE_20240422_132536.isyntax_tiles.pt
+[INFO] '24_R81530': 5 slides found — randomly selected: 24_R81530;1_1_15;-_HE_20240408_163914.isyntax_tiles.pt
+[INFO] '24_R82529': 3 slides found — randomly selected: 24_R82529;1_1_2;-_HE_20240613_090931.isyntax_tiles.pt
+[INFO] '24_R81868': 3 slides found — randomly selected: 24_R81868;1_1_3;-_HE_2_20240426_183240.isyntax_tiles.pt
+[INFO] '24_R83038': 3 slides found — randomly selected: 24_R83038;1_1_2;-_HE_20240725_213324.isyntax_tiles.pt
+[INFO] '24_H09154': 2 slides found — randomly selected: 24_H09154;1_1_1;-_HE_20240827_105802.isyntax_tiles.pt
+[INFO] '23_R80698': 3 slides found — randomly selected: 23_R80698;1_1_1;-_HE_20230221_230613.isyntax_tiles.pt
+[INFO] '23_R80975': 2 slides found — randomly selected: 23_R80975;3_1_1;-_HE_20230316_215051.isyntax_tiles.pt
+[INFO] '23_R81186': 2 slides found — randomly selected: 23_R81186;7_1_1;-_HE_20230508_133149.isyntax_tiles.pt
+[INFO] '23_R84142': 5 slides found — randomly selected: 23_R84142;1_1_4;-_HE_EDTA_20231018_170359.isyntax_tiles.pt
+[INFO] '23_R84994': 3 slides found — randomly selected: 23_R84994;1_1_1;-_HE_20231219_144600.isyntax_tiles.pt
+[INFO] '23_R85122': 2 slides found — randomly selected: 23_R85122;1_1_1;-_HE_20231228_205803.isyntax_tiles.pt
+[INFO] '23_R81502': 2 slides found — randomly selected: 23_R81502;2_1_1;-_HE_20230426_123931.isyntax_tiles.pt
+[INFO] '23_R82904': 2 slides found — randomly selected: 23_R82904;1_1_1;-_HE_1_20230725_172725.isyntax_tiles.pt
+[INFO] '23_R85049': 3 slides found — randomly selected: 23_R85049;1_1_1;-_HE_1_20231220_155159.isyntax_tiles.pt
+[INFO] '23_R81179': 4 slides found — randomly selected: 23_R81179;9_1_1;-_HE_V_20230915_160702.isyntax_tiles.pt
+[INFO] '23_R80616': 5 slides found — randomly selected: 23_R80616;1_1_1;1_HE_20230216_110728.isyntax_tiles.pt
+[INFO] '22_R80507': 5 slides found — randomly selected: 22_R80507;2_1_1;-_HE_20220209_114614.isyntax_tiles.pt
+[INFO] '22_H08717': 5 slides found — randomly selected: 22_H08717;1_1_3;-_HE_20220913_123500.isyntax_tiles.pt
+[INFO] '22_H12375': 5 slides found — randomly selected: 22_H12375;1_1_5;-_HE_20221202_193132.isyntax_tiles.pt
+[INFO] '22_H08185': 2 slides found — randomly selected: 22_H08185;3_1_1;-_HE_20220926_162106.isyntax_tiles.pt
+[INFO] '22_R81797': 5 slides found — randomly selected: 22_R81797;1_1_1;-_HE_20220520_115542.isyntax_tiles.pt
+[INFO] '22_R82123': 2 slides found — randomly selected: 22_R82123;2_1_1;-_HE_20220621_123042.isyntax_tiles.pt
+[INFO] '22_R84352': 4 slides found — randomly selected: 22_R84352;1_1_1;-_HE_20221121_122902.isyntax_tiles.pt
+[INFO] '22_R84708': 2 slides found — randomly selected: 22_R84708;2_1_1;-_HE_20221216_161810.isyntax_tiles.pt
+[INFO] '22_R80342': 2 slides found — randomly selected: 22_R80342;1_1_1;-_HE_20220208_015707.isyntax_tiles.pt
+[INFO] '22_R80725': 2 slides found — randomly selected: 22_R80725;1_1_2;-_HE__20220302_111004.isyntax_tiles.pt
+[INFO] '22_R80949': 3 slides found — randomly selected: 22_R80949;1_1_3;-_HE_1_20220316_142443.isyntax_tiles.pt
+[INFO] '22_R82650': 2 slides found — randomly selected: 22_R82650;1_1_7;-_HE_20220721_192627.isyntax_tiles.pt
+[INFO] '22_R84539': 2 slides found — randomly selected: 22_R84539;1_1_1;-_HE_20221205_103644.isyntax_tiles.pt
+[INFO] '22_R83888': 4 slides found — randomly selected: 22_R83888;1_1_12;-_HE_20221019_130730.isyntax_tiles.pt
+[INFO] '22_R82717': 2 slides found — randomly selected: 22_R82717;1_1_1;-_HE_1_20220726_145045.isyntax_tiles.pt
+[INFO] '21_R81090': 5 slides found — randomly selected: 21_R81090;1_1_2;-_HE_20210318_102108.isyntax_tiles.pt
+[INFO] '21_R80991': 6 slides found — randomly selected: 21_R80991;2_1_1;-_HE_HERW_20210312_180912.isyntax_tiles.pt
+[INFO] '21_R81352': 5 slides found — randomly selected: 21_R81352;4_1_1;-_HE_20210421_220119.isyntax_tiles.pt
+[INFO] '21_R81791': 2 slides found — randomly selected: 21_R81791;1_1_1;-_HE_20210510_173840.isyntax_tiles.pt
+[INFO] '21_R82043': 3 slides found — randomly selected: 21_R82043;1_1_32;-_HE_20210525_200637.isyntax_tiles.pt
+[INFO] '21_R82656': 3 slides found — randomly selected: 21_R82656;4_1_2;-_HE_20210802_192842.isyntax_tiles.pt
+[INFO] '21_R83281': 3 slides found — randomly selected: 21_R83281;1_1_2;-_HE_2_20210812_100653.isyntax_tiles.pt
+[INFO] '21_R83429': 2 slides found — randomly selected: 21_R83429;1_1_9;-_HE_20210824_175840.isyntax_tiles.pt
+[INFO] '21_R84730': 7 slides found — randomly selected: 21_R84730;1_1_6;-_HE_20211124_114652.isyntax_tiles.pt
+[INFO] '21_R84521': 3 slides found — randomly selected: 21_R84521;1_1_13;-_HE_TYKS_20211109_114747.isyntax_tiles.pt
+[INFO] '21_R80845': 3 slides found — randomly selected: 21_R80845;1_1_1;-_HE_20210301_164450.isyntax_tiles.pt
+[INFO] '21_R80621': 7 slides found — randomly selected: 21_R80621;1_1_16;-_HE_20210215_181519.isyntax_tiles.pt
+[INFO] '20_R82796': 4 slides found — randomly selected: 20_R82796;1_1_4;-_HE_20200810_131922.isyntax_tiles.pt
+[INFO] '20_R82823': 6 slides found — randomly selected: 20_R82823;1_1_4;-_HE_20200813_115415.isyntax_tiles.pt
+[INFO] '20_R82959': 5 slides found — randomly selected: 20_R82959;1_1_4;-_HE_20200824_154221.isyntax_tiles.pt
+[INFO] '20_R83284': 2 slides found — randomly selected: 20_R83284;1_1_1;-_HE_20200917_091735.isyntax_tiles.pt
+[INFO] '20_R83915': 5 slides found — randomly selected: 20_R83915;5_1_1;-_HE_MD_20201127_152533.isyntax_tiles.pt
+[INFO] '20_R80921': 5 slides found — randomly selected: 20_R80921;1_1_2;-_HE_20220919_152301.isyntax_tiles.pt
+[INFO] Dataset built — mode: slide-level bags
+       350 bags | 350 unique patients (multi-slide patients: one slide randomly selected)
+       8 classes: ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'Other', 'PSOF']
+       .pt files per bag — always 1 (single slide per patient enforced)
+[INFO] Label mapping: {'COD': 0, 'COF': 1, 'FD': 2, 'HG-OS': 3, 'JTOF': 4, 'LG-OS': 5, 'Other': 6, 'PSOF': 7}
+[INFO] Class 'COD': 50 patients, 50 slides → val slides per fold: [10, 10, 10, 10, 10]
+[INFO] Class 'COF': 41 patients, 41 slides → val slides per fold: [9, 8, 8, 8, 8]
+[INFO] Class 'FD': 52 patients, 52 slides → val slides per fold: [11, 11, 10, 10, 10]
+[INFO] Class 'HG-OS': 62 patients, 62 slides → val slides per fold: [13, 13, 12, 12, 12]
+[INFO] Class 'JTOF': 22 patients, 22 slides → val slides per fold: [5, 5, 4, 4, 4]
+[INFO] Class 'LG-OS': 30 patients, 30 slides → val slides per fold: [6, 6, 6, 6, 6]
+[INFO] Class 'Other': 50 patients, 50 slides → val slides per fold: [10, 10, 10, 10, 10]
+[INFO] Class 'PSOF': 43 patients, 43 slides → val slides per fold: [9, 9, 9, 8, 8]
+[INFO] Fold 1: train=277 patients / 277 slides | val=73 patients / 73 slides
+
+============================================================
+[Fold 1]  Train: 277 bags / 277 slides  |  Val: 73 bags / 73 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 1031
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 32, 'FD': 41, 'HG-OS': 49, 'JTOF': 17, 'LG-OS': 24, 'Other': 40, 'PSOF': 34}
+[INFO] Class weights:        {'COD': 0.8659999966621399, 'COF': 1.0820000171661377, 'FD': 0.8450000286102295, 'HG-OS': 0.7070000171661377, 'JTOF': 2.0369999408721924, 'LG-OS': 1.4429999589920044, 'Other': 0.8659999966621399, 'PSOF': 1.0180000066757202}
+Epoch 001  lr=2.00e-04  train_loss=1.9692  train_f1=N/A(mixup)  |  val_loss=1.7624  val_f1=0.0481  val_acc=0.0959
+  ✅ New best patient-level F1 = 0.0481  (epoch 1)
+Epoch 002  lr=2.00e-04  train_loss=1.7446  train_f1=N/A(mixup)  |  val_loss=1.6292  val_f1=0.0948  val_acc=0.1233
+  ✅ New best patient-level F1 = 0.0948  (epoch 2)
+Epoch 003  lr=2.00e-04  train_loss=1.4337  train_f1=N/A(mixup)  |  val_loss=1.4597  val_f1=0.2880  val_acc=0.3425
+  ✅ New best patient-level F1 = 0.2880  (epoch 3)
+Epoch 004  lr=2.00e-04  train_loss=1.1778  train_f1=N/A(mixup)  |  val_loss=1.4040  val_f1=0.2498  val_acc=0.2740
+Epoch 005  lr=1.99e-04  train_loss=1.0547  train_f1=N/A(mixup)  |  val_loss=1.2433  val_f1=0.3671  val_acc=0.3699
+  ✅ New best patient-level F1 = 0.3671  (epoch 5)
+Epoch 006  lr=1.99e-04  train_loss=0.9006  train_f1=N/A(mixup)  |  val_loss=1.3172  val_f1=0.4056  val_acc=0.3973
+  ✅ New best patient-level F1 = 0.4056  (epoch 6)
+Epoch 007  lr=1.99e-04  train_loss=0.8254  train_f1=N/A(mixup)  |  val_loss=1.0980  val_f1=0.4247  val_acc=0.3973
+  ✅ New best patient-level F1 = 0.4247  (epoch 7)
+Epoch 008  lr=1.99e-04  train_loss=0.7764  train_f1=N/A(mixup)  |  val_loss=1.0798  val_f1=0.5149  val_acc=0.5342
+  ✅ New best patient-level F1 = 0.5149  (epoch 8)
+Epoch 009  lr=1.98e-04  train_loss=0.7580  train_f1=N/A(mixup)  |  val_loss=1.0129  val_f1=0.5389  val_acc=0.5479
+  ✅ New best patient-level F1 = 0.5389  (epoch 9)
+Epoch 010  lr=1.98e-04  train_loss=0.6987  train_f1=N/A(mixup)  |  val_loss=0.9855  val_f1=0.5316  val_acc=0.5205
+Epoch 011  lr=1.97e-04  train_loss=0.5491  train_f1=N/A(mixup)  |  val_loss=1.0160  val_f1=0.5453  val_acc=0.5342
+  ✅ New best patient-level F1 = 0.5453  (epoch 11)
+Epoch 012  lr=1.97e-04  train_loss=0.5338  train_f1=N/A(mixup)  |  val_loss=1.0548  val_f1=0.5727  val_acc=0.5890
+  ✅ New best patient-level F1 = 0.5727  (epoch 12)
+Epoch 013  lr=1.96e-04  train_loss=0.5242  train_f1=N/A(mixup)  |  val_loss=0.9690  val_f1=0.5519  val_acc=0.5753
+Epoch 014  lr=1.96e-04  train_loss=0.4353  train_f1=N/A(mixup)  |  val_loss=1.1168  val_f1=0.5271  val_acc=0.5068
+Epoch 015  lr=1.95e-04  train_loss=0.4132  train_f1=N/A(mixup)  |  val_loss=1.0670  val_f1=0.6199  val_acc=0.6164
+  ✅ New best patient-level F1 = 0.6199  (epoch 15)
+Epoch 016  lr=1.94e-04  train_loss=0.3511  train_f1=N/A(mixup)  |  val_loss=0.9570  val_f1=0.5949  val_acc=0.5890
+Epoch 017  lr=1.94e-04  train_loss=0.4469  train_f1=N/A(mixup)  |  val_loss=0.9984  val_f1=0.5669  val_acc=0.5753
+Epoch 018  lr=1.93e-04  train_loss=0.2341  train_f1=N/A(mixup)  |  val_loss=1.0441  val_f1=0.5319  val_acc=0.5479
+Epoch 019  lr=1.92e-04  train_loss=0.4320  train_f1=N/A(mixup)  |  val_loss=1.1256  val_f1=0.5282  val_acc=0.5342
+Epoch 020  lr=1.91e-04  train_loss=0.2739  train_f1=N/A(mixup)  |  val_loss=1.0310  val_f1=0.6065  val_acc=0.6164
+Epoch 021  lr=1.91e-04  train_loss=0.2861  train_f1=N/A(mixup)  |  val_loss=0.9964  val_f1=0.6634  val_acc=0.6712
+  ✅ New best patient-level F1 = 0.6634  (epoch 21)
+Epoch 022  lr=1.90e-04  train_loss=0.4179  train_f1=N/A(mixup)  |  val_loss=1.0592  val_f1=0.6145  val_acc=0.6301
+Epoch 023  lr=1.89e-04  train_loss=0.3079  train_f1=N/A(mixup)  |  val_loss=1.1828  val_f1=0.5834  val_acc=0.5890
+Epoch 024  lr=1.88e-04  train_loss=0.2544  train_f1=N/A(mixup)  |  val_loss=1.0255  val_f1=0.5833  val_acc=0.5616
+Epoch 025  lr=1.87e-04  train_loss=0.2841  train_f1=N/A(mixup)  |  val_loss=0.8926  val_f1=0.6465  val_acc=0.6438
+Epoch 026  lr=1.86e-04  train_loss=0.3142  train_f1=N/A(mixup)  |  val_loss=0.9720  val_f1=0.5777  val_acc=0.5890
+Epoch 027  lr=1.85e-04  train_loss=0.2365  train_f1=N/A(mixup)  |  val_loss=0.9969  val_f1=0.5885  val_acc=0.5890
+Epoch 028  lr=1.83e-04  train_loss=0.2240  train_f1=N/A(mixup)  |  val_loss=0.9701  val_f1=0.5982  val_acc=0.5890
+Epoch 029  lr=1.82e-04  train_loss=0.3061  train_f1=N/A(mixup)  |  val_loss=0.9348  val_f1=0.5992  val_acc=0.5890
+Epoch 030  lr=1.81e-04  train_loss=0.2125  train_f1=N/A(mixup)  |  val_loss=1.0086  val_f1=0.5408  val_acc=0.5479
+Epoch 031  lr=1.80e-04  train_loss=0.2445  train_f1=N/A(mixup)  |  val_loss=0.9423  val_f1=0.5946  val_acc=0.5890
+Epoch 032  lr=1.78e-04  train_loss=0.2341  train_f1=N/A(mixup)  |  val_loss=1.0008  val_f1=0.6118  val_acc=0.6027
+Epoch 033  lr=1.77e-04  train_loss=0.2592  train_f1=N/A(mixup)  |  val_loss=0.9708  val_f1=0.5657  val_acc=0.5753
+Epoch 034  lr=1.76e-04  train_loss=0.2196  train_f1=N/A(mixup)  |  val_loss=0.9879  val_f1=0.6048  val_acc=0.6027
+Epoch 035  lr=1.74e-04  train_loss=0.1878  train_f1=N/A(mixup)  |  val_loss=0.9855  val_f1=0.5932  val_acc=0.5753
+Epoch 036  lr=1.73e-04  train_loss=0.2250  train_f1=N/A(mixup)  |  val_loss=0.9652  val_f1=0.6116  val_acc=0.6164
+Epoch 037  lr=1.72e-04  train_loss=0.2394  train_f1=N/A(mixup)  |  val_loss=1.0184  val_f1=0.6012  val_acc=0.6027
+Epoch 038  lr=1.70e-04  train_loss=0.2576  train_f1=N/A(mixup)  |  val_loss=1.0008  val_f1=0.6128  val_acc=0.6027
+Epoch 039  lr=1.69e-04  train_loss=0.1801  train_f1=N/A(mixup)  |  val_loss=0.9738  val_f1=0.6091  val_acc=0.6027
+Epoch 040  lr=1.67e-04  train_loss=0.2300  train_f1=N/A(mixup)  |  val_loss=0.9925  val_f1=0.6122  val_acc=0.6027
+Epoch 041  lr=1.66e-04  train_loss=0.1458  train_f1=N/A(mixup)  |  val_loss=1.0162  val_f1=0.6230  val_acc=0.6164
+Epoch 042  lr=1.64e-04  train_loss=0.1294  train_f1=N/A(mixup)  |  val_loss=1.0755  val_f1=0.5826  val_acc=0.6027
+Epoch 043  lr=1.62e-04  train_loss=0.2164  train_f1=N/A(mixup)  |  val_loss=1.0236  val_f1=0.6278  val_acc=0.6027
+Epoch 044  lr=1.61e-04  train_loss=0.1844  train_f1=N/A(mixup)  |  val_loss=1.0696  val_f1=0.6321  val_acc=0.6301
+Epoch 045  lr=1.59e-04  train_loss=0.2486  train_f1=N/A(mixup)  |  val_loss=0.9588  val_f1=0.6268  val_acc=0.6301
+Epoch 046  lr=1.57e-04  train_loss=0.2342  train_f1=N/A(mixup)  |  val_loss=1.0243  val_f1=0.5478  val_acc=0.5616
+Epoch 047  lr=1.56e-04  train_loss=0.2825  train_f1=N/A(mixup)  |  val_loss=1.0494  val_f1=0.5646  val_acc=0.5616
+Epoch 048  lr=1.54e-04  train_loss=0.2353  train_f1=N/A(mixup)  |  val_loss=0.9817  val_f1=0.6284  val_acc=0.6301
+Epoch 049  lr=1.52e-04  train_loss=0.2461  train_f1=N/A(mixup)  |  val_loss=1.0571  val_f1=0.5800  val_acc=0.5890
+Epoch 050  lr=1.50e-04  train_loss=0.1882  train_f1=N/A(mixup)  |  val_loss=1.0448  val_f1=0.6333  val_acc=0.6438
+Epoch 051  lr=1.48e-04  train_loss=0.2755  train_f1=N/A(mixup)  |  val_loss=1.0815  val_f1=0.6286  val_acc=0.6301
+Epoch 052  lr=1.47e-04  train_loss=0.1844  train_f1=N/A(mixup)  |  val_loss=1.0261  val_f1=0.6305  val_acc=0.6301
+Epoch 053  lr=1.45e-04  train_loss=0.1826  train_f1=N/A(mixup)  |  val_loss=1.0536  val_f1=0.5932  val_acc=0.6027
+Epoch 054  lr=1.43e-04  train_loss=0.1790  train_f1=N/A(mixup)  |  val_loss=1.0117  val_f1=0.6161  val_acc=0.6027
+Epoch 055  lr=1.41e-04  train_loss=0.1474  train_f1=N/A(mixup)  |  val_loss=1.0724  val_f1=0.6319  val_acc=0.6301
+Epoch 056  lr=1.39e-04  train_loss=0.1861  train_f1=N/A(mixup)  |  val_loss=1.0951  val_f1=0.5899  val_acc=0.6027
+  ⏹  Early stop (no improvement for 35 epochs)
+[INFO] Fold 2: train=278 patients / 278 slides | val=72 patients / 72 slides
+
+============================================================
+[Fold 2]  Train: 278 bags / 278 slides  |  Val: 72 bags / 72 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 111
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 41, 'HG-OS': 49, 'JTOF': 17, 'LG-OS': 24, 'Other': 40, 'PSOF': 34}
+[INFO] Class weights:        {'COD': 0.8690000176429749, 'COF': 1.0529999732971191, 'FD': 0.8479999899864197, 'HG-OS': 0.7089999914169312, 'JTOF': 2.0439999103546143, 'LG-OS': 1.4479999542236328, 'Other': 0.8690000176429749, 'PSOF': 1.0219999551773071}
+Epoch 001  lr=2.00e-04  train_loss=1.9333  train_f1=N/A(mixup)  |  val_loss=1.7417  val_f1=0.0758  val_acc=0.1111
+  ✅ New best patient-level F1 = 0.0758  (epoch 1)
+Epoch 002  lr=2.00e-04  train_loss=1.7177  train_f1=N/A(mixup)  |  val_loss=1.6555  val_f1=0.2103  val_acc=0.2639
+  ✅ New best patient-level F1 = 0.2103  (epoch 2)
+Epoch 003  lr=2.00e-04  train_loss=1.4353  train_f1=N/A(mixup)  |  val_loss=1.4451  val_f1=0.1993  val_acc=0.2500
+Epoch 004  lr=2.00e-04  train_loss=1.2871  train_f1=N/A(mixup)  |  val_loss=1.3327  val_f1=0.2433  val_acc=0.3056
+  ✅ New best patient-level F1 = 0.2433  (epoch 4)
+Epoch 005  lr=1.99e-04  train_loss=1.2609  train_f1=N/A(mixup)  |  val_loss=1.4807  val_f1=0.2764  val_acc=0.2917
+  ✅ New best patient-level F1 = 0.2764  (epoch 5)
+Epoch 006  lr=1.99e-04  train_loss=1.0104  train_f1=N/A(mixup)  |  val_loss=1.2374  val_f1=0.3658  val_acc=0.3889
+  ✅ New best patient-level F1 = 0.3658  (epoch 6)
+Epoch 007  lr=1.99e-04  train_loss=0.9302  train_f1=N/A(mixup)  |  val_loss=1.0515  val_f1=0.4473  val_acc=0.4722
+  ✅ New best patient-level F1 = 0.4473  (epoch 7)
+Epoch 008  lr=1.99e-04  train_loss=0.8730  train_f1=N/A(mixup)  |  val_loss=1.0750  val_f1=0.4420  val_acc=0.4583
+Epoch 009  lr=1.98e-04  train_loss=0.7841  train_f1=N/A(mixup)  |  val_loss=1.1600  val_f1=0.4051  val_acc=0.4306
+Epoch 010  lr=1.98e-04  train_loss=0.7847  train_f1=N/A(mixup)  |  val_loss=1.1474  val_f1=0.4434  val_acc=0.4444
+Epoch 011  lr=1.97e-04  train_loss=0.7055  train_f1=N/A(mixup)  |  val_loss=1.0790  val_f1=0.4579  val_acc=0.4722
+  ✅ New best patient-level F1 = 0.4579  (epoch 11)
+Epoch 012  lr=1.97e-04  train_loss=0.6561  train_f1=N/A(mixup)  |  val_loss=1.0333  val_f1=0.4304  val_acc=0.4444
+Epoch 013  lr=1.96e-04  train_loss=0.5866  train_f1=N/A(mixup)  |  val_loss=1.0369  val_f1=0.4734  val_acc=0.5000
+  ✅ New best patient-level F1 = 0.4734  (epoch 13)
+Epoch 014  lr=1.96e-04  train_loss=0.4398  train_f1=N/A(mixup)  |  val_loss=1.0809  val_f1=0.4808  val_acc=0.4861
+  ✅ New best patient-level F1 = 0.4808  (epoch 14)
+Epoch 015  lr=1.95e-04  train_loss=0.4839  train_f1=N/A(mixup)  |  val_loss=0.8928  val_f1=0.5795  val_acc=0.5972
+  ✅ New best patient-level F1 = 0.5795  (epoch 15)
+Epoch 016  lr=1.94e-04  train_loss=0.4818  train_f1=N/A(mixup)  |  val_loss=0.9812  val_f1=0.5466  val_acc=0.5556
+Epoch 017  lr=1.94e-04  train_loss=0.4450  train_f1=N/A(mixup)  |  val_loss=1.0853  val_f1=0.5491  val_acc=0.5694
+Epoch 018  lr=1.93e-04  train_loss=0.4601  train_f1=N/A(mixup)  |  val_loss=1.0765  val_f1=0.4804  val_acc=0.4861
+Epoch 019  lr=1.92e-04  train_loss=0.3478  train_f1=N/A(mixup)  |  val_loss=1.0340  val_f1=0.5241  val_acc=0.5417
+Epoch 020  lr=1.91e-04  train_loss=0.2576  train_f1=N/A(mixup)  |  val_loss=1.1777  val_f1=0.5086  val_acc=0.5278
+Epoch 021  lr=1.91e-04  train_loss=0.2910  train_f1=N/A(mixup)  |  val_loss=1.1667  val_f1=0.5688  val_acc=0.5833
+Epoch 022  lr=1.90e-04  train_loss=0.3848  train_f1=N/A(mixup)  |  val_loss=1.1247  val_f1=0.5724  val_acc=0.5972
+Epoch 023  lr=1.89e-04  train_loss=0.2439  train_f1=N/A(mixup)  |  val_loss=1.0294  val_f1=0.5818  val_acc=0.5972
+  ✅ New best patient-level F1 = 0.5818  (epoch 23)
+Epoch 024  lr=1.88e-04  train_loss=0.2287  train_f1=N/A(mixup)  |  val_loss=1.1090  val_f1=0.5812  val_acc=0.6111
+Epoch 025  lr=1.87e-04  train_loss=0.2993  train_f1=N/A(mixup)  |  val_loss=1.0777  val_f1=0.5866  val_acc=0.6111
+  ✅ New best patient-level F1 = 0.5866  (epoch 25)
+Epoch 026  lr=1.86e-04  train_loss=0.3319  train_f1=N/A(mixup)  |  val_loss=1.1242  val_f1=0.5975  val_acc=0.6111
+  ✅ New best patient-level F1 = 0.5975  (epoch 26)
+Epoch 027  lr=1.85e-04  train_loss=0.3067  train_f1=N/A(mixup)  |  val_loss=1.0166  val_f1=0.5970  val_acc=0.6250
+Epoch 028  lr=1.83e-04  train_loss=0.2303  train_f1=N/A(mixup)  |  val_loss=0.9444  val_f1=0.5897  val_acc=0.5972
+Epoch 029  lr=1.82e-04  train_loss=0.1617  train_f1=N/A(mixup)  |  val_loss=1.0144  val_f1=0.6490  val_acc=0.6667
+  ✅ New best patient-level F1 = 0.6490  (epoch 29)
+Epoch 030  lr=1.81e-04  train_loss=0.2417  train_f1=N/A(mixup)  |  val_loss=0.9832  val_f1=0.6731  val_acc=0.6944
+  ✅ New best patient-level F1 = 0.6731  (epoch 30)
+Epoch 031  lr=1.80e-04  train_loss=0.2680  train_f1=N/A(mixup)  |  val_loss=1.1726  val_f1=0.5089  val_acc=0.5417
+Epoch 032  lr=1.78e-04  train_loss=0.2185  train_f1=N/A(mixup)  |  val_loss=1.0746  val_f1=0.5995  val_acc=0.6250
+Epoch 033  lr=1.77e-04  train_loss=0.1632  train_f1=N/A(mixup)  |  val_loss=1.0485  val_f1=0.5915  val_acc=0.6250
+Epoch 034  lr=1.76e-04  train_loss=0.2138  train_f1=N/A(mixup)  |  val_loss=1.0203  val_f1=0.6223  val_acc=0.6528
+Epoch 035  lr=1.74e-04  train_loss=0.2996  train_f1=N/A(mixup)  |  val_loss=1.0854  val_f1=0.5525  val_acc=0.5556
+Epoch 036  lr=1.73e-04  train_loss=0.2131  train_f1=N/A(mixup)  |  val_loss=1.1519  val_f1=0.5273  val_acc=0.5556
+Epoch 037  lr=1.72e-04  train_loss=0.2614  train_f1=N/A(mixup)  |  val_loss=1.1654  val_f1=0.5449  val_acc=0.5694
+Epoch 038  lr=1.70e-04  train_loss=0.1817  train_f1=N/A(mixup)  |  val_loss=1.1180  val_f1=0.6344  val_acc=0.6667
+Epoch 039  lr=1.69e-04  train_loss=0.2056  train_f1=N/A(mixup)  |  val_loss=1.0740  val_f1=0.6141  val_acc=0.6389
+Epoch 040  lr=1.67e-04  train_loss=0.2086  train_f1=N/A(mixup)  |  val_loss=1.0287  val_f1=0.6304  val_acc=0.6528
+Epoch 041  lr=1.66e-04  train_loss=0.2438  train_f1=N/A(mixup)  |  val_loss=1.0511  val_f1=0.6210  val_acc=0.6528
+Epoch 042  lr=1.64e-04  train_loss=0.2214  train_f1=N/A(mixup)  |  val_loss=1.1179  val_f1=0.6361  val_acc=0.6528
+Epoch 043  lr=1.62e-04  train_loss=0.1447  train_f1=N/A(mixup)  |  val_loss=1.0711  val_f1=0.5672  val_acc=0.5833
+Epoch 044  lr=1.61e-04  train_loss=0.1702  train_f1=N/A(mixup)  |  val_loss=1.0462  val_f1=0.6129  val_acc=0.6250
+Epoch 045  lr=1.59e-04  train_loss=0.1473  train_f1=N/A(mixup)  |  val_loss=1.0948  val_f1=0.6053  val_acc=0.6250
+Epoch 046  lr=1.57e-04  train_loss=0.2077  train_f1=N/A(mixup)  |  val_loss=1.0707  val_f1=0.6152  val_acc=0.6389
+Epoch 047  lr=1.56e-04  train_loss=0.2160  train_f1=N/A(mixup)  |  val_loss=1.1008  val_f1=0.6501  val_acc=0.6667
+Epoch 048  lr=1.54e-04  train_loss=0.1474  train_f1=N/A(mixup)  |  val_loss=1.0938  val_f1=0.5570  val_acc=0.5694
+Epoch 049  lr=1.52e-04  train_loss=0.2224  train_f1=N/A(mixup)  |  val_loss=1.0542  val_f1=0.5590  val_acc=0.5694
+Epoch 050  lr=1.50e-04  train_loss=0.1730  train_f1=N/A(mixup)  |  val_loss=1.0730  val_f1=0.5935  val_acc=0.6250
+Epoch 051  lr=1.48e-04  train_loss=0.1477  train_f1=N/A(mixup)  |  val_loss=1.0932  val_f1=0.6227  val_acc=0.6528
+Epoch 052  lr=1.47e-04  train_loss=0.1714  train_f1=N/A(mixup)  |  val_loss=1.0546  val_f1=0.6431  val_acc=0.6667
+Epoch 053  lr=1.45e-04  train_loss=0.2232  train_f1=N/A(mixup)  |  val_loss=1.0608  val_f1=0.5974  val_acc=0.6111
+Epoch 054  lr=1.43e-04  train_loss=0.2134  train_f1=N/A(mixup)  |  val_loss=1.0917  val_f1=0.5851  val_acc=0.6111
+Epoch 055  lr=1.41e-04  train_loss=0.1280  train_f1=N/A(mixup)  |  val_loss=1.1038  val_f1=0.5536  val_acc=0.5694
+Epoch 056  lr=1.39e-04  train_loss=0.1933  train_f1=N/A(mixup)  |  val_loss=1.1011  val_f1=0.5779  val_acc=0.5972
+Epoch 057  lr=1.37e-04  train_loss=0.0860  train_f1=N/A(mixup)  |  val_loss=1.1965  val_f1=0.5945  val_acc=0.6250
+Epoch 058  lr=1.35e-04  train_loss=0.1610  train_f1=N/A(mixup)  |  val_loss=1.0970  val_f1=0.5993  val_acc=0.6111
+Epoch 059  lr=1.33e-04  train_loss=0.1061  train_f1=N/A(mixup)  |  val_loss=1.1358  val_f1=0.6414  val_acc=0.6528
+Epoch 060  lr=1.31e-04  train_loss=0.1653  train_f1=N/A(mixup)  |  val_loss=1.0770  val_f1=0.6124  val_acc=0.6389
+Epoch 061  lr=1.29e-04  train_loss=0.1913  train_f1=N/A(mixup)  |  val_loss=1.1321  val_f1=0.5828  val_acc=0.6111
+Epoch 062  lr=1.27e-04  train_loss=0.2099  train_f1=N/A(mixup)  |  val_loss=1.1725  val_f1=0.5289  val_acc=0.5556
+Epoch 063  lr=1.25e-04  train_loss=0.1120  train_f1=N/A(mixup)  |  val_loss=1.1057  val_f1=0.6024  val_acc=0.6250
+Epoch 064  lr=1.23e-04  train_loss=0.1223  train_f1=N/A(mixup)  |  val_loss=1.1279  val_f1=0.6131  val_acc=0.6250
+Epoch 065  lr=1.21e-04  train_loss=0.1788  train_f1=N/A(mixup)  |  val_loss=1.1257  val_f1=0.5567  val_acc=0.5694
+  ⏹  Early stop (no improvement for 35 epochs)
+[INFO] Fold 3: train=281 patients / 281 slides | val=69 patients / 69 slides
+
+============================================================
+[Fold 3]  Train: 281 bags / 281 slides  |  Val: 69 bags / 69 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 111
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 42, 'HG-OS': 50, 'JTOF': 18, 'LG-OS': 24, 'Other': 40, 'PSOF': 34}
+[INFO] Class weights:        {'COD': 0.878000020980835, 'COF': 1.0640000104904175, 'FD': 0.8360000252723694, 'HG-OS': 0.7020000219345093, 'JTOF': 1.9509999752044678, 'LG-OS': 1.4639999866485596, 'Other': 0.878000020980835, 'PSOF': 1.0329999923706055}
+Epoch 001  lr=2.00e-04  train_loss=2.0260  train_f1=N/A(mixup)  |  val_loss=1.7791  val_f1=0.0496  val_acc=0.0725
+  ✅ New best patient-level F1 = 0.0496  (epoch 1)
+Epoch 002  lr=2.00e-04  train_loss=1.7120  train_f1=N/A(mixup)  |  val_loss=1.6154  val_f1=0.0875  val_acc=0.1304
+  ✅ New best patient-level F1 = 0.0875  (epoch 2)
+Epoch 003  lr=2.00e-04  train_loss=1.5129  train_f1=N/A(mixup)  |  val_loss=1.4335  val_f1=0.2845  val_acc=0.3188
+  ✅ New best patient-level F1 = 0.2845  (epoch 3)
+Epoch 004  lr=2.00e-04  train_loss=1.3034  train_f1=N/A(mixup)  |  val_loss=1.2842  val_f1=0.3769  val_acc=0.4638
+  ✅ New best patient-level F1 = 0.3769  (epoch 4)
+Epoch 005  lr=1.99e-04  train_loss=1.1639  train_f1=N/A(mixup)  |  val_loss=1.2591  val_f1=0.3121  val_acc=0.3623
+Epoch 006  lr=1.99e-04  train_loss=1.0580  train_f1=N/A(mixup)  |  val_loss=1.1916  val_f1=0.3761  val_acc=0.3768
+Epoch 007  lr=1.99e-04  train_loss=0.9750  train_f1=N/A(mixup)  |  val_loss=1.0448  val_f1=0.4277  val_acc=0.4493
+  ✅ New best patient-level F1 = 0.4277  (epoch 7)
+Epoch 008  lr=1.99e-04  train_loss=0.9392  train_f1=N/A(mixup)  |  val_loss=1.2564  val_f1=0.3023  val_acc=0.3333
+Epoch 009  lr=1.98e-04  train_loss=0.9964  train_f1=N/A(mixup)  |  val_loss=1.0275  val_f1=0.3766  val_acc=0.4058
+Epoch 010  lr=1.98e-04  train_loss=0.8273  train_f1=N/A(mixup)  |  val_loss=0.9487  val_f1=0.4807  val_acc=0.5072
+  ✅ New best patient-level F1 = 0.4807  (epoch 10)
+Epoch 011  lr=1.97e-04  train_loss=0.7855  train_f1=N/A(mixup)  |  val_loss=0.8315  val_f1=0.5422  val_acc=0.5797
+  ✅ New best patient-level F1 = 0.5422  (epoch 11)
+Epoch 012  lr=1.97e-04  train_loss=0.6363  train_f1=N/A(mixup)  |  val_loss=0.8657  val_f1=0.5052  val_acc=0.5362
+Epoch 013  lr=1.96e-04  train_loss=0.7740  train_f1=N/A(mixup)  |  val_loss=0.8195  val_f1=0.5926  val_acc=0.5797
+  ✅ New best patient-level F1 = 0.5926  (epoch 13)
+Epoch 014  lr=1.96e-04  train_loss=0.6829  train_f1=N/A(mixup)  |  val_loss=0.8461  val_f1=0.3965  val_acc=0.4348
+Epoch 015  lr=1.95e-04  train_loss=0.5269  train_f1=N/A(mixup)  |  val_loss=0.8610  val_f1=0.5879  val_acc=0.6232
+Epoch 016  lr=1.94e-04  train_loss=0.5030  train_f1=N/A(mixup)  |  val_loss=0.8166  val_f1=0.5206  val_acc=0.5217
+Epoch 017  lr=1.94e-04  train_loss=0.4958  train_f1=N/A(mixup)  |  val_loss=0.6573  val_f1=0.6344  val_acc=0.6522
+  ✅ New best patient-level F1 = 0.6344  (epoch 17)
+Epoch 018  lr=1.93e-04  train_loss=0.6184  train_f1=N/A(mixup)  |  val_loss=0.7132  val_f1=0.5888  val_acc=0.5942
+Epoch 019  lr=1.92e-04  train_loss=0.4300  train_f1=N/A(mixup)  |  val_loss=0.7605  val_f1=0.5910  val_acc=0.5942
+Epoch 020  lr=1.91e-04  train_loss=0.4563  train_f1=N/A(mixup)  |  val_loss=0.7975  val_f1=0.6630  val_acc=0.6812
+  ✅ New best patient-level F1 = 0.6630  (epoch 20)
+Epoch 021  lr=1.91e-04  train_loss=0.3334  train_f1=N/A(mixup)  |  val_loss=0.7697  val_f1=0.6480  val_acc=0.6522
+Epoch 022  lr=1.90e-04  train_loss=0.3728  train_f1=N/A(mixup)  |  val_loss=1.0271  val_f1=0.5762  val_acc=0.6377
+Epoch 023  lr=1.89e-04  train_loss=0.3514  train_f1=N/A(mixup)  |  val_loss=0.8101  val_f1=0.5855  val_acc=0.5942
+Epoch 024  lr=1.88e-04  train_loss=0.4023  train_f1=N/A(mixup)  |  val_loss=0.8382  val_f1=0.5817  val_acc=0.5942
+Epoch 025  lr=1.87e-04  train_loss=0.3359  train_f1=N/A(mixup)  |  val_loss=0.7866  val_f1=0.7110  val_acc=0.7101
+  ✅ New best patient-level F1 = 0.7110  (epoch 25)
+Epoch 026  lr=1.86e-04  train_loss=0.2393  train_f1=N/A(mixup)  |  val_loss=0.6906  val_f1=0.6503  val_acc=0.6667
+Epoch 027  lr=1.85e-04  train_loss=0.4146  train_f1=N/A(mixup)  |  val_loss=0.6703  val_f1=0.6546  val_acc=0.6522
+Epoch 028  lr=1.83e-04  train_loss=0.3387  train_f1=N/A(mixup)  |  val_loss=0.6468  val_f1=0.6078  val_acc=0.6232
+Epoch 029  lr=1.82e-04  train_loss=0.2900  train_f1=N/A(mixup)  |  val_loss=0.7009  val_f1=0.6998  val_acc=0.6957
+Epoch 030  lr=1.81e-04  train_loss=0.3960  train_f1=N/A(mixup)  |  val_loss=0.7071  val_f1=0.6963  val_acc=0.6957
+Epoch 031  lr=1.80e-04  train_loss=0.2819  train_f1=N/A(mixup)  |  val_loss=0.7492  val_f1=0.6609  val_acc=0.6812
+Epoch 032  lr=1.78e-04  train_loss=0.3533  train_f1=N/A(mixup)  |  val_loss=0.6545  val_f1=0.6430  val_acc=0.6522
+Epoch 033  lr=1.77e-04  train_loss=0.3021  train_f1=N/A(mixup)  |  val_loss=0.6061  val_f1=0.7084  val_acc=0.7101
+Epoch 034  lr=1.76e-04  train_loss=0.2241  train_f1=N/A(mixup)  |  val_loss=0.6713  val_f1=0.6943  val_acc=0.7101
+Epoch 035  lr=1.74e-04  train_loss=0.2193  train_f1=N/A(mixup)  |  val_loss=0.6725  val_f1=0.6686  val_acc=0.6812
+Epoch 036  lr=1.73e-04  train_loss=0.1808  train_f1=N/A(mixup)  |  val_loss=0.6834  val_f1=0.7229  val_acc=0.7246
+  ✅ New best patient-level F1 = 0.7229  (epoch 36)
+Epoch 037  lr=1.72e-04  train_loss=0.1532  train_f1=N/A(mixup)  |  val_loss=0.6742  val_f1=0.7227  val_acc=0.7246
+Epoch 038  lr=1.70e-04  train_loss=0.2542  train_f1=N/A(mixup)  |  val_loss=0.7581  val_f1=0.6987  val_acc=0.6957
+Epoch 039  lr=1.69e-04  train_loss=0.2178  train_f1=N/A(mixup)  |  val_loss=0.6740  val_f1=0.6219  val_acc=0.6377
+Epoch 040  lr=1.67e-04  train_loss=0.1131  train_f1=N/A(mixup)  |  val_loss=0.7202  val_f1=0.7182  val_acc=0.7246
+Epoch 041  lr=1.66e-04  train_loss=0.2420  train_f1=N/A(mixup)  |  val_loss=0.6951  val_f1=0.7110  val_acc=0.7101
+Epoch 042  lr=1.64e-04  train_loss=0.2253  train_f1=N/A(mixup)  |  val_loss=0.6764  val_f1=0.6237  val_acc=0.6377
+Epoch 043  lr=1.62e-04  train_loss=0.1279  train_f1=N/A(mixup)  |  val_loss=0.6739  val_f1=0.6815  val_acc=0.6957
+Epoch 044  lr=1.61e-04  train_loss=0.1560  train_f1=N/A(mixup)  |  val_loss=0.6328  val_f1=0.7318  val_acc=0.7391
+  ✅ New best patient-level F1 = 0.7318  (epoch 44)
+Epoch 045  lr=1.59e-04  train_loss=0.1478  train_f1=N/A(mixup)  |  val_loss=0.6843  val_f1=0.7220  val_acc=0.7246
+Epoch 046  lr=1.57e-04  train_loss=0.2500  train_f1=N/A(mixup)  |  val_loss=0.6966  val_f1=0.6948  val_acc=0.7101
+Epoch 047  lr=1.56e-04  train_loss=0.1926  train_f1=N/A(mixup)  |  val_loss=0.6947  val_f1=0.7328  val_acc=0.7536
+  ✅ New best patient-level F1 = 0.7328  (epoch 47)
+Epoch 048  lr=1.54e-04  train_loss=0.2052  train_f1=N/A(mixup)  |  val_loss=0.7280  val_f1=0.7224  val_acc=0.7246
+Epoch 049  lr=1.52e-04  train_loss=0.1511  train_f1=N/A(mixup)  |  val_loss=0.7122  val_f1=0.6754  val_acc=0.6667
+Epoch 050  lr=1.50e-04  train_loss=0.1592  train_f1=N/A(mixup)  |  val_loss=0.7502  val_f1=0.6817  val_acc=0.6812
+Epoch 051  lr=1.48e-04  train_loss=0.2130  train_f1=N/A(mixup)  |  val_loss=0.6951  val_f1=0.7231  val_acc=0.7246
+Epoch 052  lr=1.47e-04  train_loss=0.1947  train_f1=N/A(mixup)  |  val_loss=0.7318  val_f1=0.6830  val_acc=0.7101
+Epoch 053  lr=1.45e-04  train_loss=0.1827  train_f1=N/A(mixup)  |  val_loss=0.6720  val_f1=0.7460  val_acc=0.7536
+  ✅ New best patient-level F1 = 0.7460  (epoch 53)
+Epoch 054  lr=1.43e-04  train_loss=0.2109  train_f1=N/A(mixup)  |  val_loss=0.6653  val_f1=0.7090  val_acc=0.7101
+Epoch 055  lr=1.41e-04  train_loss=0.1636  train_f1=N/A(mixup)  |  val_loss=0.6577  val_f1=0.6969  val_acc=0.7101
+Epoch 056  lr=1.39e-04  train_loss=0.1804  train_f1=N/A(mixup)  |  val_loss=0.6670  val_f1=0.7347  val_acc=0.7391
+Epoch 057  lr=1.37e-04  train_loss=0.1437  train_f1=N/A(mixup)  |  val_loss=0.6875  val_f1=0.6859  val_acc=0.6812
+Epoch 058  lr=1.35e-04  train_loss=0.1524  train_f1=N/A(mixup)  |  val_loss=0.6910  val_f1=0.6981  val_acc=0.6957
+Epoch 059  lr=1.33e-04  train_loss=0.2275  train_f1=N/A(mixup)  |  val_loss=0.7283  val_f1=0.6395  val_acc=0.6522
+Epoch 060  lr=1.31e-04  train_loss=0.1343  train_f1=N/A(mixup)  |  val_loss=0.7684  val_f1=0.6743  val_acc=0.6812
+Epoch 061  lr=1.29e-04  train_loss=0.2582  train_f1=N/A(mixup)  |  val_loss=0.7538  val_f1=0.6665  val_acc=0.6522
+Epoch 062  lr=1.27e-04  train_loss=0.2241  train_f1=N/A(mixup)  |  val_loss=0.7148  val_f1=0.6025  val_acc=0.5942
+Epoch 063  lr=1.25e-04  train_loss=0.2086  train_f1=N/A(mixup)  |  val_loss=0.7172  val_f1=0.6712  val_acc=0.6812
+Epoch 064  lr=1.23e-04  train_loss=0.1919  train_f1=N/A(mixup)  |  val_loss=0.7360  val_f1=0.6772  val_acc=0.6957
+Epoch 065  lr=1.21e-04  train_loss=0.2137  train_f1=N/A(mixup)  |  val_loss=0.6618  val_f1=0.6848  val_acc=0.6812
+Epoch 066  lr=1.19e-04  train_loss=0.1396  train_f1=N/A(mixup)  |  val_loss=0.7124  val_f1=0.7112  val_acc=0.7101
+Epoch 067  lr=1.17e-04  train_loss=0.1457  train_f1=N/A(mixup)  |  val_loss=0.6741  val_f1=0.6735  val_acc=0.6667
+Epoch 068  lr=1.15e-04  train_loss=0.1265  train_f1=N/A(mixup)  |  val_loss=0.7262  val_f1=0.7227  val_acc=0.7246
+Epoch 069  lr=1.13e-04  train_loss=0.1141  train_f1=N/A(mixup)  |  val_loss=0.6761  val_f1=0.6953  val_acc=0.6957
+Epoch 070  lr=1.11e-04  train_loss=0.1405  train_f1=N/A(mixup)  |  val_loss=0.7143  val_f1=0.6746  val_acc=0.6812
+Epoch 071  lr=1.09e-04  train_loss=0.1073  train_f1=N/A(mixup)  |  val_loss=0.7058  val_f1=0.7109  val_acc=0.7101
+Epoch 072  lr=1.07e-04  train_loss=0.1756  train_f1=N/A(mixup)  |  val_loss=0.7020  val_f1=0.6501  val_acc=0.6667
+Epoch 073  lr=1.05e-04  train_loss=0.1471  train_f1=N/A(mixup)  |  val_loss=0.7767  val_f1=0.6821  val_acc=0.6812
+Epoch 074  lr=1.03e-04  train_loss=0.1091  train_f1=N/A(mixup)  |  val_loss=0.7160  val_f1=0.6284  val_acc=0.6377
+Epoch 075  lr=1.00e-04  train_loss=0.1913  train_f1=N/A(mixup)  |  val_loss=0.7714  val_f1=0.6839  val_acc=0.6812
+Epoch 076  lr=9.84e-05  train_loss=0.2560  train_f1=N/A(mixup)  |  val_loss=0.7045  val_f1=0.6958  val_acc=0.7101
+Epoch 077  lr=9.63e-05  train_loss=0.2076  train_f1=N/A(mixup)  |  val_loss=0.7426  val_f1=0.6973  val_acc=0.6957
+Epoch 078  lr=9.43e-05  train_loss=0.2396  train_f1=N/A(mixup)  |  val_loss=0.6839  val_f1=0.6859  val_acc=0.6957
+Epoch 079  lr=9.22e-05  train_loss=0.1574  train_f1=N/A(mixup)  |  val_loss=0.6973  val_f1=0.6428  val_acc=0.6522
+Epoch 080  lr=9.01e-05  train_loss=0.1472  train_f1=N/A(mixup)  |  val_loss=0.6742  val_f1=0.7334  val_acc=0.7391
+Epoch 081  lr=8.80e-05  train_loss=0.1465  train_f1=N/A(mixup)  |  val_loss=0.6910  val_f1=0.6507  val_acc=0.6522
+Epoch 082  lr=8.60e-05  train_loss=0.1940  train_f1=N/A(mixup)  |  val_loss=0.7182  val_f1=0.7209  val_acc=0.7246
+Epoch 083  lr=8.39e-05  train_loss=0.2377  train_f1=N/A(mixup)  |  val_loss=0.6869  val_f1=0.6920  val_acc=0.7101
+Epoch 084  lr=8.19e-05  train_loss=0.1618  train_f1=N/A(mixup)  |  val_loss=0.7861  val_f1=0.6138  val_acc=0.6377
+Epoch 085  lr=7.98e-05  train_loss=0.1808  train_f1=N/A(mixup)  |  val_loss=0.6726  val_f1=0.6723  val_acc=0.6667
+Epoch 086  lr=7.78e-05  train_loss=0.2380  train_f1=N/A(mixup)  |  val_loss=0.7014  val_f1=0.6253  val_acc=0.6232
+Epoch 087  lr=7.58e-05  train_loss=0.1436  train_f1=N/A(mixup)  |  val_loss=0.7213  val_f1=0.7043  val_acc=0.7101
+Epoch 088  lr=7.37e-05  train_loss=0.1860  train_f1=N/A(mixup)  |  val_loss=0.7503  val_f1=0.6652  val_acc=0.6667
+  ⏹  Early stop (no improvement for 35 epochs)
+[INFO] Fold 4: train=282 patients / 282 slides | val=68 patients / 68 slides
+
+============================================================
+[Fold 4]  Train: 282 bags / 282 slides  |  Val: 68 bags / 68 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 111
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 42, 'HG-OS': 50, 'JTOF': 18, 'LG-OS': 24, 'Other': 40, 'PSOF': 35}
+[INFO] Class weights:        {'COD': 0.8809999823570251, 'COF': 1.0679999589920044, 'FD': 0.8389999866485596, 'HG-OS': 0.7049999833106995, 'JTOF': 1.9579999446868896, 'LG-OS': 1.468999981880188, 'Other': 0.8809999823570251, 'PSOF': 1.0069999694824219}
+Epoch 001  lr=2.00e-04  train_loss=1.9638  train_f1=N/A(mixup)  |  val_loss=1.7346  val_f1=0.0337  val_acc=0.0735
+  ✅ New best patient-level F1 = 0.0337  (epoch 1)
+Epoch 002  lr=2.00e-04  train_loss=1.7348  train_f1=N/A(mixup)  |  val_loss=1.5133  val_f1=0.2073  val_acc=0.2941
+  ✅ New best patient-level F1 = 0.2073  (epoch 2)
+Epoch 003  lr=2.00e-04  train_loss=1.5819  train_f1=N/A(mixup)  |  val_loss=1.3784  val_f1=0.1868  val_acc=0.2500
+Epoch 004  lr=2.00e-04  train_loss=1.2978  train_f1=N/A(mixup)  |  val_loss=1.1926  val_f1=0.2787  val_acc=0.3235
+  ✅ New best patient-level F1 = 0.2787  (epoch 4)
+Epoch 005  lr=1.99e-04  train_loss=1.2431  train_f1=N/A(mixup)  |  val_loss=1.1133  val_f1=0.4159  val_acc=0.4412
+  ✅ New best patient-level F1 = 0.4159  (epoch 5)
+Epoch 006  lr=1.99e-04  train_loss=0.9873  train_f1=N/A(mixup)  |  val_loss=0.9974  val_f1=0.4323  val_acc=0.4706
+  ✅ New best patient-level F1 = 0.4323  (epoch 6)
+Epoch 007  lr=1.99e-04  train_loss=0.8572  train_f1=N/A(mixup)  |  val_loss=0.9622  val_f1=0.5555  val_acc=0.5588
+  ✅ New best patient-level F1 = 0.5555  (epoch 7)
+Epoch 008  lr=1.99e-04  train_loss=0.7087  train_f1=N/A(mixup)  |  val_loss=0.9089  val_f1=0.5199  val_acc=0.5441
+Epoch 009  lr=1.98e-04  train_loss=0.6888  train_f1=N/A(mixup)  |  val_loss=0.9532  val_f1=0.4834  val_acc=0.4853
+Epoch 010  lr=1.98e-04  train_loss=0.7026  train_f1=N/A(mixup)  |  val_loss=0.8687  val_f1=0.5676  val_acc=0.5735
+  ✅ New best patient-level F1 = 0.5676  (epoch 10)
+Epoch 011  lr=1.97e-04  train_loss=0.6360  train_f1=N/A(mixup)  |  val_loss=0.7946  val_f1=0.6079  val_acc=0.6176
+  ✅ New best patient-level F1 = 0.6079  (epoch 11)
+Epoch 012  lr=1.97e-04  train_loss=0.4966  train_f1=N/A(mixup)  |  val_loss=0.7644  val_f1=0.6303  val_acc=0.6471
+  ✅ New best patient-level F1 = 0.6303  (epoch 12)
+Epoch 013  lr=1.96e-04  train_loss=0.4982  train_f1=N/A(mixup)  |  val_loss=0.7793  val_f1=0.6430  val_acc=0.6471
+  ✅ New best patient-level F1 = 0.6430  (epoch 13)
+Epoch 014  lr=1.96e-04  train_loss=0.4798  train_f1=N/A(mixup)  |  val_loss=0.7746  val_f1=0.6644  val_acc=0.6618
+  ✅ New best patient-level F1 = 0.6644  (epoch 14)
+Epoch 015  lr=1.95e-04  train_loss=0.5264  train_f1=N/A(mixup)  |  val_loss=0.8508  val_f1=0.5874  val_acc=0.6324
+Epoch 016  lr=1.94e-04  train_loss=0.5149  train_f1=N/A(mixup)  |  val_loss=0.7532  val_f1=0.6704  val_acc=0.6765
+  ✅ New best patient-level F1 = 0.6704  (epoch 16)
+Epoch 017  lr=1.94e-04  train_loss=0.4031  train_f1=N/A(mixup)  |  val_loss=0.7479  val_f1=0.6997  val_acc=0.7059
+  ✅ New best patient-level F1 = 0.6997  (epoch 17)
+Epoch 018  lr=1.93e-04  train_loss=0.3899  train_f1=N/A(mixup)  |  val_loss=0.7878  val_f1=0.7197  val_acc=0.7206
+  ✅ New best patient-level F1 = 0.7197  (epoch 18)
+Epoch 019  lr=1.92e-04  train_loss=0.3435  train_f1=N/A(mixup)  |  val_loss=0.7341  val_f1=0.6652  val_acc=0.6912
+Epoch 020  lr=1.91e-04  train_loss=0.3260  train_f1=N/A(mixup)  |  val_loss=0.7372  val_f1=0.7407  val_acc=0.7500
+  ✅ New best patient-level F1 = 0.7407  (epoch 20)
+Epoch 021  lr=1.91e-04  train_loss=0.3099  train_f1=N/A(mixup)  |  val_loss=0.7657  val_f1=0.7012  val_acc=0.7059
+Epoch 022  lr=1.90e-04  train_loss=0.2817  train_f1=N/A(mixup)  |  val_loss=0.8001  val_f1=0.6691  val_acc=0.6765
+Epoch 023  lr=1.89e-04  train_loss=0.3254  train_f1=N/A(mixup)  |  val_loss=0.8571  val_f1=0.6856  val_acc=0.6912
+Epoch 024  lr=1.88e-04  train_loss=0.3181  train_f1=N/A(mixup)  |  val_loss=0.7182  val_f1=0.7241  val_acc=0.7353
+Epoch 025  lr=1.87e-04  train_loss=0.2766  train_f1=N/A(mixup)  |  val_loss=0.7490  val_f1=0.7723  val_acc=0.7794
+  ✅ New best patient-level F1 = 0.7723  (epoch 25)
+Epoch 026  lr=1.86e-04  train_loss=0.2467  train_f1=N/A(mixup)  |  val_loss=0.7469  val_f1=0.7324  val_acc=0.7353
+Epoch 027  lr=1.85e-04  train_loss=0.3366  train_f1=N/A(mixup)  |  val_loss=0.7738  val_f1=0.7245  val_acc=0.7353
+Epoch 028  lr=1.83e-04  train_loss=0.1555  train_f1=N/A(mixup)  |  val_loss=0.7610  val_f1=0.6766  val_acc=0.6912
+Epoch 029  lr=1.82e-04  train_loss=0.2910  train_f1=N/A(mixup)  |  val_loss=0.7397  val_f1=0.7270  val_acc=0.7353
+Epoch 030  lr=1.81e-04  train_loss=0.1542  train_f1=N/A(mixup)  |  val_loss=0.7345  val_f1=0.6902  val_acc=0.7059
+Epoch 031  lr=1.80e-04  train_loss=0.2795  train_f1=N/A(mixup)  |  val_loss=0.7206  val_f1=0.6945  val_acc=0.7059
+Epoch 032  lr=1.78e-04  train_loss=0.3410  train_f1=N/A(mixup)  |  val_loss=0.7463  val_f1=0.7250  val_acc=0.7353
+Epoch 033  lr=1.77e-04  train_loss=0.3194  train_f1=N/A(mixup)  |  val_loss=0.7354  val_f1=0.7565  val_acc=0.7500
+Epoch 034  lr=1.76e-04  train_loss=0.3010  train_f1=N/A(mixup)  |  val_loss=0.6935  val_f1=0.7040  val_acc=0.7059
+Epoch 035  lr=1.74e-04  train_loss=0.3313  train_f1=N/A(mixup)  |  val_loss=0.7097  val_f1=0.7386  val_acc=0.7500
+Epoch 036  lr=1.73e-04  train_loss=0.1893  train_f1=N/A(mixup)  |  val_loss=0.6698  val_f1=0.7134  val_acc=0.7206
+Epoch 037  lr=1.72e-04  train_loss=0.2929  train_f1=N/A(mixup)  |  val_loss=0.6977  val_f1=0.7112  val_acc=0.7059
+Epoch 038  lr=1.70e-04  train_loss=0.2977  train_f1=N/A(mixup)  |  val_loss=0.6937  val_f1=0.7105  val_acc=0.7059
+Epoch 039  lr=1.69e-04  train_loss=0.2694  train_f1=N/A(mixup)  |  val_loss=0.6767  val_f1=0.7107  val_acc=0.7206
+Epoch 040  lr=1.67e-04  train_loss=0.2211  train_f1=N/A(mixup)  |  val_loss=0.6768  val_f1=0.7356  val_acc=0.7353
+Epoch 041  lr=1.66e-04  train_loss=0.2007  train_f1=N/A(mixup)  |  val_loss=0.6649  val_f1=0.7574  val_acc=0.7500
+Epoch 042  lr=1.64e-04  train_loss=0.1793  train_f1=N/A(mixup)  |  val_loss=0.7173  val_f1=0.7161  val_acc=0.7206
+Epoch 043  lr=1.62e-04  train_loss=0.1945  train_f1=N/A(mixup)  |  val_loss=0.6950  val_f1=0.7329  val_acc=0.7206
+Epoch 044  lr=1.61e-04  train_loss=0.2616  train_f1=N/A(mixup)  |  val_loss=0.6684  val_f1=0.7408  val_acc=0.7353
+Epoch 045  lr=1.59e-04  train_loss=0.2499  train_f1=N/A(mixup)  |  val_loss=0.7149  val_f1=0.7188  val_acc=0.7353
+Epoch 046  lr=1.57e-04  train_loss=0.1899  train_f1=N/A(mixup)  |  val_loss=0.6804  val_f1=0.7463  val_acc=0.7500
+Epoch 047  lr=1.56e-04  train_loss=0.1864  train_f1=N/A(mixup)  |  val_loss=0.7406  val_f1=0.6982  val_acc=0.6912
+Epoch 048  lr=1.54e-04  train_loss=0.2187  train_f1=N/A(mixup)  |  val_loss=0.7034  val_f1=0.7441  val_acc=0.7500
+Epoch 049  lr=1.52e-04  train_loss=0.1678  train_f1=N/A(mixup)  |  val_loss=0.7020  val_f1=0.7210  val_acc=0.7206
+Epoch 050  lr=1.50e-04  train_loss=0.2445  train_f1=N/A(mixup)  |  val_loss=0.6866  val_f1=0.7392  val_acc=0.7353
+Epoch 051  lr=1.48e-04  train_loss=0.2239  train_f1=N/A(mixup)  |  val_loss=0.7035  val_f1=0.7126  val_acc=0.7059
+Epoch 052  lr=1.47e-04  train_loss=0.1824  train_f1=N/A(mixup)  |  val_loss=0.7446  val_f1=0.6885  val_acc=0.6912
+Epoch 053  lr=1.45e-04  train_loss=0.1122  train_f1=N/A(mixup)  |  val_loss=0.7010  val_f1=0.7210  val_acc=0.7206
+Epoch 054  lr=1.43e-04  train_loss=0.2153  train_f1=N/A(mixup)  |  val_loss=0.6818  val_f1=0.7210  val_acc=0.7206
+Epoch 055  lr=1.41e-04  train_loss=0.1749  train_f1=N/A(mixup)  |  val_loss=0.7449  val_f1=0.7429  val_acc=0.7353
+Epoch 056  lr=1.39e-04  train_loss=0.2213  train_f1=N/A(mixup)  |  val_loss=0.7191  val_f1=0.7100  val_acc=0.7059
+Epoch 057  lr=1.37e-04  train_loss=0.2261  train_f1=N/A(mixup)  |  val_loss=0.6984  val_f1=0.7019  val_acc=0.7059
+Epoch 058  lr=1.35e-04  train_loss=0.2287  train_f1=N/A(mixup)  |  val_loss=0.7341  val_f1=0.6904  val_acc=0.6912
+Epoch 059  lr=1.33e-04  train_loss=0.1852  train_f1=N/A(mixup)  |  val_loss=0.6958  val_f1=0.7391  val_acc=0.7353
+Epoch 060  lr=1.31e-04  train_loss=0.1758  train_f1=N/A(mixup)  |  val_loss=0.7072  val_f1=0.7141  val_acc=0.7206
+  ⏹  Early stop (no improvement for 35 epochs)
+[INFO] Fold 5: train=282 patients / 282 slides | val=68 patients / 68 slides
+
+============================================================
+[Fold 5]  Train: 282 bags / 282 slides  |  Val: 68 bags / 68 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 111
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 42, 'HG-OS': 50, 'JTOF': 18, 'LG-OS': 24, 'Other': 40, 'PSOF': 35}
+[INFO] Class weights:        {'COD': 0.8809999823570251, 'COF': 1.0679999589920044, 'FD': 0.8389999866485596, 'HG-OS': 0.7049999833106995, 'JTOF': 1.9579999446868896, 'LG-OS': 1.468999981880188, 'Other': 0.8809999823570251, 'PSOF': 1.0069999694824219}
+Epoch 001  lr=2.00e-04  train_loss=1.9993  train_f1=N/A(mixup)  |  val_loss=1.7437  val_f1=0.0768  val_acc=0.0882
+  ✅ New best patient-level F1 = 0.0768  (epoch 1)
+Epoch 002  lr=2.00e-04  train_loss=1.7343  train_f1=N/A(mixup)  |  val_loss=1.5474  val_f1=0.2167  val_acc=0.2353
+  ✅ New best patient-level F1 = 0.2167  (epoch 2)
+Epoch 003  lr=2.00e-04  train_loss=1.4846  train_f1=N/A(mixup)  |  val_loss=1.4073  val_f1=0.2558  val_acc=0.2647
+  ✅ New best patient-level F1 = 0.2558  (epoch 3)
+Epoch 004  lr=2.00e-04  train_loss=1.2120  train_f1=N/A(mixup)  |  val_loss=1.2565  val_f1=0.3127  val_acc=0.3529
+  ✅ New best patient-level F1 = 0.3127  (epoch 4)
+Epoch 005  lr=1.99e-04  train_loss=1.1345  train_f1=N/A(mixup)  |  val_loss=1.1495  val_f1=0.4719  val_acc=0.4559
+  ✅ New best patient-level F1 = 0.4719  (epoch 5)
+Epoch 006  lr=1.99e-04  train_loss=0.9461  train_f1=N/A(mixup)  |  val_loss=1.1091  val_f1=0.4912  val_acc=0.5588
+  ✅ New best patient-level F1 = 0.4912  (epoch 6)
+Epoch 007  lr=1.99e-04  train_loss=0.9482  train_f1=N/A(mixup)  |  val_loss=0.9932  val_f1=0.5444  val_acc=0.5735
+  ✅ New best patient-level F1 = 0.5444  (epoch 7)
+Epoch 008  lr=1.99e-04  train_loss=0.8646  train_f1=N/A(mixup)  |  val_loss=0.9847  val_f1=0.5590  val_acc=0.5441
+  ✅ New best patient-level F1 = 0.5590  (epoch 8)
+Epoch 009  lr=1.98e-04  train_loss=0.8314  train_f1=N/A(mixup)  |  val_loss=0.8943  val_f1=0.5511  val_acc=0.6029
+Epoch 010  lr=1.98e-04  train_loss=0.7287  train_f1=N/A(mixup)  |  val_loss=0.8474  val_f1=0.5194  val_acc=0.5147
+Epoch 011  lr=1.97e-04  train_loss=0.5544  train_f1=N/A(mixup)  |  val_loss=1.0301  val_f1=0.5674  val_acc=0.6029
+  ✅ New best patient-level F1 = 0.5674  (epoch 11)
+Epoch 012  lr=1.97e-04  train_loss=0.6751  train_f1=N/A(mixup)  |  val_loss=0.9123  val_f1=0.5890  val_acc=0.6176
+  ✅ New best patient-level F1 = 0.5890  (epoch 12)
+Epoch 013  lr=1.96e-04  train_loss=0.6339  train_f1=N/A(mixup)  |  val_loss=0.8048  val_f1=0.6091  val_acc=0.6324
+  ✅ New best patient-level F1 = 0.6091  (epoch 13)
+Epoch 014  lr=1.96e-04  train_loss=0.5749  train_f1=N/A(mixup)  |  val_loss=0.8013  val_f1=0.6613  val_acc=0.6765
+  ✅ New best patient-level F1 = 0.6613  (epoch 14)
+Epoch 015  lr=1.95e-04  train_loss=0.5191  train_f1=N/A(mixup)  |  val_loss=0.9135  val_f1=0.6219  val_acc=0.6765
+Epoch 016  lr=1.94e-04  train_loss=0.5569  train_f1=N/A(mixup)  |  val_loss=0.8427  val_f1=0.6027  val_acc=0.6618
+Epoch 017  lr=1.94e-04  train_loss=0.4407  train_f1=N/A(mixup)  |  val_loss=0.5856  val_f1=0.7900  val_acc=0.7941
+  ✅ New best patient-level F1 = 0.7900  (epoch 17)
+Epoch 018  lr=1.93e-04  train_loss=0.3649  train_f1=N/A(mixup)  |  val_loss=0.7228  val_f1=0.6941  val_acc=0.7059
+Epoch 019  lr=1.92e-04  train_loss=0.4376  train_f1=N/A(mixup)  |  val_loss=0.7748  val_f1=0.6791  val_acc=0.7059
+Epoch 020  lr=1.91e-04  train_loss=0.3661  train_f1=N/A(mixup)  |  val_loss=0.6975  val_f1=0.6107  val_acc=0.6471
+Epoch 021  lr=1.91e-04  train_loss=0.3448  train_f1=N/A(mixup)  |  val_loss=0.6311  val_f1=0.6761  val_acc=0.7059
+Epoch 022  lr=1.90e-04  train_loss=0.3216  train_f1=N/A(mixup)  |  val_loss=0.5761  val_f1=0.7621  val_acc=0.7794
+Epoch 023  lr=1.89e-04  train_loss=0.2785  train_f1=N/A(mixup)  |  val_loss=0.8401  val_f1=0.5748  val_acc=0.6029
+Epoch 024  lr=1.88e-04  train_loss=0.3474  train_f1=N/A(mixup)  |  val_loss=0.5386  val_f1=0.7734  val_acc=0.8088
+Epoch 025  lr=1.87e-04  train_loss=0.2281  train_f1=N/A(mixup)  |  val_loss=0.7470  val_f1=0.6889  val_acc=0.7206
+Epoch 026  lr=1.86e-04  train_loss=0.3530  train_f1=N/A(mixup)  |  val_loss=0.6385  val_f1=0.7206  val_acc=0.7500
+Epoch 027  lr=1.85e-04  train_loss=0.2532  train_f1=N/A(mixup)  |  val_loss=0.7672  val_f1=0.6526  val_acc=0.7059
+Epoch 028  lr=1.83e-04  train_loss=0.2511  train_f1=N/A(mixup)  |  val_loss=0.6841  val_f1=0.6676  val_acc=0.6912
+Epoch 029  lr=1.82e-04  train_loss=0.2620  train_f1=N/A(mixup)  |  val_loss=0.6180  val_f1=0.7151  val_acc=0.7500
+Epoch 030  lr=1.81e-04  train_loss=0.3129  train_f1=N/A(mixup)  |  val_loss=0.6741  val_f1=0.7187  val_acc=0.7353
+Epoch 031  lr=1.80e-04  train_loss=0.2724  train_f1=N/A(mixup)  |  val_loss=0.5972  val_f1=0.6983  val_acc=0.7206
+Epoch 032  lr=1.78e-04  train_loss=0.2949  train_f1=N/A(mixup)  |  val_loss=0.6233  val_f1=0.7179  val_acc=0.7500
+Epoch 033  lr=1.77e-04  train_loss=0.1621  train_f1=N/A(mixup)  |  val_loss=0.6699  val_f1=0.6971  val_acc=0.7206
+Epoch 034  lr=1.76e-04  train_loss=0.2439  train_f1=N/A(mixup)  |  val_loss=0.6684  val_f1=0.7410  val_acc=0.7647
+Epoch 035  lr=1.74e-04  train_loss=0.2179  train_f1=N/A(mixup)  |  val_loss=0.6286  val_f1=0.7320  val_acc=0.7500
+Epoch 036  lr=1.73e-04  train_loss=0.2282  train_f1=N/A(mixup)  |  val_loss=0.6319  val_f1=0.7564  val_acc=0.7794
+Epoch 037  lr=1.72e-04  train_loss=0.2781  train_f1=N/A(mixup)  |  val_loss=0.7254  val_f1=0.6513  val_acc=0.7059
+Epoch 038  lr=1.70e-04  train_loss=0.2216  train_f1=N/A(mixup)  |  val_loss=0.6891  val_f1=0.7512  val_acc=0.7794
+Epoch 039  lr=1.69e-04  train_loss=0.1659  train_f1=N/A(mixup)  |  val_loss=0.6671  val_f1=0.7438  val_acc=0.7647
+Epoch 040  lr=1.67e-04  train_loss=0.1985  train_f1=N/A(mixup)  |  val_loss=0.6136  val_f1=0.7444  val_acc=0.7647
+Epoch 041  lr=1.66e-04  train_loss=0.1530  train_f1=N/A(mixup)  |  val_loss=0.6219  val_f1=0.7644  val_acc=0.7941
+Epoch 042  lr=1.64e-04  train_loss=0.1549  train_f1=N/A(mixup)  |  val_loss=0.6245  val_f1=0.7123  val_acc=0.7353
+Epoch 043  lr=1.62e-04  train_loss=0.2487  train_f1=N/A(mixup)  |  val_loss=0.6544  val_f1=0.7071  val_acc=0.7353
+Epoch 044  lr=1.61e-04  train_loss=0.2328  train_f1=N/A(mixup)  |  val_loss=0.6708  val_f1=0.7231  val_acc=0.7500
+Epoch 045  lr=1.59e-04  train_loss=0.2087  train_f1=N/A(mixup)  |  val_loss=0.7224  val_f1=0.6302  val_acc=0.6912
+Epoch 046  lr=1.57e-04  train_loss=0.1788  train_f1=N/A(mixup)  |  val_loss=0.6271  val_f1=0.7353  val_acc=0.7647
+Epoch 047  lr=1.56e-04  train_loss=0.2152  train_f1=N/A(mixup)  |  val_loss=0.7356  val_f1=0.7109  val_acc=0.7500
+Epoch 048  lr=1.54e-04  train_loss=0.1830  train_f1=N/A(mixup)  |  val_loss=0.7258  val_f1=0.6981  val_acc=0.7353
+Epoch 049  lr=1.52e-04  train_loss=0.1805  train_f1=N/A(mixup)  |  val_loss=0.6597  val_f1=0.7060  val_acc=0.7353
+Epoch 050  lr=1.50e-04  train_loss=0.2186  train_f1=N/A(mixup)  |  val_loss=0.6742  val_f1=0.7226  val_acc=0.7500
+Epoch 051  lr=1.48e-04  train_loss=0.2386  train_f1=N/A(mixup)  |  val_loss=0.7374  val_f1=0.7382  val_acc=0.7647
+Epoch 052  lr=1.47e-04  train_loss=0.1488  train_f1=N/A(mixup)  |  val_loss=0.6725  val_f1=0.7312  val_acc=0.7647
+  ⏹  Early stop (no improvement for 35 epochs)
+
+============================================================
+CROSS-VALIDATION SUMMARY
+============================================================
+  f1_macro       : 0.7290 ± 0.0516
+  f1_weighted    : 0.7382 ± 0.0495
+  acc            : 0.7386 ± 0.0479
+
+============================================================
+GLOBAL CV METRICS
+============================================================
+ accuracy  macro_f1  weighted_f1  num_patients
+ 0.737143   0.72609     0.735862           350
+
+Per-class report:
+              precision    recall  f1-score   support
+
+         COD      0.857     0.840     0.848        50
+         COF      0.571     0.488     0.526        41
+          FD      0.695     0.788     0.739        52
+       HG-OS      0.839     0.839     0.839        62
+        JTOF      0.667     0.727     0.696        22
+       LG-OS      0.815     0.733     0.772        30
+       Other      0.714     0.700     0.707        50
+        PSOF      0.667     0.698     0.682        43
+
+    accuracy                          0.737       350
+   macro avg      0.728     0.727     0.726       350
+weighted avg      0.737     0.737     0.736       350
+
+
+[DONE] All outputs saved to: /net/beegfs/users/P098169/results_mil_random_1_v1

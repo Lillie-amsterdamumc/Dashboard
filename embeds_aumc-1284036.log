@@ -1,0 +1,106 @@
+Job started on gpu03.cluster at Wed Mar 18 12:58:37 CET 2026
+Job ID: 1284036
+Python: /appdata/users/P098169/orthognal_MIL/bin/python
+
+=== Starting MIL training ===
+[INFO] Device: cuda
+[INFO] Using --classes: ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'PSOF']
+[INFO] num_classes=7
+[INFO] label2id = {'COD': 0, 'COF': 1, 'FD': 2, 'HG-OS': 3, 'JTOF': 4, 'LG-OS': 5, 'PSOF': 6}
+[INFO] Detected in_dim=1536 from slide '10001_T00-3355_3'  (shape=(27421, 1536))
+[INFO] topk disabled (topk_frac=0) -- all patches used
+[INFO] Ensemble over 5 folds
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_1/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_2/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_3/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_4/best_model.pt
+[INFO] Loaded weights: /net/beegfs/users/P098169/results_optimized_85plus/fold_5/best_model.pt
+[INFO] Loaded 5 model(s)
+Inference:   0%|          | 0/143 [00:00<?, ?it/s]Inference:   1%|          | 1/143 [00:00<01:13,  1.93it/s]Inference:   1%|▏         | 2/143 [00:00<00:46,  3.06it/s]Inference:   2%|▏         | 3/143 [00:00<00:34,  4.05it/s]Inference:   3%|▎         | 4/143 [00:00<00:27,  5.12it/s]Inference:   3%|▎         | 5/143 [00:01<00:25,  5.38it/s]Inference:   4%|▍         | 6/143 [00:01<00:24,  5.52it/s]Inference:   5%|▍         | 7/143 [00:01<00:34,  3.90it/s]Inference:   6%|▌         | 8/143 [00:01<00:34,  3.95it/s]Inference:   6%|▋         | 9/143 [00:02<00:56,  2.38it/s]Inference:   7%|▋         | 10/143 [00:03<01:05,  2.02it/s]Inference:   8%|▊         | 11/143 [00:03<00:57,  2.28it/s]Inference:   8%|▊         | 12/143 [00:04<01:00,  2.15it/s]Inference:   9%|▉         | 13/143 [00:04<01:01,  2.11it/s]Inference:  10%|▉         | 14/143 [00:06<01:47,  1.20it/s]Inference:  10%|█         | 15/143 [00:06<01:22,  1.56it/s]Inference:  11%|█         | 16/143 [00:06<01:05,  1.94it/s]Inference:  12%|█▏        | 17/143 [00:07<00:53,  2.36it/s]Inference:  13%|█▎        | 18/143 [00:07<00:50,  2.49it/s]Inference:  13%|█▎        | 19/143 [00:07<00:44,  2.81it/s]Inference:  14%|█▍        | 20/143 [00:08<01:07,  1.81it/s]Inference:  15%|█▍        | 21/143 [00:09<01:13,  1.66it/s]Inference:  15%|█▌        | 22/143 [00:10<01:20,  1.51it/s]Inference:  16%|█▌        | 23/143 [00:10<01:21,  1.47it/s]Inference:  17%|█▋        | 25/143 [00:11<00:54,  2.16it/s]Inference:  18%|█▊        | 26/143 [00:11<00:50,  2.31it/s]Inference:  19%|█▉        | 27/143 [00:11<00:44,  2.59it/s]Inference:  20%|█▉        | 28/143 [00:12<00:37,  3.09it/s]Inference:  20%|██        | 29/143 [00:12<00:36,  3.15it/s]Inference:  21%|██        | 30/143 [00:12<00:36,  3.09it/s]Inference:  22%|██▏       | 31/143 [00:13<00:36,  3.10it/s]Inference:  22%|██▏       | 32/143 [00:13<00:30,  3.63it/s]Inference:  23%|██▎       | 33/143 [00:13<00:44,  2.49it/s]Inference:  24%|██▍       | 34/143 [00:14<00:44,  2.46it/s]Inference:  24%|██▍       | 35/143 [00:15<01:00,  1.79it/s]Inference:  25%|██▌       | 36/143 [00:15<00:49,  2.18it/s]Inference:  26%|██▌       | 37/143 [00:15<00:42,  2.52it/s]Inference:  27%|██▋       | 38/143 [00:15<00:37,  2.81it/s]Inference:  27%|██▋       | 39/143 [00:17<01:07,  1.54it/s]Inference:  28%|██▊       | 40/143 [00:17<00:54,  1.88it/s]Inference:  29%|██▊       | 41/143 [00:17<00:44,  2.30it/s]Inference:  29%|██▉       | 42/143 [00:18<00:59,  1.71it/s]Inference:  30%|███       | 43/143 [00:19<00:50,  1.98it/s]Inference:  31%|███       | 44/143 [00:19<00:41,  2.40it/s]Inference:  31%|███▏      | 45/143 [00:19<00:34,  2.81it/s]Inference:  32%|███▏      | 46/143 [00:20<01:02,  1.54it/s]Inference:  33%|███▎      | 47/143 [00:21<01:07,  1.43it/s]Inference:  34%|███▎      | 48/143 [00:21<00:56,  1.69it/s]Inference:  34%|███▍      | 49/143 [00:22<00:46,  2.02it/s]Inference:  35%|███▍      | 50/143 [00:22<00:37,  2.51it/s]Inference:  36%|███▌      | 51/143 [00:23<00:45,  2.03it/s]Inference:  36%|███▋      | 52/143 [00:23<00:48,  1.87it/s]Inference:  37%|███▋      | 53/143 [00:24<00:51,  1.74it/s]Inference:  38%|███▊      | 54/143 [00:25<00:53,  1.68it/s]Inference:  38%|███▊      | 55/143 [00:25<00:39,  2.21it/s]Inference:  39%|███▉      | 56/143 [00:25<00:30,  2.83it/s]Inference:  41%|████      | 58/143 [00:26<00:33,  2.53it/s]Inference:  41%|████▏     | 59/143 [00:26<00:40,  2.09it/s]Inference:  42%|████▏     | 60/143 [00:27<00:36,  2.26it/s]Inference:  43%|████▎     | 61/143 [00:28<00:49,  1.65it/s]Inference:  43%|████▎     | 62/143 [00:29<01:09,  1.16it/s]Inference:  44%|████▍     | 63/143 [00:33<02:17,  1.72s/it]Inference:  45%|████▍     | 64/143 [00:34<01:44,  1.32s/it]Inference:  45%|████▌     | 65/143 [00:35<01:37,  1.25s/it]Inference:  46%|████▌     | 66/143 [00:35<01:16,  1.01it/s]Inference:  47%|████▋     | 67/143 [00:37<01:41,  1.33s/it]Inference:  48%|████▊     | 68/143 [00:41<02:32,  2.03s/it]Inference:  48%|████▊     | 69/143 [00:47<04:08,  3.36s/it]Inference:  49%|████▉     | 70/143 [00:48<03:02,  2.50s/it]Inference:  50%|████▉     | 71/143 [00:48<02:19,  1.94s/it]Inference:  50%|█████     | 72/143 [00:49<01:56,  1.63s/it]Inference:  51%|█████     | 73/143 [00:50<01:25,  1.21s/it]Inference:  52%|█████▏    | 74/143 [00:50<01:04,  1.07it/s]Inference:  52%|█████▏    | 75/143 [00:51<01:15,  1.10s/it]Inference:  53%|█████▎    | 76/143 [00:52<01:01,  1.10it/s]Inference:  54%|█████▍    | 77/143 [00:52<00:47,  1.38it/s]Inference:  55%|█████▍    | 78/143 [00:53<00:43,  1.51it/s]Inference:  55%|█████▌    | 79/143 [00:53<00:39,  1.62it/s]Inference:  56%|█████▌    | 80/143 [00:54<00:37,  1.70it/s]Inference:  57%|█████▋    | 81/143 [00:54<00:37,  1.65it/s]Inference:  57%|█████▋    | 82/143 [00:55<00:30,  2.02it/s]Inference:  58%|█████▊    | 83/143 [00:55<00:24,  2.50it/s]Inference:  59%|█████▊    | 84/143 [00:55<00:22,  2.66it/s]Inference:  59%|█████▉    | 85/143 [00:55<00:18,  3.06it/s]Inference:  60%|██████    | 86/143 [00:56<00:21,  2.60it/s]Inference:  61%|██████    | 87/143 [00:56<00:19,  2.83it/s]Inference:  62%|██████▏   | 88/143 [00:56<00:19,  2.89it/s]Inference:  62%|██████▏   | 89/143 [00:57<00:19,  2.83it/s]Inference:  63%|██████▎   | 90/143 [00:57<00:19,  2.76it/s]Inference:  64%|██████▎   | 91/143 [00:58<00:27,  1.88it/s]Inference:  64%|██████▍   | 92/143 [00:59<00:35,  1.43it/s]Inference:  65%|██████▌   | 93/143 [01:00<00:43,  1.15it/s]Inference:  66%|██████▌   | 94/143 [01:01<00:35,  1.37it/s]Inference:  66%|██████▋   | 95/143 [01:02<00:35,  1.36it/s]Inference:  67%|██████▋   | 96/143 [01:02<00:30,  1.56it/s]Inference:  68%|██████▊   | 97/143 [01:02<00:25,  1.81it/s]Inference:  69%|██████▊   | 98/143 [01:03<00:33,  1.35it/s]Inference:  69%|██████▉   | 99/143 [01:04<00:31,  1.40it/s]Inference:  70%|██████▉   | 100/143 [01:05<00:26,  1.60it/s]Inference:  71%|███████   | 101/143 [01:05<00:22,  1.88it/s]Inference:  71%|███████▏  | 102/143 [01:05<00:17,  2.30it/s]Inference:  72%|███████▏  | 103/143 [01:06<00:24,  1.63it/s]Inference:  73%|███████▎  | 104/143 [01:10<00:57,  1.47s/it]Inference:  73%|███████▎  | 105/143 [01:10<00:48,  1.27s/it]Inference:  74%|███████▍  | 106/143 [01:11<00:38,  1.05s/it]Inference:  75%|███████▍  | 107/143 [01:12<00:32,  1.10it/s]Inference:  76%|███████▌  | 108/143 [01:13<00:33,  1.04it/s]Inference:  76%|███████▌  | 109/143 [01:14<00:32,  1.04it/s]Inference:  77%|███████▋  | 110/143 [01:15<00:38,  1.17s/it]Inference:  78%|███████▊  | 111/143 [01:18<00:51,  1.61s/it]Inference:  78%|███████▊  | 112/143 [01:18<00:39,  1.27s/it]Inference:  79%|███████▉  | 113/143 [01:19<00:37,  1.24s/it]Inference:  80%|███████▉  | 114/143 [01:20<00:31,  1.08s/it]Inference:  80%|████████  | 115/143 [01:21<00:27,  1.01it/s]Inference:  81%|████████  | 116/143 [01:22<00:25,  1.07it/s]Inference:  82%|████████▏ | 117/143 [01:22<00:21,  1.19it/s]Inference:  83%|████████▎ | 118/143 [01:23<00:20,  1.24it/s]Inference:  83%|████████▎ | 119/143 [01:24<00:17,  1.37it/s]Inference:  84%|████████▍ | 120/143 [01:24<00:15,  1.53it/s]Inference:  85%|████████▍ | 121/143 [01:25<00:14,  1.51it/s]Inference:  85%|████████▌ | 122/143 [01:25<00:12,  1.62it/s]Inference:  86%|████████▌ | 123/143 [01:26<00:12,  1.58it/s]Inference:  87%|████████▋ | 124/143 [01:27<00:11,  1.60it/s]Inference:  87%|████████▋ | 125/143 [01:28<00:17,  1.02it/s]Inference:  88%|████████▊ | 126/143 [01:29<00:13,  1.26it/s]Inference:  89%|████████▉ | 127/143 [01:29<00:11,  1.44it/s]Inference:  90%|████████▉ | 128/143 [01:30<00:09,  1.58it/s]Inference:  90%|█████████ | 129/143 [01:30<00:08,  1.72it/s]Inference:  91%|█████████ | 130/143 [01:31<00:07,  1.64it/s]Inference:  92%|█████████▏| 131/143 [01:32<00:08,  1.42it/s]Inference:  92%|█████████▏| 132/143 [01:32<00:07,  1.55it/s]Inference:  93%|█████████▎| 133/143 [01:33<00:07,  1.30it/s]Inference:  94%|█████████▎| 134/143 [01:34<00:06,  1.30it/s]Inference:  94%|█████████▍| 135/143 [01:34<00:04,  1.75it/s]Inference:  95%|█████████▌| 136/143 [01:35<00:03,  1.90it/s]Inference:  96%|█████████▌| 137/143 [01:35<00:03,  1.72it/s]Inference:  97%|█████████▋| 138/143 [01:36<00:02,  1.67it/s]Inference:  97%|█████████▋| 139/143 [01:36<00:01,  2.05it/s]Inference:  98%|█████████▊| 140/143 [01:36<00:01,  2.57it/s]Inference:  99%|█████████▊| 141/143 [01:37<00:01,  1.84it/s]Inference:  99%|█████████▉| 142/143 [01:37<00:00,  2.38it/s]Inference: 100%|██████████| 143/143 [01:38<00:00,  1.89it/s]Inference: 100%|██████████| 143/143 [01:38<00:00,  1.45it/s]
+[INFO] Slide '10012_17_R84495_1A': found 1 .pt file(s) -> majority vote
+[INFO] Slide '10112_R06-82170_I': found 1 .pt file(s) -> majority vote
+[INFO] Slide '24_R82111': found 2 .pt file(s) -> majority vote
+[INFO] Slide '24_R83059': found 3 .pt file(s) -> majority vote
+[INFO] Slide '23_R81135': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_R83939': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R82827': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R83441': found 6 .pt file(s) -> majority vote
+[INFO] Slide '23_R81160': found 1 .pt file(s) -> majority vote
+[INFO] Slide '21_R84645': found 2 .pt file(s) -> majority vote
+[INFO] Slide '21_R81831': found 1 .pt file(s) -> majority vote
+[INFO] Slide '21_R80750': found 5 .pt file(s) -> majority vote
+[INFO] Slide '20_R82805': found 6 .pt file(s) -> majority vote
+[INFO] Slide '20_R82384': found 7 .pt file(s) -> majority vote
+[INFO] Slide '20_R83334': found 2 .pt file(s) -> majority vote
+[INFO] Slide '22_R81458': found 3 .pt file(s) -> majority vote
+[INFO] Slide '24_R80792': found 6 .pt file(s) -> majority vote
+[INFO] Slide '24_R81266': found 1 .pt file(s) -> majority vote
+[INFO] Slide '24_R81339': found 1 .pt file(s) -> majority vote
+[INFO] Slide '24_R83038': found 3 .pt file(s) -> majority vote
+[INFO] Slide '24_R82042': found 1 .pt file(s) -> majority vote
+[INFO] Slide '24_R81467': found 1 .pt file(s) -> majority vote
+[INFO] Slide '24_H09154': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R80698': found 3 .pt file(s) -> majority vote
+[INFO] Slide '23_R80975': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R81186': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R82878': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_R83213': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_H10476': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_R84806': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_R84994': found 3 .pt file(s) -> majority vote
+[INFO] Slide '23_R85122': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R80370': found 1 .pt file(s) -> majority vote
+[INFO] Slide '23_R81502': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R82904': found 2 .pt file(s) -> majority vote
+[INFO] Slide '23_R85049': found 3 .pt file(s) -> majority vote
+[INFO] Slide '23_R81179': found 4 .pt file(s) -> majority vote
+[INFO] Slide '23_R80616': found 5 .pt file(s) -> majority vote
+[INFO] Slide '22_H08185': found 2 .pt file(s) -> majority vote
+[INFO] Slide '22_R84352': found 4 .pt file(s) -> majority vote
+[INFO] Slide '22_R84708': found 2 .pt file(s) -> majority vote
+[INFO] Slide '22_R80342': found 2 .pt file(s) -> majority vote
+[INFO] Slide '22_R80725': found 2 .pt file(s) -> majority vote
+[INFO] Slide '22_R80949': found 3 .pt file(s) -> majority vote
+[INFO] Slide '22_R82629': found 1 .pt file(s) -> majority vote
+[INFO] Slide '22_R82911': found 1 .pt file(s) -> majority vote
+[INFO] Slide '21_R80273': found 1 .pt file(s) -> majority vote
+[INFO] Slide '21_R81090': found 5 .pt file(s) -> majority vote
+[INFO] Slide '21_R80991': found 6 .pt file(s) -> majority vote
+[INFO] Slide '21_R81352': found 5 .pt file(s) -> majority vote
+[INFO] Slide '21_R81791': found 2 .pt file(s) -> majority vote
+[INFO] Slide '21_R82043': found 3 .pt file(s) -> majority vote
+[INFO] Slide '21_R83281': found 3 .pt file(s) -> majority vote
+[INFO] Slide '21_R84521': found 3 .pt file(s) -> majority vote
+[INFO] Slide '21_R80845': found 3 .pt file(s) -> majority vote
+[INFO] Slide '21_R80621': found 7 .pt file(s) -> majority vote
+[INFO] Slide '20_R83284': found 2 .pt file(s) -> majority vote
+[INFO] Slide '20_R83915': found 5 .pt file(s) -> majority vote
+[INFO] Slide 'K2011_1772': found 1 .pt file(s) -> majority vote
+[INFO] Slide 'K2017_770': found 1 .pt file(s) -> majority vote
+[INFO] Slide 'K2024_472': found 1 .pt file(s) -> majority vote
+[INFO] Slide 'K2022_828': found 1 .pt file(s) -> majority vote
+
+[DONE] Saved predictions  ./results_optimized_85plus_inferences/predictions.csv
+
+============================================================
+  Accuracy : 0.3357
+  Macro F1 : 0.2639
+============================================================
+              precision    recall  f1-score   support
+
+         COD      0.375     0.136     0.200        22
+         COF      0.333     0.421     0.372        19
+          FD      0.400     0.385     0.392        26
+       HG-OS      0.583     0.583     0.583        36
+        JTOF      0.000     0.000     0.000        12
+       LG-OS      0.179     0.227     0.200        22
+        PSOF      0.071     0.167     0.100         6
+
+    accuracy                          0.336       143
+   macro avg      0.277     0.274     0.264       143
+weighted avg      0.352     0.336     0.333       143
+
+[INFO] Saved classification report  ./results_optimized_85plus_inferences/classification_report.txt
+[INFO] Saved confusion matrix  ./results_optimized_85plus_inferences/confusion_matrix.png
+
+[ALL DONE] Results in: ./results_optimized_85plus_inferences

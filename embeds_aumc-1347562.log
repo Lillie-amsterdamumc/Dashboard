@@ -1,0 +1,1217 @@
+Job started on gpu03.cluster at Thu Mar 26 16:23:13 CET 2026
+Job ID: 1347562
+Python: /appdata/users/P098169/orthognal_MIL/bin/python
+
+=== Starting MIL training ===
+============================================================
+  MIL_2slides.py  —  Multi-Head Attention MIL
+  3-slide averaging for multi-slide patients
+============================================================
+[INFO] Device = cuda
+[INFO] GPU = NVIDIA H100 NVL MIG 4g.47gb
+[INFO] '24_R82111': 2 slides found — randomly selected 2: ['24_R82111;1_1_1;1_EXTRA_HE_20240514_165532.isyntax_tiles.pt', '24_R82111;1_1_1;2_EXTRA_HE_20240514_165350.isyntax_tiles.pt']
+[INFO] '24_R83059': 3 slides found — randomly selected 3: ['24_R83059;9_1_2;-_HE_20240813_095712.isyntax_tiles.pt', '24_R83059;9_1_1;-_HE_20240813_095919.isyntax_tiles.pt', '24_R83059;8_1_1;-_HE_20240808_161636.isyntax_tiles.pt']
+[INFO] '23_R82954': 2 slides found — randomly selected 2: ['23_R82954;1_1_1;-_HE_20230727_165218.isyntax_tiles.pt', '23_R82954;3_1_1;-_HE_20230802_120800.isyntax_tiles.pt']
+[INFO] '23_R83939': 2 slides found — randomly selected 2: ['23_R83939;1_1_1;-_HE_20231009_142157.isyntax_tiles.pt', '23_R83939;1_1_2;-_HE_20231009_141831.isyntax_tiles.pt']
+[INFO] '23_R84295': 3 slides found — randomly selected 3: ['23_R84295;1_1_9;-_HE_20231030_201347.isyntax_tiles.pt', '23_R84295;1_1_21;-_HE_20231030_194138.isyntax_tiles.pt', '23_R84295;1_1_1;-_HE_20231030_204602.isyntax_tiles.pt']
+[INFO] '23_R84011': 5 slides found — randomly selected 5: ['23_R84011;1_1_12;-_HE_SPRONG_LB1_20231010_171744.isyntax_tiles.pt', '23_R84011;1_1_45;-_HE_SEMISERIE3_20231010_160903.isyntax_tiles.pt', '23_R84011;1_1_3;-_HE_SEMISERIE2_20231010_154133.isyntax_tiles.pt', '23_R84011;1_1_33;-_HE_20231010_163705.isyntax_tiles.pt', '23_R84011;1_1_24;-_HE_20231010_170145.isyntax_tiles.pt']
+[INFO] '23_R82827': 2 slides found — randomly selected 2: ['23_R82827;2_1_1;-_HE_20230720_164518.isyntax_tiles.pt', '23_R82827;4_1_1;-_HE_20230725_190038.isyntax_tiles.pt']
+[INFO] '23_R83441': 6 slides found — randomly selected 5: ['23_R83441;1_1_17;-_HE_20230904_142224.isyntax_tiles.pt', '23_R83441;1_1_19;-_HE_20230904_141628.isyntax_tiles.pt', '23_R83441;1_1_18;-_HE_20230904_141855.isyntax_tiles.pt', '23_R83441;1_1_16;-_HE_20230904_142422.isyntax_tiles.pt', '23_R83441;1_1_1;-_HE_20230904_151954.isyntax_tiles.pt']
+[INFO] '22_R82599': 3 slides found — randomly selected 3: ['22_R82599;4_1_1;-_HE_20220817_110849.isyntax_tiles.pt', '22_R82599;1_1_5;-_HE_L_1_20220719_094614.isyntax_tiles.pt', '22_R82599;1_1_1;-_HE_L_1_20220719_095243.isyntax_tiles.pt']
+[INFO] '22_R82723': 3 slides found — randomly selected 3: ['22_R82723;2_1_1;-_HE_20220728_140903.isyntax_tiles.pt', '22_R82723;1_1_1;-_HE_1_20220726_172655.isyntax_tiles.pt', '22_R82723;4_1_1;-_HE_20220804_102232.isyntax_tiles.pt']
+[INFO] '21_R84645': 2 slides found — randomly selected 2: ['21_R84645;1_1_2;-_HE_20211117_200414.isyntax_tiles.pt', '21_R84645;1_1_1;-_HE_20211117_200540.isyntax_tiles.pt']
+[INFO] '21_R83221': 7 slides found — randomly selected 5: ['21_R83221;1_1_1;-_HE_20210809_093747.isyntax_tiles.pt', '21_R83221;2_1_3;-_HE_20210809_095220.isyntax_tiles.pt', '21_R83221;3_1_1;-_HE_20210810_092807.isyntax_tiles.pt', '21_R83221;1_1_3;-_HE_20210809_093902.isyntax_tiles.pt', '21_R83221;1_1_2;-_HE_20210809_093512.isyntax_tiles.pt']
+[INFO] '21_R80750': 5 slides found — randomly selected 5: ['21_R80750;1_1_7;-_HE_20210223_173724.isyntax_tiles.pt', '21_R80750;1_1_5;-_HE_20210223_174200.isyntax_tiles.pt', '21_R80750;1_1_3;-_HE_20210223_174708.isyntax_tiles.pt', '21_R80750;1_1_4;-_HE_20210223_174349.isyntax_tiles.pt', '21_R80750;1_1_6;-_HE_20210223_173916.isyntax_tiles.pt']
+[INFO] '20_R82805': 6 slides found — randomly selected 5: ['20_R82805;2_1_1;3_HE_20200811_093551.isyntax_tiles.pt', '20_R82805;1_1_1;1_HE_20200811_095735.isyntax_tiles.pt', '20_R82805;2_1_1;2_HE_20200811_094118.isyntax_tiles.pt', '20_R82805;2_1_1;5_HE_20200811_092729.isyntax_tiles.pt', '20_R82805;2_1_1;1_HE_20200811_094650.isyntax_tiles.pt']
+[INFO] '20_R82384': 7 slides found — randomly selected 5: ['20_R82384;1_1_2;-_HE_20200713_110056.isyntax_tiles.pt', '20_R82384;1_1_18;-_HE_20200713_093316.isyntax_tiles.pt', '20_R82384;1_1_17;-_HE_20200713_093702.isyntax_tiles.pt', '20_R82384;1_1_4;-_HE_20200713_105024.isyntax_tiles.pt', '20_R82384;1_1_19;-_HE_20200713_092747.isyntax_tiles.pt']
+[INFO] '20_R83334': 2 slides found — randomly selected 2: ['20_R83334;1_1_1;-_HE_20200921_182427.isyntax_tiles.pt', '20_R83334;1_1_2;-_HE1_20200921_182248.isyntax_tiles.pt']
+[INFO] '22_R81458': 3 slides found — randomly selected 3: ['22_R81458;1_1_1;-_HE_20220425_113756.isyntax_tiles.pt', '22_R81458;1_1_3;-_HE_20220425_113244.isyntax_tiles.pt', '22_R81458;1_1_2;-_HE_20220425_113514.isyntax_tiles.pt']
+[INFO] '24_R80792': 6 slides found — randomly selected 5: ['24_R80792;1_1_3;-_HE_1_20240219_141824.isyntax_tiles.pt', '24_R80792;1_1_1;-_HE_1_20240220_093107.isyntax_tiles.pt', '24_R80792;1_1_3;-_HE_1_20240220_092325.isyntax_tiles.pt', '24_R80792;1_1_3;-_HE_1_20240219_173014.isyntax_tiles.pt', '24_R80792;1_1_1;-_HE_1_20240219_173627.isyntax_tiles.pt']
+[INFO] '24_R81340': 2 slides found — randomly selected 2: ['24_R81340;1_1_1;-_HE_20240325_145109.isyntax_tiles.pt', '24_R81340;1_1_2;-_HE_20240325_144916.isyntax_tiles.pt']
+[INFO] '24_R80761': 2 slides found — randomly selected 2: ['24_R80761;1_1_2;-_HE_20240216_204239.isyntax_tiles.pt', '24_R80761;1_1_1;-_HE_20240216_204341.isyntax_tiles.pt']
+[INFO] '24_H03876': 2 slides found — randomly selected 2: ['24_H03876;1_1_5;-_HE_20240422_132536.isyntax_tiles.pt', '24_H03876;1_1_4;-_HE_20240422_132115.isyntax_tiles.pt']
+[INFO] '24_R81530': 5 slides found — randomly selected 5: ['24_R81530;2_1_1;-_HE_20240410_150128.isyntax_tiles.pt', '24_R81530;1_1_15;-_HE_20240408_163914.isyntax_tiles.pt', '24_R81530;1_1_16;-_HE_20240408_163659.isyntax_tiles.pt', '24_R81530;1_1_13;-_HE_20240408_164147.isyntax_tiles.pt', '24_R81530;1_1_1;-_HE_20240408_165651.isyntax_tiles.pt']
+[INFO] '24_R82529': 3 slides found — randomly selected 3: ['24_R82529;1_1_2;-_HE_20240613_090931.isyntax_tiles.pt', '24_R82529;1_1_3;-_HE_20240613_090748.isyntax_tiles.pt', '24_R82529;1_1_1;-_HE_20240613_091140.isyntax_tiles.pt']
+[INFO] '24_R81868': 3 slides found — randomly selected 3: ['24_R81868;1_1_3;-_HE_2_20240426_183240.isyntax_tiles.pt', '24_R81868;1_1_1;-_HE_1_20240426_183425.isyntax_tiles.pt', '24_R81868;1_1_2;-_HE_1_20240426_183312.isyntax_tiles.pt']
+[INFO] '24_R83038': 3 slides found — randomly selected 3: ['24_R83038;1_1_1;-_HE_20240725_214047.isyntax_tiles.pt', '24_R83038;1_1_3;-_HE_20240725_213050.isyntax_tiles.pt', '24_R83038;1_1_2;-_HE_20240725_213324.isyntax_tiles.pt']
+[INFO] '24_H09154': 2 slides found — randomly selected 2: ['24_H09154;1_1_2;-_HE_20240822_114637.isyntax_tiles.pt', '24_H09154;1_1_1;-_HE_20240827_105802.isyntax_tiles.pt']
+[INFO] '23_R80698': 3 slides found — randomly selected 3: ['23_R80698;1_1_4;-_HE_20230221_225931.isyntax_tiles.pt', '23_R80698;1_1_1;-_HE_20230221_230613.isyntax_tiles.pt', '23_R80698;3_1_1;-_HE_20230223_190940.isyntax_tiles.pt']
+[INFO] '23_R80975': 2 slides found — randomly selected 2: ['23_R80975;3_1_1;-_HE_20230316_215051.isyntax_tiles.pt', '23_R80975;1_1_1;-_HE_20230314_134427.isyntax_tiles.pt']
+[INFO] '23_R81186': 2 slides found — randomly selected 2: ['23_R81186;7_1_1;-_HE_20230508_133149.isyntax_tiles.pt', '23_R81186;5_1_1;-_HE_20230504_082528.isyntax_tiles.pt']
+[INFO] '23_R84142': 5 slides found — randomly selected 5: ['23_R84142;1_1_5;-_HE_OK1_20231018_170026.isyntax_tiles.pt', '23_R84142;1_1_3;2_HE_NA_(M)_20231018_162517.isyntax_tiles.pt', '23_R84142;2_1_1;-_HE_1_20231018_162314.isyntax_tiles.pt', '23_R84142;1_1_1;-_HE_VOOR_(M)_20231018_162934.isyntax_tiles.pt', '23_R84142;1_1_4;-_HE_EDTA_20231018_170359.isyntax_tiles.pt']
+[INFO] '23_R84994': 3 slides found — randomly selected 3: ['23_R84994;1_1_3;-_HE_20231219_144244.isyntax_tiles.pt', '23_R84994;1_1_2;-_HE_20231219_144411.isyntax_tiles.pt', '23_R84994;1_1_1;-_HE_20231219_144600.isyntax_tiles.pt']
+[INFO] '23_R85122': 2 slides found — randomly selected 2: ['23_R85122;1_1_2;-_HE_20231228_205700.isyntax_tiles.pt', '23_R85122;1_1_1;-_HE_20231228_205803.isyntax_tiles.pt']
+[INFO] '23_R81502': 2 slides found — randomly selected 2: ['23_R81502;1_1_1;-_HE_ONTKALKEN_20230419_111056.isyntax_tiles.pt', '23_R81502;2_1_1;-_HE_20230426_123931.isyntax_tiles.pt']
+[INFO] '23_R82904': 2 slides found — randomly selected 2: ['23_R82904;1_1_4;-_HE_1_20230725_172321.isyntax_tiles.pt', '23_R82904;1_1_1;-_HE_1_20230725_172725.isyntax_tiles.pt']
+[INFO] '23_R85049': 3 slides found — randomly selected 3: ['23_R85049;1_1_1;-_HE_1_20231220_155159.isyntax_tiles.pt', '23_R85049;1_1_3;-_HE_1_20231220_154820.isyntax_tiles.pt', '23_R85049;1_1_2;-_HE_1_20231220_155018.isyntax_tiles.pt']
+[INFO] '23_R81179': 4 slides found — randomly selected 4: ['23_R81179;5_1_1;-_HE_MD_20231011_152300.isyntax_tiles.pt', '23_R81179;8_1_1;-_HE_20230608_181833.isyntax_tiles.pt', '23_R81179;9_1_1;-_HE_V_20230915_160702.isyntax_tiles.pt', '23_R81179;2_1_1;-_HE_20230329_121419.isyntax_tiles.pt']
+[INFO] '23_R80616': 5 slides found — randomly selected 5: ['23_R80616;1_1_6;2_HE_20230216_105353.isyntax_tiles.pt', '23_R80616;2_1_1;-_HE_20230221_145651.isyntax_tiles.pt', '23_R80616;1_1_6;1_HE_20230216_105617.isyntax_tiles.pt', '23_R80616;1_1_1;2_HE_20230216_110534.isyntax_tiles.pt', '23_R80616;1_1_1;1_HE_20230216_110728.isyntax_tiles.pt']
+[INFO] '22_R80507': 5 slides found — randomly selected 5: ['22_R80507;2_1_3;-_HE_20220209_113558.isyntax_tiles.pt', '22_R80507;1_1_1;-_HE_20220209_115306.isyntax_tiles.pt', '22_R80507;2_1_1;-_HE_20220209_114614.isyntax_tiles.pt', '22_R80507;2_1_2;-_HE_20220209_114201.isyntax_tiles.pt', '22_R80507;1_1_1;-_HE_20220209_140925.isyntax_tiles.pt']
+[INFO] '22_H08717': 5 slides found — randomly selected 5: ['22_H08717;1_1_3;-_HE_20220913_123500.isyntax_tiles.pt', '22_H08717;1_1_1;-_HE_20220829_114101.isyntax_tiles.pt', '22_H08717;1_1_2;-_HE_20220829_113853.isyntax_tiles.pt', '22_H08717;1_1_5;-_HE_20220831_124104.isyntax_tiles.pt', '22_H08717;1_1_4;-_HE_20220913_123349.isyntax_tiles.pt']
+[INFO] '22_H12375': 5 slides found — randomly selected 5: ['22_H12375;1_1_4;-_HE_20221124_181649.isyntax_tiles.pt', '22_H12375;1_1_1;-_HE_20221124_182420.isyntax_tiles.pt', '22_H12375;1_1_3;-_HE_20221124_181847.isyntax_tiles.pt', '22_H12375;1_1_2;-_HE_20221124_182126.isyntax_tiles.pt', '22_H12375;1_1_5;-_HE_20221202_193132.isyntax_tiles.pt']
+[INFO] '22_H08185': 2 slides found — randomly selected 2: ['22_H08185;1_1_1;-_HE_20220823_130129.isyntax_tiles.pt', '22_H08185;3_1_1;-_HE_20220926_162106.isyntax_tiles.pt']
+[INFO] '22_R81797': 5 slides found — randomly selected 5: ['22_R81797;1_1_3;-_HE_L2_20220520_115231.isyntax_tiles.pt', '22_R81797;1_1_21;-_HE_L_1_20220520_163042.isyntax_tiles.pt', '22_R81797;1_1_1;-_HE_20220520_115542.isyntax_tiles.pt', '22_R81797;1_1_2;-_HE_L1_20220520_115416.isyntax_tiles.pt', '22_R81797;1_1_22;-_HE_L_2_20220520_162938.isyntax_tiles.pt']
+[INFO] '22_R82123': 2 slides found — randomly selected 2: ['22_R82123;1_1_1;-_HE_1_20220615_134416.isyntax_tiles.pt', '22_R82123;2_1_1;-_HE_20220621_123042.isyntax_tiles.pt']
+[INFO] '22_R84352': 4 slides found — randomly selected 4: ['22_R84352;1_1_6;-_HE_20221121_121920.isyntax_tiles.pt', '22_R84352;1_1_1;-_HE_20221121_122902.isyntax_tiles.pt', '22_R84352;1_1_3;-_HE_20221121_122539.isyntax_tiles.pt', '22_R84352;1_1_2;-_HE_20221121_122814.isyntax_tiles.pt']
+[INFO] '22_R84708': 2 slides found — randomly selected 2: ['22_R84708;2_1_1;-_HE_20221216_161810.isyntax_tiles.pt', '22_R84708;1_1_1;-_HE_1_20221214_105721.isyntax_tiles.pt']
+[INFO] '22_R80342': 2 slides found — randomly selected 2: ['22_R80342;1_1_1;-_HE_20220208_015707.isyntax_tiles.pt', '22_R80342;1_1_2;-_HE_20220208_014755.isyntax_tiles.pt']
+[INFO] '22_R80725': 2 slides found — randomly selected 2: ['22_R80725;1_1_1;-_HE_20220302_111311.isyntax_tiles.pt', '22_R80725;1_1_2;-_HE__20220302_111004.isyntax_tiles.pt']
+[INFO] '22_R80949': 3 slides found — randomly selected 3: ['22_R80949;1_1_3;-_HE_1_20220316_142443.isyntax_tiles.pt', '22_R80949;1_1_2;-_HE_1_20220316_142832.isyntax_tiles.pt', '22_R80949;1_1_1;-_HE_1_20220316_143140.isyntax_tiles.pt']
+[INFO] '22_R82650': 2 slides found — randomly selected 2: ['22_R82650;1_1_1;-_HE_20220721_192519.isyntax_tiles.pt', '22_R82650;1_1_7;-_HE_20220721_192627.isyntax_tiles.pt']
+[INFO] '22_R84539': 2 slides found — randomly selected 2: ['22_R84539;2_1_1;-_HE_20221208_094334.isyntax_tiles.pt', '22_R84539;1_1_1;-_HE_20221205_103644.isyntax_tiles.pt']
+[INFO] '22_R83888': 4 slides found — randomly selected 4: ['22_R83888;1_1_2;-_HE_20221019_150338.isyntax_tiles.pt', '22_R83888;1_1_3;-_HE_20221019_130248.isyntax_tiles.pt', '22_R83888;1_1_1;-_HE_20221019_140422.isyntax_tiles.pt', '22_R83888;1_1_12;-_HE_20221019_130730.isyntax_tiles.pt']
+[INFO] '22_R82717': 2 slides found — randomly selected 2: ['22_R82717;1_1_1;-_HE_1_20220726_145045.isyntax_tiles.pt', '22_R82717;1_1_9;-_HE_1_20220726_142947.isyntax_tiles.pt']
+[INFO] '21_R81090': 5 slides found — randomly selected 5: ['21_R81090;2_1_1;-_HE_20210326_133945.isyntax_tiles.pt', '21_R81090;1_1_3;-_HE_SPR_N1-3_20210318_102302.isyntax_tiles.pt', '21_R81090;1_1_2;-_HE_20210318_102108.isyntax_tiles.pt', '21_R81090;2_1_2;-_HE_20210326_133829.isyntax_tiles.pt', '21_R81090;1_1_1;-_HE_20210318_102029.isyntax_tiles.pt']
+[INFO] '21_R80991': 6 slides found — randomly selected 5: ['21_R80991;1_1_2;-_HE_20210311_125401.isyntax_tiles.pt', '21_R80991;2_1_4;-_HE_20210312_180005.isyntax_tiles.pt', '21_R80991;1_1_1;-_HE_20210311_125459.isyntax_tiles.pt', '21_R80991;2_1_3;-_HE_HERW_20210312_180212.isyntax_tiles.pt', '21_R80991;2_1_2;-_HE_HERW_20210312_180552.isyntax_tiles.pt']
+[INFO] '21_R81352': 5 slides found — randomly selected 5: ['21_R81352;4_1_6;-_HE-SERIEOP_5_20210421_215407.isyntax_tiles.pt', '21_R81352;4_1_3;-_HE-SERIEOP_2_20210421_215937.isyntax_tiles.pt', '21_R81352;4_1_4;-_HE-SERIEOP_3_20210421_215744.isyntax_tiles.pt', '21_R81352;4_1_1;-_HE_20210421_220119.isyntax_tiles.pt', '21_R81352;4_1_5;-_HE-SERIEOP_4_20210421_215603.isyntax_tiles.pt']
+[INFO] '21_R81791': 2 slides found — randomly selected 2: ['21_R81791;1_1_1;-_HE_20210510_173840.isyntax_tiles.pt', '21_R81791;2_1_1;-_HE_20210512_194653.isyntax_tiles.pt']
+[INFO] '21_R82043': 3 slides found — randomly selected 3: ['21_R82043;1_1_32;-_HE_20210525_200637.isyntax_tiles.pt', '21_R82043;2_1_2;-_HE_20210525_194230.isyntax_tiles.pt', '21_R82043;2_1_1;-_HE_20210525_194345.isyntax_tiles.pt']
+[INFO] '21_R82656': 3 slides found — randomly selected 3: ['21_R82656;4_1_2;-_HE_20210802_192842.isyntax_tiles.pt', '21_R82656;1_1_1;-_HE_20210729_092952.isyntax_tiles.pt', '21_R82656;4_1_3;-_HE_20210802_192409.isyntax_tiles.pt']
+[INFO] '21_R83281': 3 slides found — randomly selected 3: ['21_R83281;1_1_2;-_HE_2_20210812_100653.isyntax_tiles.pt', '21_R83281;3_1_1;-_HE_20210813_081856.isyntax_tiles.pt', '21_R83281;1_1_1;-_HE_1_20210812_101127.isyntax_tiles.pt']
+[INFO] '21_R83429': 2 slides found — randomly selected 2: ['21_R83429;1_1_1;-_HE_20210824_181540.isyntax_tiles.pt', '21_R83429;1_1_9;-_HE_20210824_175840.isyntax_tiles.pt']
+[INFO] '21_R84730': 7 slides found — randomly selected 5: ['21_R84730;1_1_2;-_HE_20211124_115324.isyntax_tiles.pt', '21_R84730;1_1_4;-_HE_20211124_115020.isyntax_tiles.pt', '21_R84730;1_1_6;-_HE_20211124_114652.isyntax_tiles.pt', '21_R84730;3_1_2;-_HE_20211126_142241.isyntax_tiles.pt', '21_R84730;1_1_1;-_HE_20211124_115544.isyntax_tiles.pt']
+[INFO] '21_R84521': 3 slides found — randomly selected 3: ['21_R84521;1_1_10;-_HE_TYKS_20211109_115107.isyntax_tiles.pt', '21_R84521;1_1_13;-_HE_TYKS_20211109_114747.isyntax_tiles.pt', '21_R84521;1_1_1;-_HE_TYKS_20211109_120610.isyntax_tiles.pt']
+[INFO] '21_R80845': 3 slides found — randomly selected 3: ['21_R80845;1_1_2;-_HE_SS_2_20210301_164026.isyntax_tiles.pt', '21_R80845;1_1_3;-_HE_SS_3_20210301_163637.isyntax_tiles.pt', '21_R80845;1_1_1;-_HE_20210301_164450.isyntax_tiles.pt']
+[INFO] '21_R80621': 7 slides found — randomly selected 5: ['21_R80621;3_1_5;-_HE_20210222_172912.isyntax_tiles.pt', '21_R80621;3_1_1;-_HE_20210222_174250.isyntax_tiles.pt', '21_R80621;1_1_14;-_HE_20210215_181851.isyntax_tiles.pt', '21_R80621;1_1_9;-_HE_20230815_124852.isyntax_tiles.pt', '21_R80621;1_1_1;-_HE_20230815_130452.isyntax_tiles.pt']
+[INFO] '20_R82796': 4 slides found — randomly selected 4: ['20_R82796;1_1_5;-_HE_20200810_131821.isyntax_tiles.pt', '20_R82796;1_1_4;-_HE_20200810_131922.isyntax_tiles.pt', '20_R82796;1_1_3;-_HE_20200810_132102.isyntax_tiles.pt', '20_R82796;1_1_1;-_HE_20200810_132601.isyntax_tiles.pt']
+[INFO] '20_R82823': 6 slides found — randomly selected 5: ['20_R82823;1_1_4;-_HE_20200813_115415.isyntax_tiles.pt', '20_R82823;2_1_7;-_HE_20200813_115850.isyntax_tiles.pt', '20_R82823;2_1_6;-_HE_20200813_115653.isyntax_tiles.pt', '20_R82823;1_1_5;-_HE_20200813_115513.isyntax_tiles.pt', '20_R82823;2_1_5;-_HE_20200813_112506.isyntax_tiles.pt']
+[INFO] '20_R82959': 5 slides found — randomly selected 5: ['20_R82959;1_1_2;-_HE_20200824_154523.isyntax_tiles.pt', '20_R82959;2_1_1;-_HE_20200825_232503.isyntax_tiles.pt', '20_R82959;1_1_1;-_HE_20200824_154631.isyntax_tiles.pt', '20_R82959;2_1_3;-_HE_20200825_231956.isyntax_tiles.pt', '20_R82959;1_1_4;-_HE_20200824_154221.isyntax_tiles.pt']
+[INFO] '20_R83284': 2 slides found — randomly selected 2: ['20_R83284;1_1_1;-_HE_20200917_091735.isyntax_tiles.pt', '20_R83284;1_1_2;-_HE_NA_20200917_091556.isyntax_tiles.pt']
+[INFO] '20_R83915': 5 slides found — randomly selected 5: ['20_R83915;1_1_1;-_HE_1_20201102_150327.isyntax_tiles.pt', '20_R83915;1_1_10;-_HE_1_20201102_144012.isyntax_tiles.pt', '20_R83915;5_1_1;-_HE_MD_20201127_152533.isyntax_tiles.pt', '20_R83915;1_1_14;-_HE_1_20201102_142643.isyntax_tiles.pt', '20_R83915;1_1_13;-_HE_2_20201102_143629.isyntax_tiles.pt']
+[INFO] '20_R80921': 5 slides found — randomly selected 5: ['20_R80921;1_1_2;-_HE_20220919_152301.isyntax_tiles.pt', '20_R80921;7_1_3;-_HE2_20220919_153212.isyntax_tiles.pt', '20_R80921;7_1_2;-_HE1_20220919_153401.isyntax_tiles.pt', '20_R80921;7_1_1;-_HE2_20220919_153605.isyntax_tiles.pt', '20_R80921;1_1_1;-_HE_20220919_150455.isyntax_tiles.pt']
+[INFO] Dataset built — mode: slide-level bags
+       514 bags | 350 unique patients
+       Single-slide bags: 280 | Multi-slide bags (up to 3 per patient): 234
+       8 classes: ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'Other', 'PSOF']
+[INFO] Label mapping: {'COD': 0, 'COF': 1, 'FD': 2, 'HG-OS': 3, 'JTOF': 4, 'LG-OS': 5, 'Other': 6, 'PSOF': 7}
+[INFO] Class 'COD': 50 patients, 75 slides → val slides per fold: [15, 15, 15, 15, 15]
+[INFO] Class 'COF': 41 patients, 43 slides → val slides per fold: [9, 9, 9, 8, 8]
+[INFO] Class 'FD': 52 patients, 74 slides → val slides per fold: [15, 15, 15, 15, 14]
+[INFO] Class 'HG-OS': 62 patients, 87 slides → val slides per fold: [18, 18, 17, 17, 17]
+[INFO] Class 'JTOF': 22 patients, 22 slides → val slides per fold: [5, 5, 4, 4, 4]
+[INFO] Class 'LG-OS': 30 patients, 38 slides → val slides per fold: [8, 8, 8, 7, 7]
+[INFO] Class 'Other': 50 patients, 125 slides → val slides per fold: [25, 25, 25, 25, 25]
+[INFO] Class 'PSOF': 43 patients, 50 slides → val slides per fold: [10, 10, 10, 10, 10]
+[INFO] Fold 1: train=287 patients / 409 slides | val=63 patients / 105 slides
+
+============================================================
+[Fold 1]  Train: 409 bags / 409 slides  |  Val: 105 bags / 105 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 94
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 41, 'COF': 33, 'FD': 42, 'HG-OS': 50, 'JTOF': 17, 'LG-OS': 26, 'Other': 41, 'PSOF': 37}
+[INFO] Class weights:        {'COD': 0.875, 'COF': 1.0870000123977661, 'FD': 0.8539999723434448, 'HG-OS': 0.7179999947547913, 'JTOF': 2.109999895095825, 'LG-OS': 1.3799999952316284, 'Other': 0.875, 'PSOF': 0.9700000286102295}
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 001  lr=1.00e-04  train_loss=1.5360  train_f1=N/A(mixup)  |  val_loss=1.3997  val_f1=0.0816  val_acc=0.1905
+  ✅ New best patient-level F1 = 0.0816  (epoch 1)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 002  lr=1.00e-04  train_loss=1.4675  train_f1=N/A(mixup)  |  val_loss=1.3456  val_f1=0.1790  val_acc=0.2540
+  ✅ New best patient-level F1 = 0.1790  (epoch 2)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 003  lr=9.99e-05  train_loss=1.2602  train_f1=N/A(mixup)  |  val_loss=1.2871  val_f1=0.2222  val_acc=0.3016
+  ✅ New best patient-level F1 = 0.2222  (epoch 3)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 004  lr=9.98e-05  train_loss=1.1202  train_f1=N/A(mixup)  |  val_loss=1.1648  val_f1=0.2737  val_acc=0.3492
+  ✅ New best patient-level F1 = 0.2737  (epoch 4)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 005  lr=9.98e-05  train_loss=1.0159  train_f1=N/A(mixup)  |  val_loss=1.1344  val_f1=0.3047  val_acc=0.3651
+  ✅ New best patient-level F1 = 0.3047  (epoch 5)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 006  lr=9.96e-05  train_loss=0.9280  train_f1=N/A(mixup)  |  val_loss=1.0037  val_f1=0.4030  val_acc=0.4603
+  ✅ New best patient-level F1 = 0.4030  (epoch 6)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 007  lr=9.95e-05  train_loss=0.8601  train_f1=N/A(mixup)  |  val_loss=0.9250  val_f1=0.3501  val_acc=0.3968
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 008  lr=9.94e-05  train_loss=0.7984  train_f1=N/A(mixup)  |  val_loss=0.9577  val_f1=0.3709  val_acc=0.4127
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 009  lr=9.92e-05  train_loss=0.7702  train_f1=N/A(mixup)  |  val_loss=0.9337  val_f1=0.4304  val_acc=0.4762
+  ✅ New best patient-level F1 = 0.4304  (epoch 9)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 010  lr=9.90e-05  train_loss=0.7121  train_f1=N/A(mixup)  |  val_loss=0.8530  val_f1=0.4664  val_acc=0.4921
+  ✅ New best patient-level F1 = 0.4664  (epoch 10)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 011  lr=9.88e-05  train_loss=0.7126  train_f1=N/A(mixup)  |  val_loss=0.8310  val_f1=0.4859  val_acc=0.5238
+  ✅ New best patient-level F1 = 0.4859  (epoch 11)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 012  lr=9.86e-05  train_loss=0.6594  train_f1=N/A(mixup)  |  val_loss=0.8391  val_f1=0.5544  val_acc=0.5873
+  ✅ New best patient-level F1 = 0.5544  (epoch 12)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 013  lr=9.83e-05  train_loss=0.6974  train_f1=N/A(mixup)  |  val_loss=0.8212  val_f1=0.5456  val_acc=0.5714
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 014  lr=9.81e-05  train_loss=0.6075  train_f1=N/A(mixup)  |  val_loss=0.7767  val_f1=0.5538  val_acc=0.5873
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 015  lr=9.78e-05  train_loss=0.5957  train_f1=N/A(mixup)  |  val_loss=0.8565  val_f1=0.5598  val_acc=0.5714
+  ✅ New best patient-level F1 = 0.5598  (epoch 15)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 016  lr=9.75e-05  train_loss=0.5960  train_f1=N/A(mixup)  |  val_loss=0.7354  val_f1=0.5944  val_acc=0.6508
+  ✅ New best patient-level F1 = 0.5944  (epoch 16)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 017  lr=9.72e-05  train_loss=0.6078  train_f1=N/A(mixup)  |  val_loss=0.7740  val_f1=0.5392  val_acc=0.5556
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 018  lr=9.68e-05  train_loss=0.5975  train_f1=N/A(mixup)  |  val_loss=0.6866  val_f1=0.6613  val_acc=0.6825
+  ✅ New best patient-level F1 = 0.6613  (epoch 18)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 019  lr=9.65e-05  train_loss=0.5504  train_f1=N/A(mixup)  |  val_loss=0.7431  val_f1=0.5183  val_acc=0.5556
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 020  lr=9.61e-05  train_loss=0.5302  train_f1=N/A(mixup)  |  val_loss=0.7095  val_f1=0.6069  val_acc=0.6508
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 021  lr=9.57e-05  train_loss=0.5067  train_f1=N/A(mixup)  |  val_loss=0.8150  val_f1=0.5755  val_acc=0.6190
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 022  lr=9.53e-05  train_loss=0.5332  train_f1=N/A(mixup)  |  val_loss=0.7907  val_f1=0.6038  val_acc=0.6349
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 023  lr=9.49e-05  train_loss=0.4877  train_f1=N/A(mixup)  |  val_loss=0.6833  val_f1=0.5653  val_acc=0.6190
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 024  lr=9.44e-05  train_loss=0.4339  train_f1=N/A(mixup)  |  val_loss=0.6489  val_f1=0.6516  val_acc=0.6667
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 025  lr=9.40e-05  train_loss=0.4557  train_f1=N/A(mixup)  |  val_loss=0.7005  val_f1=0.6615  val_acc=0.6825
+  ✅ New best patient-level F1 = 0.6615  (epoch 25)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 026  lr=9.35e-05  train_loss=0.4902  train_f1=N/A(mixup)  |  val_loss=0.6977  val_f1=0.6292  val_acc=0.6508
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 027  lr=9.30e-05  train_loss=0.4753  train_f1=N/A(mixup)  |  val_loss=0.6568  val_f1=0.6473  val_acc=0.6667
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 028  lr=9.25e-05  train_loss=0.4422  train_f1=N/A(mixup)  |  val_loss=0.8433  val_f1=0.5884  val_acc=0.6190
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 029  lr=9.20e-05  train_loss=0.4793  train_f1=N/A(mixup)  |  val_loss=0.6907  val_f1=0.6214  val_acc=0.6349
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 030  lr=9.14e-05  train_loss=0.4526  train_f1=N/A(mixup)  |  val_loss=0.7117  val_f1=0.7207  val_acc=0.7302
+  ✅ New best patient-level F1 = 0.7207  (epoch 30)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 031  lr=9.08e-05  train_loss=0.4131  train_f1=N/A(mixup)  |  val_loss=0.6451  val_f1=0.6998  val_acc=0.7143
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 032  lr=9.03e-05  train_loss=0.4424  train_f1=N/A(mixup)  |  val_loss=0.6370  val_f1=0.6549  val_acc=0.6667
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 033  lr=8.97e-05  train_loss=0.4181  train_f1=N/A(mixup)  |  val_loss=0.6208  val_f1=0.6918  val_acc=0.6984
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 034  lr=8.91e-05  train_loss=0.4255  train_f1=N/A(mixup)  |  val_loss=0.6836  val_f1=0.7557  val_acc=0.7619
+  ✅ New best patient-level F1 = 0.7557  (epoch 34)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 035  lr=8.84e-05  train_loss=0.4321  train_f1=N/A(mixup)  |  val_loss=0.6342  val_f1=0.6641  val_acc=0.6825
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 036  lr=8.78e-05  train_loss=0.4149  train_f1=N/A(mixup)  |  val_loss=0.6483  val_f1=0.6551  val_acc=0.6825
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 037  lr=8.72e-05  train_loss=0.4526  train_f1=N/A(mixup)  |  val_loss=0.6382  val_f1=0.6564  val_acc=0.6825
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 038  lr=8.65e-05  train_loss=0.4218  train_f1=N/A(mixup)  |  val_loss=0.6217  val_f1=0.7020  val_acc=0.7143
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 039  lr=8.58e-05  train_loss=0.3843  train_f1=N/A(mixup)  |  val_loss=0.6301  val_f1=0.7168  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 040  lr=8.51e-05  train_loss=0.3451  train_f1=N/A(mixup)  |  val_loss=0.6311  val_f1=0.7383  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 041  lr=8.44e-05  train_loss=0.3424  train_f1=N/A(mixup)  |  val_loss=0.6555  val_f1=0.7185  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 042  lr=8.37e-05  train_loss=0.4280  train_f1=N/A(mixup)  |  val_loss=0.6415  val_f1=0.6557  val_acc=0.6984
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 043  lr=8.30e-05  train_loss=0.3477  train_f1=N/A(mixup)  |  val_loss=0.6319  val_f1=0.7197  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 044  lr=8.22e-05  train_loss=0.3584  train_f1=N/A(mixup)  |  val_loss=0.6234  val_f1=0.7628  val_acc=0.7778
+  ✅ New best patient-level F1 = 0.7628  (epoch 44)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 045  lr=8.15e-05  train_loss=0.4065  train_f1=N/A(mixup)  |  val_loss=0.6020  val_f1=0.7668  val_acc=0.7778
+  ✅ New best patient-level F1 = 0.7668  (epoch 45)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 046  lr=8.07e-05  train_loss=0.3361  train_f1=N/A(mixup)  |  val_loss=0.6063  val_f1=0.7487  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 047  lr=7.99e-05  train_loss=0.3644  train_f1=N/A(mixup)  |  val_loss=0.6264  val_f1=0.7520  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 048  lr=7.91e-05  train_loss=0.2979  train_f1=N/A(mixup)  |  val_loss=0.5941  val_f1=0.7031  val_acc=0.7143
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 049  lr=7.83e-05  train_loss=0.3707  train_f1=N/A(mixup)  |  val_loss=0.6518  val_f1=0.7384  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 050  lr=7.75e-05  train_loss=0.2998  train_f1=N/A(mixup)  |  val_loss=0.6248  val_f1=0.7116  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 051  lr=7.67e-05  train_loss=0.3427  train_f1=N/A(mixup)  |  val_loss=0.6002  val_f1=0.7603  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 052  lr=7.58e-05  train_loss=0.3248  train_f1=N/A(mixup)  |  val_loss=0.6411  val_f1=0.6975  val_acc=0.7143
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 053  lr=7.50e-05  train_loss=0.3874  train_f1=N/A(mixup)  |  val_loss=0.6144  val_f1=0.7523  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 054  lr=7.42e-05  train_loss=0.2974  train_f1=N/A(mixup)  |  val_loss=0.6000  val_f1=0.7603  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 055  lr=7.33e-05  train_loss=0.3130  train_f1=N/A(mixup)  |  val_loss=0.5713  val_f1=0.7703  val_acc=0.7778
+  ✅ New best patient-level F1 = 0.7703  (epoch 55)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 056  lr=7.24e-05  train_loss=0.3476  train_f1=N/A(mixup)  |  val_loss=0.6089  val_f1=0.7149  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 057  lr=7.16e-05  train_loss=0.3075  train_f1=N/A(mixup)  |  val_loss=0.6311  val_f1=0.7382  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 058  lr=7.07e-05  train_loss=0.3217  train_f1=N/A(mixup)  |  val_loss=0.6021  val_f1=0.7540  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 059  lr=6.98e-05  train_loss=0.3325  train_f1=N/A(mixup)  |  val_loss=0.5992  val_f1=0.7650  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 060  lr=6.89e-05  train_loss=0.3240  train_f1=N/A(mixup)  |  val_loss=0.6329  val_f1=0.7164  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 061  lr=6.80e-05  train_loss=0.2976  train_f1=N/A(mixup)  |  val_loss=0.6100  val_f1=0.7897  val_acc=0.7937
+  ✅ New best patient-level F1 = 0.7897  (epoch 61)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 062  lr=6.71e-05  train_loss=0.3865  train_f1=N/A(mixup)  |  val_loss=0.6222  val_f1=0.7898  val_acc=0.7937
+  ✅ New best patient-level F1 = 0.7898  (epoch 62)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 063  lr=6.62e-05  train_loss=0.3558  train_f1=N/A(mixup)  |  val_loss=0.6223  val_f1=0.7468  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 064  lr=6.53e-05  train_loss=0.3581  train_f1=N/A(mixup)  |  val_loss=0.6137  val_f1=0.7665  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 065  lr=6.44e-05  train_loss=0.2430  train_f1=N/A(mixup)  |  val_loss=0.6402  val_f1=0.7474  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 066  lr=6.34e-05  train_loss=0.3084  train_f1=N/A(mixup)  |  val_loss=0.6685  val_f1=0.7765  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 067  lr=6.25e-05  train_loss=0.3237  train_f1=N/A(mixup)  |  val_loss=0.6286  val_f1=0.7624  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 068  lr=6.16e-05  train_loss=0.3249  train_f1=N/A(mixup)  |  val_loss=0.6318  val_f1=0.7875  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 069  lr=6.06e-05  train_loss=0.3057  train_f1=N/A(mixup)  |  val_loss=0.6406  val_f1=0.7476  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 070  lr=5.97e-05  train_loss=0.3414  train_f1=N/A(mixup)  |  val_loss=0.6458  val_f1=0.7364  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 071  lr=5.88e-05  train_loss=0.2965  train_f1=N/A(mixup)  |  val_loss=0.6444  val_f1=0.6996  val_acc=0.7143
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 072  lr=5.78e-05  train_loss=0.3351  train_f1=N/A(mixup)  |  val_loss=0.6073  val_f1=0.7634  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 073  lr=5.69e-05  train_loss=0.3489  train_f1=N/A(mixup)  |  val_loss=0.6522  val_f1=0.7108  val_acc=0.7302
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 074  lr=5.59e-05  train_loss=0.3213  train_f1=N/A(mixup)  |  val_loss=0.6660  val_f1=0.7532  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 075  lr=5.50e-05  train_loss=0.3046  train_f1=N/A(mixup)  |  val_loss=0.6269  val_f1=0.7793  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 076  lr=5.41e-05  train_loss=0.3484  train_f1=N/A(mixup)  |  val_loss=0.6550  val_f1=0.7861  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 077  lr=5.31e-05  train_loss=0.3580  train_f1=N/A(mixup)  |  val_loss=0.6424  val_f1=0.7720  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 078  lr=5.22e-05  train_loss=0.3525  train_f1=N/A(mixup)  |  val_loss=0.6337  val_f1=0.7346  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 079  lr=5.12e-05  train_loss=0.2937  train_f1=N/A(mixup)  |  val_loss=0.6336  val_f1=0.7624  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 080  lr=5.03e-05  train_loss=0.3105  train_f1=N/A(mixup)  |  val_loss=0.6182  val_f1=0.7553  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 081  lr=4.94e-05  train_loss=0.3393  train_f1=N/A(mixup)  |  val_loss=0.6314  val_f1=0.7713  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 082  lr=4.84e-05  train_loss=0.3047  train_f1=N/A(mixup)  |  val_loss=0.6460  val_f1=0.7720  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 083  lr=4.75e-05  train_loss=0.3010  train_f1=N/A(mixup)  |  val_loss=0.6400  val_f1=0.7479  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 084  lr=4.66e-05  train_loss=0.2919  train_f1=N/A(mixup)  |  val_loss=0.6353  val_f1=0.8003  val_acc=0.8095
+  ✅ New best patient-level F1 = 0.8003  (epoch 84)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 085  lr=4.56e-05  train_loss=0.3097  train_f1=N/A(mixup)  |  val_loss=0.6277  val_f1=0.7895  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 086  lr=4.47e-05  train_loss=0.3585  train_f1=N/A(mixup)  |  val_loss=0.6431  val_f1=0.7747  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 087  lr=4.38e-05  train_loss=0.2903  train_f1=N/A(mixup)  |  val_loss=0.6422  val_f1=0.7875  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 088  lr=4.29e-05  train_loss=0.3330  train_f1=N/A(mixup)  |  val_loss=0.6454  val_f1=0.8003  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 089  lr=4.20e-05  train_loss=0.3294  train_f1=N/A(mixup)  |  val_loss=0.6590  val_f1=0.7576  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 090  lr=4.11e-05  train_loss=0.2912  train_f1=N/A(mixup)  |  val_loss=0.6256  val_f1=0.7861  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 091  lr=4.02e-05  train_loss=0.3580  train_f1=N/A(mixup)  |  val_loss=0.6444  val_f1=0.7996  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 092  lr=3.93e-05  train_loss=0.2860  train_f1=N/A(mixup)  |  val_loss=0.6294  val_f1=0.7634  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 093  lr=3.84e-05  train_loss=0.3257  train_f1=N/A(mixup)  |  val_loss=0.6214  val_f1=0.8003  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 094  lr=3.76e-05  train_loss=0.2750  train_f1=N/A(mixup)  |  val_loss=0.6223  val_f1=0.7996  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 095  lr=3.67e-05  train_loss=0.2899  train_f1=N/A(mixup)  |  val_loss=0.6735  val_f1=0.7523  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 096  lr=3.58e-05  train_loss=0.3303  train_f1=N/A(mixup)  |  val_loss=0.6218  val_f1=0.7996  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 097  lr=3.50e-05  train_loss=0.2862  train_f1=N/A(mixup)  |  val_loss=0.6259  val_f1=0.7996  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 098  lr=3.42e-05  train_loss=0.3131  train_f1=N/A(mixup)  |  val_loss=0.6645  val_f1=0.7780  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 099  lr=3.33e-05  train_loss=0.2915  train_f1=N/A(mixup)  |  val_loss=0.6252  val_f1=0.7996  val_acc=0.8095
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 100  lr=3.25e-05  train_loss=0.2652  train_f1=N/A(mixup)  |  val_loss=0.6171  val_f1=0.7634  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 101  lr=3.17e-05  train_loss=0.2832  train_f1=N/A(mixup)  |  val_loss=0.6302  val_f1=0.7625  val_acc=0.7619
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 102  lr=3.09e-05  train_loss=0.3224  train_f1=N/A(mixup)  |  val_loss=0.6510  val_f1=0.7634  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 103  lr=3.01e-05  train_loss=0.3355  train_f1=N/A(mixup)  |  val_loss=0.6593  val_f1=0.7866  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 104  lr=2.93e-05  train_loss=0.2678  train_f1=N/A(mixup)  |  val_loss=0.6427  val_f1=0.7634  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 105  lr=2.85e-05  train_loss=0.2905  train_f1=N/A(mixup)  |  val_loss=0.6433  val_f1=0.7765  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 106  lr=2.78e-05  train_loss=0.3259  train_f1=N/A(mixup)  |  val_loss=0.6720  val_f1=0.7474  val_acc=0.7460
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 107  lr=2.70e-05  train_loss=0.3263  train_f1=N/A(mixup)  |  val_loss=0.6646  val_f1=0.7866  val_acc=0.7937
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 108  lr=2.63e-05  train_loss=0.3010  train_f1=N/A(mixup)  |  val_loss=0.6560  val_f1=0.7764  val_acc=0.7778
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+Epoch 109  lr=2.56e-05  train_loss=0.2971  train_f1=N/A(mixup)  |  val_loss=0.6403  val_f1=0.7720  val_acc=0.7778
+  ⏹  Early stop (no improvement for 25 epochs)
+  [Slide→Patient] 105 bags → 63 patients (16 with multi-slide averaging, 47 single-slide)
+[INFO] Fold 2: train=283 patients / 409 slides | val=67 patients / 105 slides
+
+============================================================
+[Fold 2]  Train: 409 bags / 409 slides  |  Val: 105 bags / 105 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 94
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 42, 'HG-OS': 49, 'JTOF': 17, 'LG-OS': 26, 'Other': 40, 'PSOF': 36}
+[INFO] Class weights:        {'COD': 0.8840000033378601, 'COF': 1.0720000267028809, 'FD': 0.8420000076293945, 'HG-OS': 0.722000002861023, 'JTOF': 2.0810000896453857, 'LG-OS': 1.3609999418258667, 'Other': 0.8840000033378601, 'PSOF': 0.9829999804496765}
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 001  lr=1.00e-04  train_loss=1.5357  train_f1=N/A(mixup)  |  val_loss=1.4164  val_f1=0.2064  val_acc=0.2836
+  ✅ New best patient-level F1 = 0.2064  (epoch 1)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 002  lr=1.00e-04  train_loss=1.4655  train_f1=N/A(mixup)  |  val_loss=1.3915  val_f1=0.1171  val_acc=0.2090
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 003  lr=9.99e-05  train_loss=1.2357  train_f1=N/A(mixup)  |  val_loss=1.2705  val_f1=0.2276  val_acc=0.3284
+  ✅ New best patient-level F1 = 0.2276  (epoch 3)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 004  lr=9.98e-05  train_loss=1.1184  train_f1=N/A(mixup)  |  val_loss=1.1262  val_f1=0.2532  val_acc=0.3134
+  ✅ New best patient-level F1 = 0.2532  (epoch 4)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 005  lr=9.98e-05  train_loss=0.9353  train_f1=N/A(mixup)  |  val_loss=1.1262  val_f1=0.2348  val_acc=0.2985
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 006  lr=9.96e-05  train_loss=0.9770  train_f1=N/A(mixup)  |  val_loss=1.0117  val_f1=0.2886  val_acc=0.3582
+  ✅ New best patient-level F1 = 0.2886  (epoch 6)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 007  lr=9.95e-05  train_loss=0.8587  train_f1=N/A(mixup)  |  val_loss=1.0198  val_f1=0.3932  val_acc=0.4328
+  ✅ New best patient-level F1 = 0.3932  (epoch 7)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 008  lr=9.94e-05  train_loss=0.7995  train_f1=N/A(mixup)  |  val_loss=0.9672  val_f1=0.3346  val_acc=0.3731
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 009  lr=9.92e-05  train_loss=0.7849  train_f1=N/A(mixup)  |  val_loss=0.8283  val_f1=0.4712  val_acc=0.4925
+  ✅ New best patient-level F1 = 0.4712  (epoch 9)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 010  lr=9.90e-05  train_loss=0.8001  train_f1=N/A(mixup)  |  val_loss=0.8709  val_f1=0.3880  val_acc=0.4030
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 011  lr=9.88e-05  train_loss=0.6727  train_f1=N/A(mixup)  |  val_loss=0.8195  val_f1=0.5260  val_acc=0.5224
+  ✅ New best patient-level F1 = 0.5260  (epoch 11)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 012  lr=9.86e-05  train_loss=0.6254  train_f1=N/A(mixup)  |  val_loss=0.7569  val_f1=0.4905  val_acc=0.5075
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 013  lr=9.83e-05  train_loss=0.6789  train_f1=N/A(mixup)  |  val_loss=0.7984  val_f1=0.5462  val_acc=0.5672
+  ✅ New best patient-level F1 = 0.5462  (epoch 13)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 014  lr=9.81e-05  train_loss=0.6116  train_f1=N/A(mixup)  |  val_loss=0.8392  val_f1=0.5183  val_acc=0.5224
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 015  lr=9.78e-05  train_loss=0.6725  train_f1=N/A(mixup)  |  val_loss=0.7857  val_f1=0.5417  val_acc=0.5672
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 016  lr=9.75e-05  train_loss=0.6057  train_f1=N/A(mixup)  |  val_loss=0.7966  val_f1=0.5940  val_acc=0.6119
+  ✅ New best patient-level F1 = 0.5940  (epoch 16)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 017  lr=9.72e-05  train_loss=0.5975  train_f1=N/A(mixup)  |  val_loss=0.7809  val_f1=0.6151  val_acc=0.6269
+  ✅ New best patient-level F1 = 0.6151  (epoch 17)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 018  lr=9.68e-05  train_loss=0.5480  train_f1=N/A(mixup)  |  val_loss=0.7910  val_f1=0.5492  val_acc=0.5672
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 019  lr=9.65e-05  train_loss=0.5078  train_f1=N/A(mixup)  |  val_loss=0.6832  val_f1=0.5971  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 020  lr=9.61e-05  train_loss=0.4736  train_f1=N/A(mixup)  |  val_loss=0.7843  val_f1=0.5500  val_acc=0.5672
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 021  lr=9.57e-05  train_loss=0.4733  train_f1=N/A(mixup)  |  val_loss=0.8974  val_f1=0.5451  val_acc=0.5672
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 022  lr=9.53e-05  train_loss=0.4905  train_f1=N/A(mixup)  |  val_loss=0.8961  val_f1=0.5864  val_acc=0.6119
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 023  lr=9.49e-05  train_loss=0.4777  train_f1=N/A(mixup)  |  val_loss=0.8132  val_f1=0.6317  val_acc=0.6418
+  ✅ New best patient-level F1 = 0.6317  (epoch 23)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 024  lr=9.44e-05  train_loss=0.4886  train_f1=N/A(mixup)  |  val_loss=0.8120  val_f1=0.5414  val_acc=0.5522
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 025  lr=9.40e-05  train_loss=0.4893  train_f1=N/A(mixup)  |  val_loss=0.8000  val_f1=0.5458  val_acc=0.5672
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 026  lr=9.35e-05  train_loss=0.5029  train_f1=N/A(mixup)  |  val_loss=0.8123  val_f1=0.5777  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 027  lr=9.30e-05  train_loss=0.4786  train_f1=N/A(mixup)  |  val_loss=0.8147  val_f1=0.6420  val_acc=0.6716
+  ✅ New best patient-level F1 = 0.6420  (epoch 27)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 028  lr=9.25e-05  train_loss=0.4235  train_f1=N/A(mixup)  |  val_loss=0.7074  val_f1=0.5595  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 029  lr=9.20e-05  train_loss=0.4335  train_f1=N/A(mixup)  |  val_loss=0.7723  val_f1=0.6263  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 030  lr=9.14e-05  train_loss=0.4630  train_f1=N/A(mixup)  |  val_loss=0.8704  val_f1=0.4841  val_acc=0.5522
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 031  lr=9.08e-05  train_loss=0.4655  train_f1=N/A(mixup)  |  val_loss=0.8258  val_f1=0.6379  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 032  lr=9.03e-05  train_loss=0.4494  train_f1=N/A(mixup)  |  val_loss=0.7193  val_f1=0.6105  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 033  lr=8.97e-05  train_loss=0.4296  train_f1=N/A(mixup)  |  val_loss=0.7340  val_f1=0.6116  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 034  lr=8.91e-05  train_loss=0.3523  train_f1=N/A(mixup)  |  val_loss=0.7941  val_f1=0.5681  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 035  lr=8.84e-05  train_loss=0.4538  train_f1=N/A(mixup)  |  val_loss=0.7315  val_f1=0.6829  val_acc=0.6866
+  ✅ New best patient-level F1 = 0.6829  (epoch 35)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 036  lr=8.78e-05  train_loss=0.4383  train_f1=N/A(mixup)  |  val_loss=0.7717  val_f1=0.5962  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 037  lr=8.72e-05  train_loss=0.3808  train_f1=N/A(mixup)  |  val_loss=0.8243  val_f1=0.5656  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 038  lr=8.65e-05  train_loss=0.4230  train_f1=N/A(mixup)  |  val_loss=0.8320  val_f1=0.5323  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 039  lr=8.58e-05  train_loss=0.3779  train_f1=N/A(mixup)  |  val_loss=0.7461  val_f1=0.5627  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 040  lr=8.51e-05  train_loss=0.3691  train_f1=N/A(mixup)  |  val_loss=0.7500  val_f1=0.6118  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 041  lr=8.44e-05  train_loss=0.3598  train_f1=N/A(mixup)  |  val_loss=0.7490  val_f1=0.6174  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 042  lr=8.37e-05  train_loss=0.3681  train_f1=N/A(mixup)  |  val_loss=0.7280  val_f1=0.6427  val_acc=0.6866
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 043  lr=8.30e-05  train_loss=0.3793  train_f1=N/A(mixup)  |  val_loss=0.7563  val_f1=0.5971  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 044  lr=8.22e-05  train_loss=0.3449  train_f1=N/A(mixup)  |  val_loss=0.7603  val_f1=0.5885  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 045  lr=8.15e-05  train_loss=0.3444  train_f1=N/A(mixup)  |  val_loss=0.7273  val_f1=0.6081  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 046  lr=8.07e-05  train_loss=0.3788  train_f1=N/A(mixup)  |  val_loss=0.7082  val_f1=0.6405  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 047  lr=7.99e-05  train_loss=0.3746  train_f1=N/A(mixup)  |  val_loss=0.7438  val_f1=0.6015  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 048  lr=7.91e-05  train_loss=0.3027  train_f1=N/A(mixup)  |  val_loss=0.7548  val_f1=0.6357  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 049  lr=7.83e-05  train_loss=0.3414  train_f1=N/A(mixup)  |  val_loss=0.7876  val_f1=0.6455  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 050  lr=7.75e-05  train_loss=0.3417  train_f1=N/A(mixup)  |  val_loss=0.7679  val_f1=0.6083  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 051  lr=7.67e-05  train_loss=0.3358  train_f1=N/A(mixup)  |  val_loss=0.7918  val_f1=0.6492  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 052  lr=7.58e-05  train_loss=0.3591  train_f1=N/A(mixup)  |  val_loss=0.7441  val_f1=0.5734  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 053  lr=7.50e-05  train_loss=0.3191  train_f1=N/A(mixup)  |  val_loss=0.7421  val_f1=0.7013  val_acc=0.7164
+  ✅ New best patient-level F1 = 0.7013  (epoch 53)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 054  lr=7.42e-05  train_loss=0.3515  train_f1=N/A(mixup)  |  val_loss=0.7496  val_f1=0.6903  val_acc=0.7015
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 055  lr=7.33e-05  train_loss=0.3478  train_f1=N/A(mixup)  |  val_loss=0.7108  val_f1=0.6090  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 056  lr=7.24e-05  train_loss=0.3287  train_f1=N/A(mixup)  |  val_loss=0.7192  val_f1=0.5947  val_acc=0.6269
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 057  lr=7.16e-05  train_loss=0.2863  train_f1=N/A(mixup)  |  val_loss=0.7150  val_f1=0.6068  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 058  lr=7.07e-05  train_loss=0.3367  train_f1=N/A(mixup)  |  val_loss=0.7784  val_f1=0.5840  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 059  lr=6.98e-05  train_loss=0.3360  train_f1=N/A(mixup)  |  val_loss=0.7394  val_f1=0.6104  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 060  lr=6.89e-05  train_loss=0.3357  train_f1=N/A(mixup)  |  val_loss=0.7744  val_f1=0.6569  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 061  lr=6.80e-05  train_loss=0.3147  train_f1=N/A(mixup)  |  val_loss=0.7135  val_f1=0.6647  val_acc=0.6866
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 062  lr=6.71e-05  train_loss=0.3327  train_f1=N/A(mixup)  |  val_loss=0.7097  val_f1=0.6218  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 063  lr=6.62e-05  train_loss=0.3307  train_f1=N/A(mixup)  |  val_loss=0.7618  val_f1=0.6357  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 064  lr=6.53e-05  train_loss=0.3175  train_f1=N/A(mixup)  |  val_loss=0.7007  val_f1=0.6767  val_acc=0.6866
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 065  lr=6.44e-05  train_loss=0.3249  train_f1=N/A(mixup)  |  val_loss=0.7217  val_f1=0.6240  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 066  lr=6.34e-05  train_loss=0.2903  train_f1=N/A(mixup)  |  val_loss=0.7396  val_f1=0.6517  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 067  lr=6.25e-05  train_loss=0.3178  train_f1=N/A(mixup)  |  val_loss=0.7485  val_f1=0.5775  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 068  lr=6.16e-05  train_loss=0.3277  train_f1=N/A(mixup)  |  val_loss=0.7621  val_f1=0.6448  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 069  lr=6.06e-05  train_loss=0.3308  train_f1=N/A(mixup)  |  val_loss=0.7150  val_f1=0.6679  val_acc=0.6866
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 070  lr=5.97e-05  train_loss=0.2795  train_f1=N/A(mixup)  |  val_loss=0.7469  val_f1=0.5769  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 071  lr=5.88e-05  train_loss=0.2240  train_f1=N/A(mixup)  |  val_loss=0.7465  val_f1=0.6476  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 072  lr=5.78e-05  train_loss=0.2892  train_f1=N/A(mixup)  |  val_loss=0.7739  val_f1=0.6685  val_acc=0.6866
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 073  lr=5.69e-05  train_loss=0.3115  train_f1=N/A(mixup)  |  val_loss=0.7814  val_f1=0.6352  val_acc=0.6418
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 074  lr=5.59e-05  train_loss=0.3063  train_f1=N/A(mixup)  |  val_loss=0.7670  val_f1=0.6431  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 075  lr=5.50e-05  train_loss=0.3286  train_f1=N/A(mixup)  |  val_loss=0.7938  val_f1=0.6479  val_acc=0.6567
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 076  lr=5.41e-05  train_loss=0.2876  train_f1=N/A(mixup)  |  val_loss=0.7801  val_f1=0.5665  val_acc=0.5970
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 077  lr=5.31e-05  train_loss=0.2845  train_f1=N/A(mixup)  |  val_loss=0.8181  val_f1=0.6530  val_acc=0.6716
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+Epoch 078  lr=5.22e-05  train_loss=0.3526  train_f1=N/A(mixup)  |  val_loss=0.7794  val_f1=0.6174  val_acc=0.6119
+  ⏹  Early stop (no improvement for 25 epochs)
+  [Slide→Patient] 105 bags → 67 patients (14 with multi-slide averaging, 53 single-slide)
+[INFO] Fold 3: train=276 patients / 411 slides | val=74 patients / 103 slides
+
+============================================================
+[Fold 3]  Train: 411 bags / 411 slides  |  Val: 103 bags / 103 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 94
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 32, 'FD': 41, 'HG-OS': 50, 'JTOF': 18, 'LG-OS': 22, 'Other': 40, 'PSOF': 33}
+[INFO] Class weights:        {'COD': 0.8619999885559082, 'COF': 1.0779999494552612, 'FD': 0.8410000205039978, 'HG-OS': 0.6899999976158142, 'JTOF': 1.9170000553131104, 'LG-OS': 1.5679999589920044, 'Other': 0.8619999885559082, 'PSOF': 1.0449999570846558}
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 001  lr=1.00e-04  train_loss=1.5651  train_f1=N/A(mixup)  |  val_loss=1.3838  val_f1=0.1337  val_acc=0.1892
+  ✅ New best patient-level F1 = 0.1337  (epoch 1)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 002  lr=1.00e-04  train_loss=1.4546  train_f1=N/A(mixup)  |  val_loss=1.2791  val_f1=0.1145  val_acc=0.2162
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 003  lr=9.99e-05  train_loss=1.2936  train_f1=N/A(mixup)  |  val_loss=1.1199  val_f1=0.1628  val_acc=0.2568
+  ✅ New best patient-level F1 = 0.1628  (epoch 3)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 004  lr=9.98e-05  train_loss=1.1172  train_f1=N/A(mixup)  |  val_loss=0.9274  val_f1=0.2973  val_acc=0.3649
+  ✅ New best patient-level F1 = 0.2973  (epoch 4)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 005  lr=9.98e-05  train_loss=1.0450  train_f1=N/A(mixup)  |  val_loss=0.8528  val_f1=0.3867  val_acc=0.4595
+  ✅ New best patient-level F1 = 0.3867  (epoch 5)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 006  lr=9.96e-05  train_loss=0.8930  train_f1=N/A(mixup)  |  val_loss=0.8157  val_f1=0.3655  val_acc=0.4189
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 007  lr=9.95e-05  train_loss=0.8496  train_f1=N/A(mixup)  |  val_loss=0.8250  val_f1=0.4008  val_acc=0.4324
+  ✅ New best patient-level F1 = 0.4008  (epoch 7)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 008  lr=9.94e-05  train_loss=0.8173  train_f1=N/A(mixup)  |  val_loss=0.7870  val_f1=0.4537  val_acc=0.5270
+  ✅ New best patient-level F1 = 0.4537  (epoch 8)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 009  lr=9.92e-05  train_loss=0.8215  train_f1=N/A(mixup)  |  val_loss=0.7156  val_f1=0.5121  val_acc=0.5541
+  ✅ New best patient-level F1 = 0.5121  (epoch 9)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 010  lr=9.90e-05  train_loss=0.7737  train_f1=N/A(mixup)  |  val_loss=0.6984  val_f1=0.5273  val_acc=0.5676
+  ✅ New best patient-level F1 = 0.5273  (epoch 10)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 011  lr=9.88e-05  train_loss=0.7626  train_f1=N/A(mixup)  |  val_loss=0.7503  val_f1=0.5240  val_acc=0.5676
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 012  lr=9.86e-05  train_loss=0.7155  train_f1=N/A(mixup)  |  val_loss=0.6811  val_f1=0.5042  val_acc=0.5270
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 013  lr=9.83e-05  train_loss=0.6721  train_f1=N/A(mixup)  |  val_loss=0.5954  val_f1=0.5851  val_acc=0.6351
+  ✅ New best patient-level F1 = 0.5851  (epoch 13)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 014  lr=9.81e-05  train_loss=0.7407  train_f1=N/A(mixup)  |  val_loss=0.6707  val_f1=0.5369  val_acc=0.5676
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 015  lr=9.78e-05  train_loss=0.6491  train_f1=N/A(mixup)  |  val_loss=0.5925  val_f1=0.5830  val_acc=0.6216
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 016  lr=9.75e-05  train_loss=0.5580  train_f1=N/A(mixup)  |  val_loss=0.5952  val_f1=0.6341  val_acc=0.6622
+  ✅ New best patient-level F1 = 0.6341  (epoch 16)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 017  lr=9.72e-05  train_loss=0.5766  train_f1=N/A(mixup)  |  val_loss=0.5863  val_f1=0.5818  val_acc=0.6081
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 018  lr=9.68e-05  train_loss=0.5746  train_f1=N/A(mixup)  |  val_loss=0.6059  val_f1=0.5436  val_acc=0.5946
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 019  lr=9.65e-05  train_loss=0.5603  train_f1=N/A(mixup)  |  val_loss=0.5800  val_f1=0.4918  val_acc=0.5135
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 020  lr=9.61e-05  train_loss=0.5646  train_f1=N/A(mixup)  |  val_loss=0.5592  val_f1=0.5934  val_acc=0.6486
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 021  lr=9.57e-05  train_loss=0.5398  train_f1=N/A(mixup)  |  val_loss=0.5283  val_f1=0.6403  val_acc=0.6892
+  ✅ New best patient-level F1 = 0.6403  (epoch 21)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 022  lr=9.53e-05  train_loss=0.5417  train_f1=N/A(mixup)  |  val_loss=0.5422  val_f1=0.6260  val_acc=0.6622
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 023  lr=9.49e-05  train_loss=0.5449  train_f1=N/A(mixup)  |  val_loss=0.6178  val_f1=0.6326  val_acc=0.6757
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 024  lr=9.44e-05  train_loss=0.4994  train_f1=N/A(mixup)  |  val_loss=0.5215  val_f1=0.6709  val_acc=0.7027
+  ✅ New best patient-level F1 = 0.6709  (epoch 24)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 025  lr=9.40e-05  train_loss=0.4944  train_f1=N/A(mixup)  |  val_loss=0.5526  val_f1=0.6478  val_acc=0.7027
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 026  lr=9.35e-05  train_loss=0.5376  train_f1=N/A(mixup)  |  val_loss=0.5429  val_f1=0.6243  val_acc=0.6622
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 027  lr=9.30e-05  train_loss=0.4532  train_f1=N/A(mixup)  |  val_loss=0.5171  val_f1=0.6619  val_acc=0.6892
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 028  lr=9.25e-05  train_loss=0.4928  train_f1=N/A(mixup)  |  val_loss=0.5508  val_f1=0.6212  val_acc=0.6486
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 029  lr=9.20e-05  train_loss=0.4239  train_f1=N/A(mixup)  |  val_loss=0.5307  val_f1=0.6489  val_acc=0.6892
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 030  lr=9.14e-05  train_loss=0.4937  train_f1=N/A(mixup)  |  val_loss=0.5372  val_f1=0.6341  val_acc=0.6757
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 031  lr=9.08e-05  train_loss=0.4452  train_f1=N/A(mixup)  |  val_loss=0.5405  val_f1=0.6804  val_acc=0.7027
+  ✅ New best patient-level F1 = 0.6804  (epoch 31)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 032  lr=9.03e-05  train_loss=0.4378  train_f1=N/A(mixup)  |  val_loss=0.5140  val_f1=0.7089  val_acc=0.7297
+  ✅ New best patient-level F1 = 0.7089  (epoch 32)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 033  lr=8.97e-05  train_loss=0.3855  train_f1=N/A(mixup)  |  val_loss=0.4968  val_f1=0.7197  val_acc=0.7432
+  ✅ New best patient-level F1 = 0.7197  (epoch 33)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 034  lr=8.91e-05  train_loss=0.3684  train_f1=N/A(mixup)  |  val_loss=0.5270  val_f1=0.7282  val_acc=0.7432
+  ✅ New best patient-level F1 = 0.7282  (epoch 34)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 035  lr=8.84e-05  train_loss=0.4281  train_f1=N/A(mixup)  |  val_loss=0.4870  val_f1=0.7205  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 036  lr=8.78e-05  train_loss=0.3849  train_f1=N/A(mixup)  |  val_loss=0.4932  val_f1=0.7196  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 037  lr=8.72e-05  train_loss=0.3326  train_f1=N/A(mixup)  |  val_loss=0.5352  val_f1=0.6475  val_acc=0.6892
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 038  lr=8.65e-05  train_loss=0.4749  train_f1=N/A(mixup)  |  val_loss=0.5384  val_f1=0.6688  val_acc=0.7027
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 039  lr=8.58e-05  train_loss=0.3120  train_f1=N/A(mixup)  |  val_loss=0.5141  val_f1=0.7320  val_acc=0.7568
+  ✅ New best patient-level F1 = 0.7320  (epoch 39)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 040  lr=8.51e-05  train_loss=0.3981  train_f1=N/A(mixup)  |  val_loss=0.5171  val_f1=0.6859  val_acc=0.7162
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 041  lr=8.44e-05  train_loss=0.3447  train_f1=N/A(mixup)  |  val_loss=0.5328  val_f1=0.7297  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 042  lr=8.37e-05  train_loss=0.3600  train_f1=N/A(mixup)  |  val_loss=0.5147  val_f1=0.7209  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 043  lr=8.30e-05  train_loss=0.3951  train_f1=N/A(mixup)  |  val_loss=0.5472  val_f1=0.6847  val_acc=0.7162
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 044  lr=8.22e-05  train_loss=0.4302  train_f1=N/A(mixup)  |  val_loss=0.5044  val_f1=0.7178  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 045  lr=8.15e-05  train_loss=0.3511  train_f1=N/A(mixup)  |  val_loss=0.5027  val_f1=0.7213  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 046  lr=8.07e-05  train_loss=0.3271  train_f1=N/A(mixup)  |  val_loss=0.4993  val_f1=0.7185  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 047  lr=7.99e-05  train_loss=0.3043  train_f1=N/A(mixup)  |  val_loss=0.5062  val_f1=0.7321  val_acc=0.7568
+  ✅ New best patient-level F1 = 0.7321  (epoch 47)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 048  lr=7.91e-05  train_loss=0.3376  train_f1=N/A(mixup)  |  val_loss=0.5087  val_f1=0.7423  val_acc=0.7568
+  ✅ New best patient-level F1 = 0.7423  (epoch 48)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 049  lr=7.83e-05  train_loss=0.3784  train_f1=N/A(mixup)  |  val_loss=0.5412  val_f1=0.7415  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 050  lr=7.75e-05  train_loss=0.3847  train_f1=N/A(mixup)  |  val_loss=0.5244  val_f1=0.7166  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 051  lr=7.67e-05  train_loss=0.3192  train_f1=N/A(mixup)  |  val_loss=0.5040  val_f1=0.7545  val_acc=0.7703
+  ✅ New best patient-level F1 = 0.7545  (epoch 51)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 052  lr=7.58e-05  train_loss=0.3323  train_f1=N/A(mixup)  |  val_loss=0.5193  val_f1=0.7264  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 053  lr=7.50e-05  train_loss=0.3734  train_f1=N/A(mixup)  |  val_loss=0.5356  val_f1=0.7496  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 054  lr=7.42e-05  train_loss=0.3624  train_f1=N/A(mixup)  |  val_loss=0.5288  val_f1=0.7195  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 055  lr=7.33e-05  train_loss=0.3460  train_f1=N/A(mixup)  |  val_loss=0.5316  val_f1=0.7663  val_acc=0.7838
+  ✅ New best patient-level F1 = 0.7663  (epoch 55)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 056  lr=7.24e-05  train_loss=0.3023  train_f1=N/A(mixup)  |  val_loss=0.5332  val_f1=0.7195  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 057  lr=7.16e-05  train_loss=0.3386  train_f1=N/A(mixup)  |  val_loss=0.5138  val_f1=0.7253  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 058  lr=7.07e-05  train_loss=0.3283  train_f1=N/A(mixup)  |  val_loss=0.5615  val_f1=0.6775  val_acc=0.7027
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 059  lr=6.98e-05  train_loss=0.3963  train_f1=N/A(mixup)  |  val_loss=0.5450  val_f1=0.7440  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 060  lr=6.89e-05  train_loss=0.3634  train_f1=N/A(mixup)  |  val_loss=0.5538  val_f1=0.7107  val_acc=0.7297
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 061  lr=6.80e-05  train_loss=0.3562  train_f1=N/A(mixup)  |  val_loss=0.5212  val_f1=0.7714  val_acc=0.7973
+  ✅ New best patient-level F1 = 0.7714  (epoch 61)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 062  lr=6.71e-05  train_loss=0.3500  train_f1=N/A(mixup)  |  val_loss=0.5394  val_f1=0.7175  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 063  lr=6.62e-05  train_loss=0.2928  train_f1=N/A(mixup)  |  val_loss=0.5304  val_f1=0.7251  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 064  lr=6.53e-05  train_loss=0.3413  train_f1=N/A(mixup)  |  val_loss=0.5252  val_f1=0.7264  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 065  lr=6.44e-05  train_loss=0.3512  train_f1=N/A(mixup)  |  val_loss=0.5326  val_f1=0.7126  val_acc=0.7297
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 066  lr=6.34e-05  train_loss=0.2961  train_f1=N/A(mixup)  |  val_loss=0.5133  val_f1=0.7809  val_acc=0.7973
+  ✅ New best patient-level F1 = 0.7809  (epoch 66)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 067  lr=6.25e-05  train_loss=0.3089  train_f1=N/A(mixup)  |  val_loss=0.5282  val_f1=0.7203  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 068  lr=6.16e-05  train_loss=0.2988  train_f1=N/A(mixup)  |  val_loss=0.5398  val_f1=0.7530  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 069  lr=6.06e-05  train_loss=0.2853  train_f1=N/A(mixup)  |  val_loss=0.5223  val_f1=0.6959  val_acc=0.7162
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 070  lr=5.97e-05  train_loss=0.3428  train_f1=N/A(mixup)  |  val_loss=0.5573  val_f1=0.7472  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 071  lr=5.88e-05  train_loss=0.2777  train_f1=N/A(mixup)  |  val_loss=0.5508  val_f1=0.7374  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 072  lr=5.78e-05  train_loss=0.3069  train_f1=N/A(mixup)  |  val_loss=0.5358  val_f1=0.7251  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 073  lr=5.69e-05  train_loss=0.3127  train_f1=N/A(mixup)  |  val_loss=0.5286  val_f1=0.7915  val_acc=0.8108
+  ✅ New best patient-level F1 = 0.7915  (epoch 73)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 074  lr=5.59e-05  train_loss=0.2906  train_f1=N/A(mixup)  |  val_loss=0.5210  val_f1=0.7341  val_acc=0.7432
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 075  lr=5.50e-05  train_loss=0.2718  train_f1=N/A(mixup)  |  val_loss=0.5398  val_f1=0.7328  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 076  lr=5.41e-05  train_loss=0.2572  train_f1=N/A(mixup)  |  val_loss=0.5563  val_f1=0.7155  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 077  lr=5.31e-05  train_loss=0.3287  train_f1=N/A(mixup)  |  val_loss=0.5198  val_f1=0.7811  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 078  lr=5.22e-05  train_loss=0.2374  train_f1=N/A(mixup)  |  val_loss=0.5279  val_f1=0.7541  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 079  lr=5.12e-05  train_loss=0.2848  train_f1=N/A(mixup)  |  val_loss=0.5293  val_f1=0.7360  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 080  lr=5.03e-05  train_loss=0.3126  train_f1=N/A(mixup)  |  val_loss=0.5515  val_f1=0.7287  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 081  lr=4.94e-05  train_loss=0.3012  train_f1=N/A(mixup)  |  val_loss=0.5324  val_f1=0.7594  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 082  lr=4.84e-05  train_loss=0.3216  train_f1=N/A(mixup)  |  val_loss=0.5291  val_f1=0.7231  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 083  lr=4.75e-05  train_loss=0.2497  train_f1=N/A(mixup)  |  val_loss=0.5595  val_f1=0.7382  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 084  lr=4.66e-05  train_loss=0.3163  train_f1=N/A(mixup)  |  val_loss=0.5304  val_f1=0.7669  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 085  lr=4.56e-05  train_loss=0.2914  train_f1=N/A(mixup)  |  val_loss=0.5345  val_f1=0.7918  val_acc=0.8108
+  ✅ New best patient-level F1 = 0.7918  (epoch 85)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 086  lr=4.47e-05  train_loss=0.3027  train_f1=N/A(mixup)  |  val_loss=0.5309  val_f1=0.7421  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 087  lr=4.38e-05  train_loss=0.3456  train_f1=N/A(mixup)  |  val_loss=0.5282  val_f1=0.7343  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 088  lr=4.29e-05  train_loss=0.3074  train_f1=N/A(mixup)  |  val_loss=0.5446  val_f1=0.7424  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 089  lr=4.20e-05  train_loss=0.2407  train_f1=N/A(mixup)  |  val_loss=0.5501  val_f1=0.7547  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 090  lr=4.11e-05  train_loss=0.2578  train_f1=N/A(mixup)  |  val_loss=0.5383  val_f1=0.7420  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 091  lr=4.02e-05  train_loss=0.2783  train_f1=N/A(mixup)  |  val_loss=0.5095  val_f1=0.7910  val_acc=0.8108
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 092  lr=3.93e-05  train_loss=0.2950  train_f1=N/A(mixup)  |  val_loss=0.5376  val_f1=0.7296  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 093  lr=3.84e-05  train_loss=0.3020  train_f1=N/A(mixup)  |  val_loss=0.5455  val_f1=0.7552  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 094  lr=3.76e-05  train_loss=0.3076  train_f1=N/A(mixup)  |  val_loss=0.5409  val_f1=0.7735  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 095  lr=3.67e-05  train_loss=0.3262  train_f1=N/A(mixup)  |  val_loss=0.5281  val_f1=0.7574  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 096  lr=3.58e-05  train_loss=0.2835  train_f1=N/A(mixup)  |  val_loss=0.5246  val_f1=0.7613  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 097  lr=3.50e-05  train_loss=0.2938  train_f1=N/A(mixup)  |  val_loss=0.5314  val_f1=0.7750  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 098  lr=3.42e-05  train_loss=0.2877  train_f1=N/A(mixup)  |  val_loss=0.5198  val_f1=0.7762  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 099  lr=3.33e-05  train_loss=0.2804  train_f1=N/A(mixup)  |  val_loss=0.5487  val_f1=0.7479  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 100  lr=3.25e-05  train_loss=0.3203  train_f1=N/A(mixup)  |  val_loss=0.5304  val_f1=0.7947  val_acc=0.8108
+  ✅ New best patient-level F1 = 0.7947  (epoch 100)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 101  lr=3.17e-05  train_loss=0.2813  train_f1=N/A(mixup)  |  val_loss=0.5376  val_f1=0.7600  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 102  lr=3.09e-05  train_loss=0.2892  train_f1=N/A(mixup)  |  val_loss=0.5583  val_f1=0.7541  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 103  lr=3.01e-05  train_loss=0.3803  train_f1=N/A(mixup)  |  val_loss=0.5593  val_f1=0.7576  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 104  lr=2.93e-05  train_loss=0.3038  train_f1=N/A(mixup)  |  val_loss=0.5557  val_f1=0.7693  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 105  lr=2.85e-05  train_loss=0.3393  train_f1=N/A(mixup)  |  val_loss=0.5411  val_f1=0.7798  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 106  lr=2.78e-05  train_loss=0.2331  train_f1=N/A(mixup)  |  val_loss=0.5428  val_f1=0.7352  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 107  lr=2.70e-05  train_loss=0.2952  train_f1=N/A(mixup)  |  val_loss=0.5432  val_f1=0.7485  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 108  lr=2.63e-05  train_loss=0.2763  train_f1=N/A(mixup)  |  val_loss=0.5332  val_f1=0.7613  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 109  lr=2.56e-05  train_loss=0.3107  train_f1=N/A(mixup)  |  val_loss=0.5402  val_f1=0.7790  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 110  lr=2.49e-05  train_loss=0.2563  train_f1=N/A(mixup)  |  val_loss=0.5367  val_f1=0.7947  val_acc=0.8108
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 111  lr=2.42e-05  train_loss=0.2337  train_f1=N/A(mixup)  |  val_loss=0.5263  val_f1=0.7960  val_acc=0.8108
+  ✅ New best patient-level F1 = 0.7960  (epoch 111)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 112  lr=2.35e-05  train_loss=0.2753  train_f1=N/A(mixup)  |  val_loss=0.5472  val_f1=0.7319  val_acc=0.7568
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 113  lr=2.28e-05  train_loss=0.2883  train_f1=N/A(mixup)  |  val_loss=0.5385  val_f1=0.7811  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 114  lr=2.22e-05  train_loss=0.2918  train_f1=N/A(mixup)  |  val_loss=0.5443  val_f1=0.7621  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 115  lr=2.16e-05  train_loss=0.2838  train_f1=N/A(mixup)  |  val_loss=0.5440  val_f1=0.7811  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 116  lr=2.09e-05  train_loss=0.3138  train_f1=N/A(mixup)  |  val_loss=0.5434  val_f1=0.7650  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 117  lr=2.03e-05  train_loss=0.2591  train_f1=N/A(mixup)  |  val_loss=0.5491  val_f1=0.7528  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 118  lr=1.97e-05  train_loss=0.3011  train_f1=N/A(mixup)  |  val_loss=0.5511  val_f1=0.7653  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 119  lr=1.92e-05  train_loss=0.2205  train_f1=N/A(mixup)  |  val_loss=0.5497  val_f1=0.7653  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 120  lr=1.86e-05  train_loss=0.2938  train_f1=N/A(mixup)  |  val_loss=0.5393  val_f1=0.7960  val_acc=0.8108
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 121  lr=1.80e-05  train_loss=0.2886  train_f1=N/A(mixup)  |  val_loss=0.5407  val_f1=0.7798  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 122  lr=1.75e-05  train_loss=0.2825  train_f1=N/A(mixup)  |  val_loss=0.5423  val_f1=0.7801  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 123  lr=1.70e-05  train_loss=0.2795  train_f1=N/A(mixup)  |  val_loss=0.5512  val_f1=0.7798  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 124  lr=1.65e-05  train_loss=0.2947  train_f1=N/A(mixup)  |  val_loss=0.5381  val_f1=0.7693  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 125  lr=1.60e-05  train_loss=0.2769  train_f1=N/A(mixup)  |  val_loss=0.5374  val_f1=0.7801  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 126  lr=1.56e-05  train_loss=0.2560  train_f1=N/A(mixup)  |  val_loss=0.5382  val_f1=0.7789  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 127  lr=1.51e-05  train_loss=0.2954  train_f1=N/A(mixup)  |  val_loss=0.5551  val_f1=0.7422  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 128  lr=1.47e-05  train_loss=0.2676  train_f1=N/A(mixup)  |  val_loss=0.5402  val_f1=0.7790  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 129  lr=1.43e-05  train_loss=0.2985  train_f1=N/A(mixup)  |  val_loss=0.5458  val_f1=0.7541  val_acc=0.7838
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 130  lr=1.39e-05  train_loss=0.2657  train_f1=N/A(mixup)  |  val_loss=0.5458  val_f1=0.7798  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 131  lr=1.35e-05  train_loss=0.2641  train_f1=N/A(mixup)  |  val_loss=0.5468  val_f1=0.7712  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 132  lr=1.32e-05  train_loss=0.3223  train_f1=N/A(mixup)  |  val_loss=0.5498  val_f1=0.7479  val_acc=0.7703
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 133  lr=1.28e-05  train_loss=0.2525  train_f1=N/A(mixup)  |  val_loss=0.5423  val_f1=0.7910  val_acc=0.8108
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 134  lr=1.25e-05  train_loss=0.3239  train_f1=N/A(mixup)  |  val_loss=0.5402  val_f1=0.7910  val_acc=0.8108
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 135  lr=1.22e-05  train_loss=0.3465  train_f1=N/A(mixup)  |  val_loss=0.5446  val_f1=0.7786  val_acc=0.7973
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+Epoch 136  lr=1.19e-05  train_loss=0.2679  train_f1=N/A(mixup)  |  val_loss=0.5402  val_f1=0.7786  val_acc=0.7973
+  ⏹  Early stop (no improvement for 25 epochs)
+  [Slide→Patient] 103 bags → 74 patients (13 with multi-slide averaging, 61 single-slide)
+[INFO] Fold 4: train=277 patients / 413 slides | val=73 patients / 101 slides
+
+============================================================
+[Fold 4]  Train: 413 bags / 413 slides  |  Val: 101 bags / 101 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 876
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 40, 'COF': 33, 'FD': 41, 'HG-OS': 49, 'JTOF': 18, 'LG-OS': 23, 'Other': 40, 'PSOF': 33}
+[INFO] Class weights:        {'COD': 0.8659999966621399, 'COF': 1.0490000247955322, 'FD': 0.8450000286102295, 'HG-OS': 0.7070000171661377, 'JTOF': 1.9240000247955322, 'LG-OS': 1.5049999952316284, 'Other': 0.8659999966621399, 'PSOF': 1.0490000247955322}
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 001  lr=1.00e-04  train_loss=1.5669  train_f1=N/A(mixup)  |  val_loss=1.3953  val_f1=0.1392  val_acc=0.2055
+  ✅ New best patient-level F1 = 0.1392  (epoch 1)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 002  lr=1.00e-04  train_loss=1.5200  train_f1=N/A(mixup)  |  val_loss=1.3063  val_f1=0.1229  val_acc=0.1781
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 003  lr=9.99e-05  train_loss=1.3012  train_f1=N/A(mixup)  |  val_loss=1.0857  val_f1=0.2580  val_acc=0.2877
+  ✅ New best patient-level F1 = 0.2580  (epoch 3)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 004  lr=9.98e-05  train_loss=1.1446  train_f1=N/A(mixup)  |  val_loss=0.9104  val_f1=0.3074  val_acc=0.3562
+  ✅ New best patient-level F1 = 0.3074  (epoch 4)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 005  lr=9.98e-05  train_loss=1.0005  train_f1=N/A(mixup)  |  val_loss=0.8995  val_f1=0.3553  val_acc=0.3973
+  ✅ New best patient-level F1 = 0.3553  (epoch 5)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 006  lr=9.96e-05  train_loss=0.9242  train_f1=N/A(mixup)  |  val_loss=0.8304  val_f1=0.4314  val_acc=0.4521
+  ✅ New best patient-level F1 = 0.4314  (epoch 6)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 007  lr=9.95e-05  train_loss=0.8260  train_f1=N/A(mixup)  |  val_loss=0.9558  val_f1=0.3771  val_acc=0.3699
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 008  lr=9.94e-05  train_loss=0.8233  train_f1=N/A(mixup)  |  val_loss=0.7910  val_f1=0.4845  val_acc=0.4932
+  ✅ New best patient-level F1 = 0.4845  (epoch 8)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 009  lr=9.92e-05  train_loss=0.7324  train_f1=N/A(mixup)  |  val_loss=0.7668  val_f1=0.4894  val_acc=0.4932
+  ✅ New best patient-level F1 = 0.4894  (epoch 9)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 010  lr=9.90e-05  train_loss=0.6632  train_f1=N/A(mixup)  |  val_loss=0.7891  val_f1=0.5723  val_acc=0.5890
+  ✅ New best patient-level F1 = 0.5723  (epoch 10)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 011  lr=9.88e-05  train_loss=0.5914  train_f1=N/A(mixup)  |  val_loss=0.7424  val_f1=0.4817  val_acc=0.4932
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 012  lr=9.86e-05  train_loss=0.7101  train_f1=N/A(mixup)  |  val_loss=0.7375  val_f1=0.5528  val_acc=0.5890
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 013  lr=9.83e-05  train_loss=0.6305  train_f1=N/A(mixup)  |  val_loss=0.7557  val_f1=0.5589  val_acc=0.5890
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 014  lr=9.81e-05  train_loss=0.5626  train_f1=N/A(mixup)  |  val_loss=0.7649  val_f1=0.6402  val_acc=0.6575
+  ✅ New best patient-level F1 = 0.6402  (epoch 14)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 015  lr=9.78e-05  train_loss=0.6350  train_f1=N/A(mixup)  |  val_loss=0.7549  val_f1=0.5980  val_acc=0.6164
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 016  lr=9.75e-05  train_loss=0.5675  train_f1=N/A(mixup)  |  val_loss=0.7579  val_f1=0.6543  val_acc=0.6712
+  ✅ New best patient-level F1 = 0.6543  (epoch 16)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 017  lr=9.72e-05  train_loss=0.5404  train_f1=N/A(mixup)  |  val_loss=0.7955  val_f1=0.5755  val_acc=0.5890
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 018  lr=9.68e-05  train_loss=0.5142  train_f1=N/A(mixup)  |  val_loss=0.8393  val_f1=0.6337  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 019  lr=9.65e-05  train_loss=0.5715  train_f1=N/A(mixup)  |  val_loss=0.7742  val_f1=0.6489  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 020  lr=9.61e-05  train_loss=0.5676  train_f1=N/A(mixup)  |  val_loss=0.7671  val_f1=0.6710  val_acc=0.6712
+  ✅ New best patient-level F1 = 0.6710  (epoch 20)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 021  lr=9.57e-05  train_loss=0.4621  train_f1=N/A(mixup)  |  val_loss=0.8039  val_f1=0.6079  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 022  lr=9.53e-05  train_loss=0.4880  train_f1=N/A(mixup)  |  val_loss=0.8062  val_f1=0.6035  val_acc=0.6027
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 023  lr=9.49e-05  train_loss=0.4673  train_f1=N/A(mixup)  |  val_loss=0.7659  val_f1=0.6537  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 024  lr=9.44e-05  train_loss=0.4118  train_f1=N/A(mixup)  |  val_loss=0.8089  val_f1=0.5751  val_acc=0.6164
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 025  lr=9.40e-05  train_loss=0.4564  train_f1=N/A(mixup)  |  val_loss=0.7810  val_f1=0.6534  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 026  lr=9.35e-05  train_loss=0.5152  train_f1=N/A(mixup)  |  val_loss=0.7778  val_f1=0.6155  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 027  lr=9.30e-05  train_loss=0.4131  train_f1=N/A(mixup)  |  val_loss=0.7706  val_f1=0.6834  val_acc=0.6986
+  ✅ New best patient-level F1 = 0.6834  (epoch 27)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 028  lr=9.25e-05  train_loss=0.4666  train_f1=N/A(mixup)  |  val_loss=0.8113  val_f1=0.6589  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 029  lr=9.20e-05  train_loss=0.4843  train_f1=N/A(mixup)  |  val_loss=0.8014  val_f1=0.6833  val_acc=0.6986
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 030  lr=9.14e-05  train_loss=0.3842  train_f1=N/A(mixup)  |  val_loss=0.8154  val_f1=0.6280  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 031  lr=9.08e-05  train_loss=0.3943  train_f1=N/A(mixup)  |  val_loss=0.7828  val_f1=0.6954  val_acc=0.7123
+  ✅ New best patient-level F1 = 0.6954  (epoch 31)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 032  lr=9.03e-05  train_loss=0.4583  train_f1=N/A(mixup)  |  val_loss=0.7912  val_f1=0.6477  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 033  lr=8.97e-05  train_loss=0.4307  train_f1=N/A(mixup)  |  val_loss=0.8031  val_f1=0.6378  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 034  lr=8.91e-05  train_loss=0.4324  train_f1=N/A(mixup)  |  val_loss=0.7833  val_f1=0.6190  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 035  lr=8.84e-05  train_loss=0.4552  train_f1=N/A(mixup)  |  val_loss=0.7789  val_f1=0.6569  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 036  lr=8.78e-05  train_loss=0.4469  train_f1=N/A(mixup)  |  val_loss=0.7899  val_f1=0.6334  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 037  lr=8.72e-05  train_loss=0.3928  train_f1=N/A(mixup)  |  val_loss=0.7811  val_f1=0.6304  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 038  lr=8.65e-05  train_loss=0.3423  train_f1=N/A(mixup)  |  val_loss=0.8070  val_f1=0.6387  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 039  lr=8.58e-05  train_loss=0.3438  train_f1=N/A(mixup)  |  val_loss=0.8135  val_f1=0.6281  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 040  lr=8.51e-05  train_loss=0.3422  train_f1=N/A(mixup)  |  val_loss=0.8011  val_f1=0.6482  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 041  lr=8.44e-05  train_loss=0.3965  train_f1=N/A(mixup)  |  val_loss=0.7951  val_f1=0.7037  val_acc=0.7123
+  ✅ New best patient-level F1 = 0.7037  (epoch 41)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 042  lr=8.37e-05  train_loss=0.3869  train_f1=N/A(mixup)  |  val_loss=0.8173  val_f1=0.6445  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 043  lr=8.30e-05  train_loss=0.3596  train_f1=N/A(mixup)  |  val_loss=0.7960  val_f1=0.6517  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 044  lr=8.22e-05  train_loss=0.3875  train_f1=N/A(mixup)  |  val_loss=0.8542  val_f1=0.6415  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 045  lr=8.15e-05  train_loss=0.3105  train_f1=N/A(mixup)  |  val_loss=0.8209  val_f1=0.6221  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 046  lr=8.07e-05  train_loss=0.3733  train_f1=N/A(mixup)  |  val_loss=0.8116  val_f1=0.5973  val_acc=0.6301
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 047  lr=7.99e-05  train_loss=0.3522  train_f1=N/A(mixup)  |  val_loss=0.8112  val_f1=0.6697  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 048  lr=7.91e-05  train_loss=0.3726  train_f1=N/A(mixup)  |  val_loss=0.8053  val_f1=0.6530  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 049  lr=7.83e-05  train_loss=0.3428  train_f1=N/A(mixup)  |  val_loss=0.8187  val_f1=0.6536  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 050  lr=7.75e-05  train_loss=0.3611  train_f1=N/A(mixup)  |  val_loss=0.8041  val_f1=0.6479  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 051  lr=7.67e-05  train_loss=0.3457  train_f1=N/A(mixup)  |  val_loss=0.7981  val_f1=0.6486  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 052  lr=7.58e-05  train_loss=0.3868  train_f1=N/A(mixup)  |  val_loss=0.7921  val_f1=0.6485  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 053  lr=7.50e-05  train_loss=0.3126  train_f1=N/A(mixup)  |  val_loss=0.8105  val_f1=0.6271  val_acc=0.6438
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 054  lr=7.42e-05  train_loss=0.3211  train_f1=N/A(mixup)  |  val_loss=0.8317  val_f1=0.6709  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 055  lr=7.33e-05  train_loss=0.2667  train_f1=N/A(mixup)  |  val_loss=0.7949  val_f1=0.6338  val_acc=0.6575
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 056  lr=7.24e-05  train_loss=0.3968  train_f1=N/A(mixup)  |  val_loss=0.7734  val_f1=0.6613  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 057  lr=7.16e-05  train_loss=0.3255  train_f1=N/A(mixup)  |  val_loss=0.7741  val_f1=0.6613  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 058  lr=7.07e-05  train_loss=0.3145  train_f1=N/A(mixup)  |  val_loss=0.8133  val_f1=0.6622  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 059  lr=6.98e-05  train_loss=0.3669  train_f1=N/A(mixup)  |  val_loss=0.7871  val_f1=0.6921  val_acc=0.7123
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 060  lr=6.89e-05  train_loss=0.3347  train_f1=N/A(mixup)  |  val_loss=0.7621  val_f1=0.6939  val_acc=0.6986
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 061  lr=6.80e-05  train_loss=0.3363  train_f1=N/A(mixup)  |  val_loss=0.7610  val_f1=0.6723  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 062  lr=6.71e-05  train_loss=0.3324  train_f1=N/A(mixup)  |  val_loss=0.8072  val_f1=0.6686  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 063  lr=6.62e-05  train_loss=0.3014  train_f1=N/A(mixup)  |  val_loss=0.8063  val_f1=0.6700  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 064  lr=6.53e-05  train_loss=0.3474  train_f1=N/A(mixup)  |  val_loss=0.7698  val_f1=0.6602  val_acc=0.6849
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 065  lr=6.44e-05  train_loss=0.2957  train_f1=N/A(mixup)  |  val_loss=0.7957  val_f1=0.6461  val_acc=0.6712
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+Epoch 066  lr=6.34e-05  train_loss=0.2867  train_f1=N/A(mixup)  |  val_loss=0.7998  val_f1=0.6252  val_acc=0.6575
+  ⏹  Early stop (no improvement for 25 epochs)
+  [Slide→Patient] 101 bags → 73 patients (13 with multi-slide averaging, 60 single-slide)
+[INFO] Fold 5: train=277 patients / 414 slides | val=73 patients / 100 slides
+
+============================================================
+[Fold 5]  Train: 414 bags / 414 slides  |  Val: 100 bags / 100 slides
+============================================================
+[INFO] Pre-validating feature dimensions...
+[INFO] Feature dimension = 1536
+[INFO] Auto topk = 94
+[INFO] Model parameters: 9,544,208
+[INFO] Patient class counts: {'COD': 39, 'COF': 33, 'FD': 42, 'HG-OS': 50, 'JTOF': 18, 'LG-OS': 23, 'Other': 39, 'PSOF': 33}
+[INFO] Class weights:        {'COD': 0.8880000114440918, 'COF': 1.0490000247955322, 'FD': 0.8240000009536743, 'HG-OS': 0.6919999718666077, 'JTOF': 1.9240000247955322, 'LG-OS': 1.5049999952316284, 'Other': 0.8880000114440918, 'PSOF': 1.0490000247955322}
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 001  lr=1.00e-04  train_loss=1.5679  train_f1=N/A(mixup)  |  val_loss=1.3882  val_f1=0.1279  val_acc=0.2192
+  ✅ New best patient-level F1 = 0.1279  (epoch 1)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 002  lr=1.00e-04  train_loss=1.4570  train_f1=N/A(mixup)  |  val_loss=1.2426  val_f1=0.1593  val_acc=0.2466
+  ✅ New best patient-level F1 = 0.1593  (epoch 2)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 003  lr=9.99e-05  train_loss=1.2840  train_f1=N/A(mixup)  |  val_loss=1.0084  val_f1=0.2275  val_acc=0.3151
+  ✅ New best patient-level F1 = 0.2275  (epoch 3)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 004  lr=9.98e-05  train_loss=1.1453  train_f1=N/A(mixup)  |  val_loss=0.9687  val_f1=0.3289  val_acc=0.4384
+  ✅ New best patient-level F1 = 0.3289  (epoch 4)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 005  lr=9.98e-05  train_loss=0.9686  train_f1=N/A(mixup)  |  val_loss=0.8483  val_f1=0.3695  val_acc=0.4521
+  ✅ New best patient-level F1 = 0.3695  (epoch 5)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 006  lr=9.96e-05  train_loss=0.9127  train_f1=N/A(mixup)  |  val_loss=0.7800  val_f1=0.3582  val_acc=0.4247
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 007  lr=9.95e-05  train_loss=0.8547  train_f1=N/A(mixup)  |  val_loss=0.7919  val_f1=0.4291  val_acc=0.4384
+  ✅ New best patient-level F1 = 0.4291  (epoch 7)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 008  lr=9.94e-05  train_loss=0.8241  train_f1=N/A(mixup)  |  val_loss=0.7437  val_f1=0.4500  val_acc=0.4932
+  ✅ New best patient-level F1 = 0.4500  (epoch 8)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 009  lr=9.92e-05  train_loss=0.8303  train_f1=N/A(mixup)  |  val_loss=0.7636  val_f1=0.5002  val_acc=0.5342
+  ✅ New best patient-level F1 = 0.5002  (epoch 9)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 010  lr=9.90e-05  train_loss=0.7418  train_f1=N/A(mixup)  |  val_loss=0.6872  val_f1=0.4669  val_acc=0.5205
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 011  lr=9.88e-05  train_loss=0.7069  train_f1=N/A(mixup)  |  val_loss=0.6901  val_f1=0.5081  val_acc=0.5342
+  ✅ New best patient-level F1 = 0.5081  (epoch 11)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 012  lr=9.86e-05  train_loss=0.6917  train_f1=N/A(mixup)  |  val_loss=0.6206  val_f1=0.5391  val_acc=0.5753
+  ✅ New best patient-level F1 = 0.5391  (epoch 12)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 013  lr=9.83e-05  train_loss=0.5856  train_f1=N/A(mixup)  |  val_loss=0.6916  val_f1=0.4884  val_acc=0.5068
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 014  lr=9.81e-05  train_loss=0.6556  train_f1=N/A(mixup)  |  val_loss=0.5904  val_f1=0.5799  val_acc=0.6027
+  ✅ New best patient-level F1 = 0.5799  (epoch 14)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 015  lr=9.78e-05  train_loss=0.5872  train_f1=N/A(mixup)  |  val_loss=0.5555  val_f1=0.5957  val_acc=0.6301
+  ✅ New best patient-level F1 = 0.5957  (epoch 15)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 016  lr=9.75e-05  train_loss=0.5658  train_f1=N/A(mixup)  |  val_loss=0.5564  val_f1=0.6098  val_acc=0.6301
+  ✅ New best patient-level F1 = 0.6098  (epoch 16)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 017  lr=9.72e-05  train_loss=0.6227  train_f1=N/A(mixup)  |  val_loss=0.5313  val_f1=0.6493  val_acc=0.6575
+  ✅ New best patient-level F1 = 0.6493  (epoch 17)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 018  lr=9.68e-05  train_loss=0.6352  train_f1=N/A(mixup)  |  val_loss=0.5545  val_f1=0.6380  val_acc=0.6575
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 019  lr=9.65e-05  train_loss=0.6245  train_f1=N/A(mixup)  |  val_loss=0.5413  val_f1=0.6502  val_acc=0.6575
+  ✅ New best patient-level F1 = 0.6502  (epoch 19)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 020  lr=9.61e-05  train_loss=0.5806  train_f1=N/A(mixup)  |  val_loss=0.6238  val_f1=0.5524  val_acc=0.5890
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 021  lr=9.57e-05  train_loss=0.5757  train_f1=N/A(mixup)  |  val_loss=0.6653  val_f1=0.5046  val_acc=0.5479
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 022  lr=9.53e-05  train_loss=0.5200  train_f1=N/A(mixup)  |  val_loss=0.5847  val_f1=0.5971  val_acc=0.6301
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 023  lr=9.49e-05  train_loss=0.5367  train_f1=N/A(mixup)  |  val_loss=0.5216  val_f1=0.6640  val_acc=0.6712
+  ✅ New best patient-level F1 = 0.6640  (epoch 23)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 024  lr=9.44e-05  train_loss=0.4376  train_f1=N/A(mixup)  |  val_loss=0.5320  val_f1=0.7244  val_acc=0.7260
+  ✅ New best patient-level F1 = 0.7244  (epoch 24)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 025  lr=9.40e-05  train_loss=0.4807  train_f1=N/A(mixup)  |  val_loss=0.5256  val_f1=0.6977  val_acc=0.6849
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 026  lr=9.35e-05  train_loss=0.5448  train_f1=N/A(mixup)  |  val_loss=0.5367  val_f1=0.6374  val_acc=0.6575
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 027  lr=9.30e-05  train_loss=0.4976  train_f1=N/A(mixup)  |  val_loss=0.5157  val_f1=0.6249  val_acc=0.6438
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 028  lr=9.25e-05  train_loss=0.4324  train_f1=N/A(mixup)  |  val_loss=0.5453  val_f1=0.6357  val_acc=0.6438
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 029  lr=9.20e-05  train_loss=0.4267  train_f1=N/A(mixup)  |  val_loss=0.5134  val_f1=0.7260  val_acc=0.7260
+  ✅ New best patient-level F1 = 0.7260  (epoch 29)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 030  lr=9.14e-05  train_loss=0.4725  train_f1=N/A(mixup)  |  val_loss=0.5323  val_f1=0.7256  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 031  lr=9.08e-05  train_loss=0.4384  train_f1=N/A(mixup)  |  val_loss=0.5180  val_f1=0.7037  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 032  lr=9.03e-05  train_loss=0.4634  train_f1=N/A(mixup)  |  val_loss=0.6066  val_f1=0.7006  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 033  lr=8.97e-05  train_loss=0.4783  train_f1=N/A(mixup)  |  val_loss=0.5502  val_f1=0.7024  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 034  lr=8.91e-05  train_loss=0.4557  train_f1=N/A(mixup)  |  val_loss=0.5557  val_f1=0.6529  val_acc=0.6575
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 035  lr=8.84e-05  train_loss=0.3847  train_f1=N/A(mixup)  |  val_loss=0.5133  val_f1=0.6882  val_acc=0.6849
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 036  lr=8.78e-05  train_loss=0.4364  train_f1=N/A(mixup)  |  val_loss=0.5524  val_f1=0.6964  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 037  lr=8.72e-05  train_loss=0.4216  train_f1=N/A(mixup)  |  val_loss=0.6001  val_f1=0.7023  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 038  lr=8.65e-05  train_loss=0.3660  train_f1=N/A(mixup)  |  val_loss=0.5580  val_f1=0.7043  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 039  lr=8.58e-05  train_loss=0.3215  train_f1=N/A(mixup)  |  val_loss=0.5612  val_f1=0.6403  val_acc=0.6575
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 040  lr=8.51e-05  train_loss=0.3573  train_f1=N/A(mixup)  |  val_loss=0.5462  val_f1=0.7347  val_acc=0.7260
+  ✅ New best patient-level F1 = 0.7347  (epoch 40)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 041  lr=8.44e-05  train_loss=0.4421  train_f1=N/A(mixup)  |  val_loss=0.5274  val_f1=0.7109  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 042  lr=8.37e-05  train_loss=0.3861  train_f1=N/A(mixup)  |  val_loss=0.5303  val_f1=0.7584  val_acc=0.7397
+  ✅ New best patient-level F1 = 0.7584  (epoch 42)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 043  lr=8.30e-05  train_loss=0.4211  train_f1=N/A(mixup)  |  val_loss=0.5634  val_f1=0.7076  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 044  lr=8.22e-05  train_loss=0.3627  train_f1=N/A(mixup)  |  val_loss=0.5477  val_f1=0.6926  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 045  lr=8.15e-05  train_loss=0.4054  train_f1=N/A(mixup)  |  val_loss=0.5543  val_f1=0.6392  val_acc=0.6575
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 046  lr=8.07e-05  train_loss=0.3520  train_f1=N/A(mixup)  |  val_loss=0.5371  val_f1=0.7284  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 047  lr=7.99e-05  train_loss=0.3347  train_f1=N/A(mixup)  |  val_loss=0.5221  val_f1=0.6880  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 048  lr=7.91e-05  train_loss=0.3861  train_f1=N/A(mixup)  |  val_loss=0.5688  val_f1=0.7392  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 049  lr=7.83e-05  train_loss=0.3654  train_f1=N/A(mixup)  |  val_loss=0.5561  val_f1=0.7200  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 050  lr=7.75e-05  train_loss=0.3630  train_f1=N/A(mixup)  |  val_loss=0.5206  val_f1=0.7780  val_acc=0.7671
+  ✅ New best patient-level F1 = 0.7780  (epoch 50)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 051  lr=7.67e-05  train_loss=0.3687  train_f1=N/A(mixup)  |  val_loss=0.5304  val_f1=0.7412  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 052  lr=7.58e-05  train_loss=0.3416  train_f1=N/A(mixup)  |  val_loss=0.5513  val_f1=0.7349  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 053  lr=7.50e-05  train_loss=0.3277  train_f1=N/A(mixup)  |  val_loss=0.5613  val_f1=0.7429  val_acc=0.7534
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 054  lr=7.42e-05  train_loss=0.3551  train_f1=N/A(mixup)  |  val_loss=0.5797  val_f1=0.7415  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 055  lr=7.33e-05  train_loss=0.3245  train_f1=N/A(mixup)  |  val_loss=0.5850  val_f1=0.7500  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 056  lr=7.24e-05  train_loss=0.3420  train_f1=N/A(mixup)  |  val_loss=0.5613  val_f1=0.6888  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 057  lr=7.16e-05  train_loss=0.3285  train_f1=N/A(mixup)  |  val_loss=0.5421  val_f1=0.7148  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 058  lr=7.07e-05  train_loss=0.3923  train_f1=N/A(mixup)  |  val_loss=0.5745  val_f1=0.7168  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 059  lr=6.98e-05  train_loss=0.2903  train_f1=N/A(mixup)  |  val_loss=0.5712  val_f1=0.7105  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 060  lr=6.89e-05  train_loss=0.3217  train_f1=N/A(mixup)  |  val_loss=0.5987  val_f1=0.6760  val_acc=0.6849
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 061  lr=6.80e-05  train_loss=0.4133  train_f1=N/A(mixup)  |  val_loss=0.5749  val_f1=0.7575  val_acc=0.7671
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 062  lr=6.71e-05  train_loss=0.3325  train_f1=N/A(mixup)  |  val_loss=0.5902  val_f1=0.7407  val_acc=0.7534
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 063  lr=6.62e-05  train_loss=0.3368  train_f1=N/A(mixup)  |  val_loss=0.6029  val_f1=0.7032  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 064  lr=6.53e-05  train_loss=0.2997  train_f1=N/A(mixup)  |  val_loss=0.5865  val_f1=0.7230  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 065  lr=6.44e-05  train_loss=0.3346  train_f1=N/A(mixup)  |  val_loss=0.5803  val_f1=0.7317  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 066  lr=6.34e-05  train_loss=0.2865  train_f1=N/A(mixup)  |  val_loss=0.6058  val_f1=0.6763  val_acc=0.6849
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 067  lr=6.25e-05  train_loss=0.3157  train_f1=N/A(mixup)  |  val_loss=0.5687  val_f1=0.7420  val_acc=0.7397
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 068  lr=6.16e-05  train_loss=0.3794  train_f1=N/A(mixup)  |  val_loss=0.5811  val_f1=0.7272  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 069  lr=6.06e-05  train_loss=0.3421  train_f1=N/A(mixup)  |  val_loss=0.5544  val_f1=0.7279  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 070  lr=5.97e-05  train_loss=0.3264  train_f1=N/A(mixup)  |  val_loss=0.5581  val_f1=0.7184  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 071  lr=5.88e-05  train_loss=0.3486  train_f1=N/A(mixup)  |  val_loss=0.5877  val_f1=0.7391  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 072  lr=5.78e-05  train_loss=0.3438  train_f1=N/A(mixup)  |  val_loss=0.5941  val_f1=0.7485  val_acc=0.7260
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 073  lr=5.69e-05  train_loss=0.3179  train_f1=N/A(mixup)  |  val_loss=0.6201  val_f1=0.7030  val_acc=0.6986
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 074  lr=5.59e-05  train_loss=0.2789  train_f1=N/A(mixup)  |  val_loss=0.5898  val_f1=0.7212  val_acc=0.7123
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+Epoch 075  lr=5.50e-05  train_loss=0.3041  train_f1=N/A(mixup)  |  val_loss=0.5915  val_f1=0.7375  val_acc=0.7260
+  ⏹  Early stop (no improvement for 25 epochs)
+  [Slide→Patient] 100 bags → 73 patients (14 with multi-slide averaging, 59 single-slide)
+
+============================================================
+CROSS-VALIDATION SUMMARY
+============================================================
+  f1_macro       : 0.7558 ± 0.0442
+  f1_weighted    : 0.7634 ± 0.0423
+  acc            : 0.7632 ± 0.0429
+
+============================================================
+GLOBAL CV METRICS
+============================================================
+ accuracy  macro_f1  weighted_f1  num_patients
+ 0.762857  0.758702     0.763743           350
+
+Per-class report:
+              precision    recall  f1-score   support
+
+         COD      0.907     0.780     0.839        50
+         COF      0.706     0.585     0.640        41
+          FD      0.636     0.673     0.654        52
+       HG-OS      0.889     0.903     0.896        62
+        JTOF      0.692     0.818     0.750        22
+       LG-OS      0.880     0.733     0.800        30
+       Other      0.650     0.780     0.709        50
+        PSOF      0.773     0.791     0.782        43
+
+    accuracy                          0.763       350
+   macro avg      0.767     0.758     0.759       350
+weighted avg      0.771     0.763     0.764       350
+
+
+[DONE] All outputs saved to: /net/beegfs/users/P098169/results_mil_run_external

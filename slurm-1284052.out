@@ -1,0 +1,96 @@
+Job started on gpu03.cluster at Wed Mar 18 13:26:44 CET 2026
+Job ID: 1284052
+Python: /appdata/users/P098169/orthognal_MIL/bin/python
+
+=== Starting MIL training ===
+============================================================
+  MIL_inference_v2.py — External Test Set Inference
+  (14 fixes applied)
+============================================================
+[INFO] Device = cuda
+[WARNING] fold_summary.json not found — falling back to CLI arguments.
+[INFO] Using --classes from CLI: ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'PSOF']
+[WARNING] in_dim unknown — will infer from test data
+[INFO] Architecture config sourced from CLI (no fold_summary.json)
+[INFO] Classes (7): ['COD', 'COF', 'FD', 'HG-OS', 'JTOF', 'LG-OS', 'PSOF']
+[INFO] label2id : {'COD': 0, 'COF': 1, 'FD': 2, 'HG-OS': 3, 'JTOF': 4, 'LG-OS': 5, 'PSOF': 6}
+[INFO] in_dim=None | attn_dim=384 | heads=8 | topk=0 | topk_frac=0.15 | bag_frac=0.0
+[INFO] Config saved to: ./results_optimized_85plus_inferences_2/training_config.json
+[INFO] slide_level = False
+[INFO] Test set: 143 bags | 143 unique patients
+[WARNING] in_dim not in config — inferring from test data.
+[WARNING] Make sure the same feature extractor was used!
+[INFO] Feature dim inferred from test data: 1536
+
+──────────────────────────────────────────────────
+  Fold 1 / 5
+──────────────────────────────────────────────────
+  [OK] Weights loaded: /net/beegfs/users/P098169/results_optimized_85plus/fold_1/best_model.pt
+  [OK] Saved: ./results_optimized_85plus_inferences_2/fold_1_predictions.csv
+  Acc=0.3147 | F1-macro=0.2471 | F1-weighted=0.3018
+
+──────────────────────────────────────────────────
+  Fold 2 / 5
+──────────────────────────────────────────────────
+  [OK] Weights loaded: /net/beegfs/users/P098169/results_optimized_85plus/fold_2/best_model.pt
+  [OK] Saved: ./results_optimized_85plus_inferences_2/fold_2_predictions.csv
+  Acc=0.3217 | F1-macro=0.2659 | F1-weighted=0.3265
+
+──────────────────────────────────────────────────
+  Fold 3 / 5
+──────────────────────────────────────────────────
+  [OK] Weights loaded: /net/beegfs/users/P098169/results_optimized_85plus/fold_3/best_model.pt
+  [OK] Saved: ./results_optimized_85plus_inferences_2/fold_3_predictions.csv
+  Acc=0.4056 | F1-macro=0.3254 | F1-weighted=0.3725
+
+──────────────────────────────────────────────────
+  Fold 4 / 5
+──────────────────────────────────────────────────
+  [OK] Weights loaded: /net/beegfs/users/P098169/results_optimized_85plus/fold_4/best_model.pt
+  [OK] Saved: ./results_optimized_85plus_inferences_2/fold_4_predictions.csv
+  Acc=0.3566 | F1-macro=0.3345 | F1-weighted=0.3889
+
+──────────────────────────────────────────────────
+  Fold 5 / 5
+──────────────────────────────────────────────────
+  [OK] Weights loaded: /net/beegfs/users/P098169/results_optimized_85plus/fold_5/best_model.pt
+  [OK] Saved: ./results_optimized_85plus_inferences_2/fold_5_predictions.csv
+  Acc=0.3287 | F1-macro=0.2773 | F1-weighted=0.3424
+
+==================================================
+  ENSEMBLE (5 folds)
+==================================================
+[OK] Ensemble predictions: ./results_optimized_85plus_inferences_2/ensemble_predictions.csv
+
+  Ensemble Accuracy    = 0.3357
+  Ensemble F1-macro    = 0.2640
+  Ensemble F1-weighted = 0.3350
+
+              precision    recall  f1-score   support
+
+         COD      0.600     0.136     0.222        22
+         COF      0.290     0.474     0.360        19
+          FD      0.409     0.346     0.375        26
+       HG-OS      0.600     0.583     0.592        36
+        JTOF      0.000     0.000     0.000        12
+       LG-OS      0.192     0.227     0.208        22
+        PSOF      0.062     0.167     0.091         6
+
+    accuracy                          0.336       143
+   macro avg      0.308     0.276     0.264       143
+weighted avg      0.389     0.336     0.335       143
+
+[OK] Metrics: ./results_optimized_85plus_inferences_2/ensemble_metrics.txt
+[OK] Confusion matrices saved.
+[OK] Fold summary: ./results_optimized_85plus_inferences_2/fold_metrics_summary.csv
+
+    fold    acc  f1_macro  f1_weighted  n_patients
+       1 0.3147    0.2471       0.3018         143
+       2 0.3217    0.2659       0.3265         143
+       3 0.4056    0.3254       0.3725         143
+       4 0.3566    0.3345       0.3889         143
+       5 0.3287    0.2773       0.3424         143
+ensemble 0.3357    0.2640       0.3350         143
+
+[DONE] All outputs in: ./results_optimized_85plus_inferences_2
+/var/spool/slurmd/job1284052/slurm_script: line 77: --topk_frac: command not found
