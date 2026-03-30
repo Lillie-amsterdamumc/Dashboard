@@ -18,17 +18,10 @@ CLASS_ORDER = ["COD", "COF", "FD", "HG-OS", "JTOF", "LG-OS", "Other", "PSOF"]
 
 # ── Log directory ──────────────────────────────────────────────────────────────
 # Priority: 1) sidebar input  2) MIL_LOG_DIR env var  3) same folder as script
-_default_dir = os.environ.get("MIL_LOG_DIR", "") or str(Path(__file__).resolve().parent)
-
-with st.sidebar:
-    st.markdown("### Settings")
-    _log_dir_input = st.text_input(
-        "Log directory",
-        value=_default_dir,
-        help="Folder containing your .log / .out files (and optionally the CSV).",
-    )
-
-BASE_DIR = Path(_log_dir_input).resolve() if _log_dir_input else Path(__file__).resolve().parent
+# Streamlit Cloud mounts repo at /mount/src/<reponame-lowercase>
+BASE_DIR = Path("/mount/src/dashboard")
+if not BASE_DIR.exists():
+    BASE_DIR = Path(__file__).resolve().parent
 CSV_PATH = BASE_DIR / "dataset_stratified_updated.csv"
 
 RUN_PROFILES: Dict[str, Dict[str, str]] = {
@@ -296,6 +289,8 @@ def load_runs() -> List[dict]:
 
 def render_heatmap_tab() -> None:
     st.subheader("Dataset heatmap")
+    # Debug: show where we are looking
+    st.caption(f"Looking for CSV in: `{CSV_PATH}` | exists: {CSV_PATH.exists()} | BASE_DIR: {BASE_DIR}")
     df = load_data()
     if df is None:
         st.info(
@@ -821,6 +816,7 @@ def render_external_validation_tab() -> None:
     )
 
 st.title("🔬 Bone Tumor MIL — Dashboard")
+
 
 tab1, tab2, tab3, tab4 = st.tabs(["Dataset heatmap", "MIL Run Comparison", "Per-run deep dive", "External validation"])
 with tab1:
