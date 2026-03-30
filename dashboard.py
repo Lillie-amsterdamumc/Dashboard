@@ -18,17 +18,7 @@ CLASS_ORDER = ["COD", "COF", "FD", "HG-OS", "JTOF", "LG-OS", "Other", "PSOF"]
 
 # ── Log directory ──────────────────────────────────────────────────────────────
 # Priority: 1) sidebar input  2) MIL_LOG_DIR env var  3) same folder as script
-_default_dir = os.environ.get("MIL_LOG_DIR", "") or str(Path(__file__).resolve().parent)
-
-with st.sidebar:
-    st.markdown("### Settings")
-    _log_dir_input = st.text_input(
-        "Log directory",
-        value=_default_dir,
-        help="Folder containing your .log / .out files (and optionally the CSV).",
-    )
-
-BASE_DIR = Path(_log_dir_input).resolve() if _log_dir_input else Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent
 CSV_PATH = BASE_DIR / "dataset_stratified_updated.csv"
 
 RUN_PROFILES: Dict[str, Dict[str, str]] = {
